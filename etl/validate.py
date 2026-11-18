@@ -38,8 +38,8 @@ def validar() -> list[str]:
     if not f.empty:
         esperado = pd.date_range(f.min(), f.max(), freq="ME").strftime("%Y-%m-%d")
         huecos = sorted(set(esperado) - set(f))
-        if huecos:
-            errores.append(f"Formato 414 sin meses: {', '.join(huecos)}")
+        if huecos:  # el 414 se completa en varias corridas: alerta, no error
+            alertas.append(f"Formato 414 sin meses todavía: {', '.join(huecos)}")
 
     # 4. Saltos atípicos (> ±50 % m/m) en saldos de entidades: alerta, no error.
     for ind in ("activo", "depositos_total", "cartera_bruta"):

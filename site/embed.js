@@ -59,10 +59,11 @@
   function mesesEntre(a, b) {
     return (+b.slice(0, 4) - +a.slice(0, 4)) * 12 + (+b.slice(5, 7) - +a.slice(5, 7));
   }
+  // Suma de un flujo en el año; solo si están los 12 meses (si no, "n.d." en vez de una cifra incompleta).
   function anual(ind, ent, anio) {
     var s = serie(ind, ent), t = 0, n = 0;
     for (var i = 0; i < s.length; i++) if (s[i][0].slice(0, 4) === String(anio)) { t += s[i][1]; n++; }
-    return n ? t : null;
+    return n === 12 ? t : null;
   }
   function anioInforme() { return +D.meta.corte_informe.slice(0, 4); }
 

@@ -185,8 +185,10 @@ CONSULTAS = {
 
 # Primer mes por dataset (el 414 es pesado: ~6 min por mes).
 DESDE = {"f414": "2024-01-31", "f441": "2024-01-31", "canales": "2024-01-31"}
-# Consultas en paralelo por dataset (meses simultáneos).
-HILOS = {"f414": 4, "f441": 3}
+# Consultas en paralelo por dataset. El 414 va de a una: en paralelo datos.gov.co lo frena.
+HILOS = {"f414": 1, "f441": 3}
+# Fuentes lentas a las que aplica el tope de meses por corrida.
+LENTOS = {"f414"}
 
 
 def _pendientes(nombre: str, lista, forzar: bool):
@@ -210,14 +212,21 @@ def _pendientes(nombre: str, lista, forzar: bool):
 
 
 def extraer(nombres: list[str] | None = None, hasta: date | None = None, forzar: bool = False) -> dict:
+    import os
     from concurrent.futures import ThreadPoolExecutor
 
     ent, inf, ds, cuif = cargar_config()
     hasta = hasta or date.today()
-    resumen = {}
+    # Tope de meses por corrida para fuentes lentas (en GitHub Actions: MAX_MESES_POR_CORRIDA=6).
+    tope = int(os.environ.get("MAX_MESES_POR_CORRIDA", "0")) or None
+    resumen, errores = {}, {}
     for nombre in nombres or CONSULTAS:
         lista = meses(DESDE.get(nombre, inf["inicio_series"]), hasta)
         carpeta, pendientes = _pendientes(nombre, lista, forzar)
+        # Lo más reciente primero: si la corrida se corta, quedan los meses que más importan.
+        pendientes = sorted(pendientes, reverse=True)
+        if tope and nombre in LENTOS:
+            pendientes = pendientes[:tope]
 
         def bajar(mes, nombre=nombre, carpeta=carpeta):
             clave = mes.strftime("%Y-%m")
@@ -231,8 +240,14 @@ def extraer(nombres: list[str] | None = None, hasta: date | None = None, forzar:
             print(f"[{nombre}] {clave} ok ({len(df)} filas)", flush=True)
             return 1
 
-        with ThreadPoolExecutor(max_workers=HILOS.get(nombre, 2)) as ex:
-            resumen[nombre] = sum(ex.map(bajar, pendientes))
+        try:
+            with ThreadPoolExecutor(max_workers=HILOS.get(nombre, 2)) as ex:
+                resumen[nombre] = sum(ex.map(bajar, pendientes))
+        except Exception as e:  # una fuente caída no detiene las demás
+            errores[nombre] = str(e)[:300]
+            print(f"[{nombre}] ERROR: {errores[nombre]}", flush=True)
+    if errores:
+        resumen["errores"] = errores
     return resumen
 
 

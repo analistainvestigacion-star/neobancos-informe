@@ -52,6 +52,7 @@ jobs:
         if: steps.revisar.outputs.cambio == 'true'
         env:
           SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+          MAX_MESES_POR_CORRIDA: "6"   # el 414 tarda ~5 min por mes; el histórico se completa en varias corridas
         run: python -m etl.cli todo
 
       - name: Guardar datos en el repositorio
