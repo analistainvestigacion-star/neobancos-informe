@@ -1,6 +1,6 @@
 # Informe vivo: Neobancos y Billeteras Digitales
 
-Este repositorio genera el informe web *Fintech Snapshot 2025: Neobancos y Billeteras Digitales* a partir de los datos abiertos de la Superintendencia Financiera de Colombia (SFC) y de Fogafín en datos.gov.co. Cuando las fuentes publican datos nuevos, las cifras, las gráficas y los números dentro de los párrafos se actualizan solos. Los párrafos de análisis se redactan como borrador y salen a la web solo cuando alguien del equipo los aprueba.
+Este repositorio genera el informe web *Fintech Snapshot 2025: Neobancos y Billeteras Digitales* a partir de los datos abiertos de la Superintendencia Financiera de Colombia (SFC) y de Fogafín en datos.gov.co. Cuando las fuentes publican datos nuevos, las cifras, las gráficas y los números dentro de los párrafos se actualizan solos. Los párrafos de análisis se revisan desde Claude Code (sin API de pago) y salen a la web solo cuando alguien del equipo los aprueba.
 
 ## Cómo funciona
 
@@ -9,11 +9,11 @@ datos.gov.co ──► etl/extract.py ──► data/raw/<fuente>/<AAAA-MM>.parq
                  etl/transform.py ─► data/processed/indicadores.parquet   (entidad, fecha, indicador, valor)
                  etl/validate.py ──► data/processed/alertas.json          (errores bloquean la publicación)
                  etl/publish.py ───► site/data/informe.json + indicadores.csv
-                 etl/redactar.py ──► PR con el borrador de los textos (API de Claude)
+                 etl/textos.py ────► cifras para redactar y validación de los párrafos
 site/embed.js ──► se inserta en WordPress y dibuja el informe con los datos de site/data/
 ```
 
-- **`.github/workflows/actualizar.yml`** corre los días 1 y 15 de cada mes a las 7:00 a. m. (también se puede correr a mano desde la pestaña Actions). Revisa la fecha de actualización de cada dataset y solo descarga si algo cambió. Si la validación falla, no publica y abre un issue.
+- **`.github/workflows/actualizar.yml`** corre los días 1 y 15 de cada mes a las 7:00 a. m. (también se puede correr a mano desde la pestaña Actions). Revisa la fecha de actualización de cada dataset y solo descarga si algo cambió. Si la validación falla, no publica y abre un issue. Si hubo datos nuevos, abre un issue recordando revisar los textos.
 - **`.github/workflows/publicar.yml`** publica `site/` en GitHub Pages. Corre después de cada actualización y cuando se aprueba un PR de textos.
 
 ## Fuentes (datos.gov.co)
@@ -41,8 +41,8 @@ Particularidades de las fuentes, ya resueltas en el código:
 ## Editar el informe
 
 - **Universo:** `config/entidades.yaml`. Para agregar una entidad, se añade su tipo y código SFC. Las fechas de autorización se diligencian a mano.
-- **Textos y gráficas:** `content/secciones/*.md`. Las cifras van como marcadores, por ejemplo `{{v:depositos_total:universo:informe:billones}}`. Las gráficas son bloques de código ` ```grafico ` con un JSON. La lista completa de marcadores está al inicio de `etl/redactar.py`.
-- **Párrafos de análisis:** son los que están entre `<!-- analisis:id -->` y `<!-- /analisis -->`. Son los únicos que el borrador automático reescribe.
+- **Textos y gráficas:** `content/secciones/*.md`. Las cifras van como marcadores, por ejemplo `{{v:depositos_total:universo:informe:billones}}`. Las gráficas son bloques de código ` ```grafico ` con un JSON. La lista completa de marcadores está al inicio de `etl/textos.py`.
+- **Párrafos de análisis:** son los que están entre `<!-- analisis:id -->` y `<!-- /analisis -->`. Sus cifras se actualizan solas; el análisis se revisa en Claude Code con `/actualizar-textos-neobancos` (abriendo Claude Code en la carpeta CF), que redacta, valida con `python -m etl.textos validar` y propone un PR. No usa la API de pago.
 - **Nombres de canales del formato 444:** `config/canales_444.yaml`. Está pendiente de completar con el instructivo de la SFC.
 
 ## Correr localmente
@@ -57,9 +57,8 @@ python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
 
 1. Crear el repositorio en la cuenta del gremio y subir este código.
 2. En *Settings → Pages*, elegir **GitHub Actions** como origen.
-3. En *Settings → Secrets and variables → Actions*, agregar `ANTHROPIC_API_KEY` para el borrador de textos. `SOCRATA_APP_TOKEN` es opcional y da más cupo en datos.gov.co.
-4. En *Settings → Actions → General*, permitir que Actions cree pull requests.
-5. Correr *Actualizar datos* a mano una vez (con "forzar").
+3. Opcional: en *Settings → Secrets and variables → Actions*, agregar `SOCRATA_APP_TOKEN` para tener más cupo en datos.gov.co.
+4. Correr *Actualizar datos* a mano una vez (con "forzar").
 
 ## Insertar en WordPress
 
