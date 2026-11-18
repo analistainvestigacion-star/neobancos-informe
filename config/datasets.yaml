@@ -1,0 +1,12 @@
+# Datasets de datos.gov.co (Socrata). Campos de entidad y fecha por dataset.
+cuif:          {id: mxk5-ce6w, tipo: tipo_entidad, codigo: codigo_entidad, fecha: fecha_corte,    fuente: "SFC, CUIF"}
+captaciones:   {id: p22c-4r9c, tipo: tipoentidad,  codigo: codigoentidad,  fecha: fechacorte,     fuente: "SFC, captaciones por rangos"}
+fogafin:       {id: frdr-biuv, tipo: codigo_tipo_entidad_sfc, codigo: codigo_entidad_sfc, fecha: fecha_de_corte, fuente: "Fogafín, saldos por producto de depósito"}
+cartera:       {id: rvii-eis8, tipo: tipo_entidad, codigo: codigo_entidad, fecha: fecha_corte,    fuente: "SFC, distribución de cartera por producto"}
+f414:          {id: w9zh-vetq, tipo: tipo_entidad, codigo: codigo_entidad, fecha: fecha_corte,    fuente: "SFC, formato 414"}
+f414_reciente: {id: qzsc-9esp, tipo: tipo_entidad, codigo: codigo_entidad, fecha: fecha_corte,    fuente: "SFC, formato 414"}
+f441:          {id: axk9-g2nh, tipo: tipoentidad,  codigo: codigoentidad,  fecha: fechacorte,     fuente: "SFC, formato 441"}
+tarjetas:      {id: h2jg-r3zg, tipo: tipoentidad,  codigo: codigoentidad,  fecha: fechacorte,     fuente: "SFC, tarjetas de crédito y débito"}
+inclusion:     {id: kx2f-xjdq, tipo: tipo_entidad, codigo: codigo_entidad, fecha: fecha_corte,    fuente: "SFC, inclusión financiera"}
+canales:       {id: bzdm-fkaz, tipo: tipo_entidad, codigo: codigo_entidad, fecha: fecha_corte,    fuente: "SFC, operaciones por canal (formato 444)"}
+entidades:     {id: sr9n-792w, fuente: "SFC, entidades vigiladas"}

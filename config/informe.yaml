@@ -1,0 +1,4 @@
+titulo: "Fintech Snapshot 2025: Neobancos y Billeteras Digitales"
+corte_informe: "2025-12-31"   # comparaciones anuales fijas
+corte_base: "2024-12-31"      # año de comparación
+inicio_series: "2023-01-31"   # primer mes que se descarga

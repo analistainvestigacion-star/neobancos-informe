@@ -1,0 +1,35 @@
+# Universo del informe de Neobancos y Billeteras Digitales.
+# tipo/codigo: códigos SFC (tipo_entidad / codigo_entidad en datos.gov.co).
+# licencia_2026: true -> fuera del corte anual de dic-2025, solo en series vivas.
+# fecha_autorizacion / resolucion: diligenciar a mano con la resolución de la SFC (no viene en datos abiertos).
+grupos:
+  banco: Bancos digitales
+  cf: Compañías de financiamiento digitales
+  sedpe: SEDPE
+entidades:
+  - {id: lulo,        marca: Lulo Bank,     grupo: banco, tipo: 1,   codigo: 65,  licencia: Banco,                     fecha_autorizacion: null, resolucion: null}
+  - {id: revolut,     marca: Revolut,       grupo: banco, tipo: 1,   codigo: 69,  licencia: Banco,                     fecha_autorizacion: null, resolucion: null, licencia_2026: true}
+  - {id: nu,          marca: Nu,            grupo: cf,    tipo: 4,   codigo: 128, licencia: Compañía de financiamiento, fecha_autorizacion: null, resolucion: null}
+  - {id: rappipay,    marca: RappiPay,      grupo: cf,    tipo: 4,   codigo: 124, licencia: Compañía de financiamiento, fecha_autorizacion: null, resolucion: null}
+  - {id: nequi,       marca: Nequi,         grupo: cf,    tipo: 4,   codigo: 130, licencia: Compañía de financiamiento, fecha_autorizacion: null, resolucion: null}
+  - {id: uala,        marca: Ualá (Bancar), grupo: cf,    tipo: 4,   codigo: 123, licencia: Compañía de financiamiento, fecha_autorizacion: null, resolucion: null}
+  - {id: iris,        marca: Iris,          grupo: cf,    tipo: 4,   codigo: 108, licencia: Compañía de financiamiento, fecha_autorizacion: null, resolucion: null}
+  - {id: bold,        marca: Bold,          grupo: cf,    tipo: 4,   codigo: 127, licencia: Compañía de financiamiento, fecha_autorizacion: null, resolucion: null}
+  - {id: mercadopago, marca: Mercado Pago,  grupo: cf,    tipo: 4,   codigo: 126, licencia: Compañía de financiamiento, fecha_autorizacion: null, resolucion: null}
+  - {id: addi,        marca: Addi,          grupo: cf,    tipo: 4,   codigo: 131, licencia: Compañía de financiamiento, fecha_autorizacion: null, resolucion: null, licencia_2026: true}
+  - {id: plata,       marca: Plata,         grupo: cf,    tipo: 4,   codigo: 132, licencia: Compañía de financiamiento, fecha_autorizacion: null, resolucion: null, licencia_2026: true}
+  - {id: movii,       marca: Movii,         grupo: sedpe, tipo: 128, codigo: 1,   licencia: SEDPE, fecha_autorizacion: null, resolucion: null}
+  - {id: pagosgde,    marca: Pagos GDE,     grupo: sedpe, tipo: 128, codigo: 2,   licencia: SEDPE, fecha_autorizacion: null, resolucion: null, validar_marca: true}
+  - {id: dale,        marca: dale!,         grupo: sedpe, tipo: 128, codigo: 3,   licencia: SEDPE, fecha_autorizacion: null, resolucion: null}
+  - {id: powwi,       marca: Powwi,         grupo: sedpe, tipo: 128, codigo: 4,   licencia: SEDPE, fecha_autorizacion: null, resolucion: null}
+  - {id: coink,       marca: Coink,         grupo: sedpe, tipo: 128, codigo: 5,   licencia: SEDPE, fecha_autorizacion: null, resolucion: null}
+  - {id: global66,    marca: Global66,      grupo: sedpe, tipo: 128, codigo: 6,   licencia: SEDPE, fecha_autorizacion: null, resolucion: null}
+  - {id: stonex,      marca: StoneX,        grupo: sedpe, tipo: 128, codigo: 7,   licencia: SEDPE, fecha_autorizacion: null, resolucion: null}
+  - {id: ria,         marca: Ria,           grupo: sedpe, tipo: 128, codigo: 8,   licencia: SEDPE, fecha_autorizacion: null, resolucion: null}
+  - {id: paycash,     marca: PayCash,       grupo: sedpe, tipo: 128, codigo: 9,   licencia: SEDPE, fecha_autorizacion: null, resolucion: null}
+# Comparadores: totales del sistema por tipo de entidad SFC.
+comparadores:
+  - {id: sis_bancos, nombre: Bancos (sistema),                 tipos: [1]}
+  - {id: sis_cf,     nombre: Compañías de financiamiento (sistema), tipos: [4]}
+  - {id: sis_ec,     nombre: Establecimientos de crédito,      tipos: [1, 2, 4, 32]}
+  - {id: sis_sedpe,  nombre: SEDPE (sistema),                  tipos: [128]}

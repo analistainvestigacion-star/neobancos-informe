@@ -1,0 +1,6 @@
+requests>=2.32
+pandas>=2.2
+pyarrow>=16
+pyyaml>=6
+anthropic>=0.80
+pytest>=8

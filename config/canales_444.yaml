@@ -1,0 +1,4 @@
+# Nombres de los códigos de canal del formato 444 (dataset bzdm-fkaz).
+# PENDIENTE: completar con el instructivo del formato 444 (Anexo 1, CBCF de la SFC).
+# Mientras un código no tenga nombre, el informe lo muestra como "Canal <código>".
+canales: {}
