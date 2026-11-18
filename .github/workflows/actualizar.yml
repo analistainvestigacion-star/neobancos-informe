@@ -1,11 +1,11 @@
 name: Actualizar datos
 
-# Revisa cada día si la SFC o Fogafín publicaron datos nuevos. Si hubo cambios:
+# Revisa cada dos semanas (días 1 y 15 de cada mes) si la SFC o Fogafín publicaron datos nuevos. Si hubo cambios:
 # descarga, recalcula, valida, publica cifras y gráficas, y abre un PR con el
 # borrador de los párrafos de análisis (que solo sale a la web cuando se aprueba).
 on:
   schedule:
-    - cron: "0 12 * * *"   # 7:00 a. m. hora de Colombia
+    - cron: "0 12 1,15 * *"   # días 1 y 15, 7:00 a. m. hora de Colombia
   workflow_dispatch:
     inputs:
       forzar:
