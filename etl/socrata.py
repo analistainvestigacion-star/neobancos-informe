@@ -17,7 +17,7 @@ if os.environ.get("SOCRATA_APP_TOKEN"):
 PAGE = 50_000
 
 
-def _get(url: str, params: dict, timeout: int = 600, retries: int = 4):
+def _get(url: str, params: dict, timeout: int = 600, retries: int = 6):
     for intento in range(retries):
         try:
             r = SESSION.get(url, params=params, timeout=timeout)
@@ -30,7 +30,7 @@ def _get(url: str, params: dict, timeout: int = 600, retries: int = 4):
         except (requests.HTTPError, requests.ConnectionError, requests.Timeout) as e:
             if intento == retries - 1:
                 raise
-            espera = 10 * (intento + 1)
+            espera = 30 * (intento + 1)  # datos.gov.co se satura: esperas crecientes
             print(f"  reintento {intento + 1} en {espera}s ({e})")
             time.sleep(espera)
 

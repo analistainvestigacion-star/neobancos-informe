@@ -247,7 +247,12 @@ def extraer(nombres: list[str] | None = None, hasta: date | None = None, forzar:
         def bajar(mes, nombre=nombre, carpeta=carpeta):
             clave = mes.strftime("%Y-%m")
             print(f"[{nombre}] {clave} ...", flush=True)
-            df = CONSULTAS[nombre](ent, ds, cuif, mes)
+            try:
+                df = CONSULTAS[nombre](ent, ds, cuif, mes)
+            except Exception as e:  # un mes fallido no detiene los demás; se reintenta en la próxima corrida
+                errores.setdefault(nombre, []).append(f"{clave}: {str(e)[:150]}")
+                print(f"[{nombre}] {clave} FALLÓ: {str(e)[:150]}", flush=True)
+                return 0
             if df.empty:
                 (carpeta / f"{clave}.vacio").touch()
                 return 0
@@ -260,8 +265,8 @@ def extraer(nombres: list[str] | None = None, hasta: date | None = None, forzar:
             with ThreadPoolExecutor(max_workers=HILOS.get(nombre, 2)) as ex:
                 resumen[nombre] = sum(ex.map(bajar, pendientes))
         except Exception as e:  # una fuente caída no detiene las demás
-            errores[nombre] = str(e)[:300]
-            print(f"[{nombre}] ERROR: {errores[nombre]}", flush=True)
+            errores.setdefault(nombre, []).append(str(e)[:300])
+            print(f"[{nombre}] ERROR: {str(e)[:300]}", flush=True)
     if errores:
         resumen["errores"] = errores
     return resumen
