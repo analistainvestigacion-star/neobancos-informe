@@ -207,13 +207,24 @@ def ind_cartera(u: Universo) -> pd.DataFrame:
     df = df[df["renglon"] == "5"]
     df = df.drop_duplicates(subset=["nivel", "tipo_entidad", "codigo_entidad", "fecha", "unicap"])
     df["vencida"] = df["saldo"] - df["vigente"]
+    # Calificación por riesgo: pares (número, saldo) para A..E en las columnas 17..26.
+    calif = {"a": "_18_calificaci_n_de_riesgo", "b": "_20_calificaci_n_de_riesgo", "c": "_22_calificaci_n_de_riesgo",
+             "d": "_24_calificaci_n_de_riesgo", "e": "_26_calificaci_n_de_riesgo"}
+    for k, c in calif.items():
+        df[f"calif_{k}"] = num(df[c]) if c in df else np.nan
+    df["calif_be"] = df[[f"calif_{k}" for k in "bcde"]].sum(axis=1, min_count=1)
+    # Algunas entidades reportan la calificación en cero para ciertos productos: el indicador de riesgo
+    # se mide sobre la cartera que sí trae calificación (calif_total) y se informa su cobertura.
+    df["calif_total"] = df[[f"calif_{k}" for k in "abcde"]].sum(axis=1, min_count=1)
     f = u.ds["cartera"]["fuente"]
     consumo = df[df["unicap"].isin(UNICAP_CONSUMO)]
     return pd.concat([
         a_largo(consumo, u, "tipo_entidad", "codigo_entidad",
                 {"cartera_consumo_dist": "saldo", "cartera_vencida": "vencida", "clientes_mora": "clientes_mora"}, f),
         a_largo(df, u, "tipo_entidad", "codigo_entidad",
-                {"cartera_dist_total": "saldo", "cartera_vencida_total": "vencida"}, f),
+                {"cartera_dist_total": "saldo", "cartera_vencida_total": "vencida",
+                 **{f"cartera_calif_{k}": f"calif_{k}" for k in "abcde"}, "cartera_calif_be": "calif_be",
+                 "cartera_calif_total": "calif_total"}, f),
     ], ignore_index=True)
 
 
@@ -248,18 +259,52 @@ def ind_414(u: Universo) -> tuple[pd.DataFrame, dict]:
     return pd.concat(filas, ignore_index=True), {}
 
 
-def ind_441(u: Universo) -> pd.DataFrame:
+def ind_441(u: Universo) -> tuple[pd.DataFrame, dict]:
+    """Formato 441 (montos en miles de pesos): CDT emitidos por plazo (uca 1) y tasa de los
+    depósitos de ahorro (uca 7), que aproxima el costo de los depósitos a la vista."""
     df = leer("f441")
     if df.empty:
-        return pd.DataFrame()
+        return pd.DataFrame(), {}
     df["fecha"] = fin_de_mes(df["fechacorte"])
-    df["monto"] = num(df["monto_total"])
-    df["txm"] = num(df["tasa_x_monto"])
+    df["monto"] = num(df["monto_total"]) * 1000
+    df["txm"] = num(df["tasa_x_monto"]) * 1000
     df["codigoentidad"] = df["codigoentidad"].fillna("")
+    df["uca"] = df["uca"].astype(str) if "uca" in df else "1"
     # Excluye la fila 900 (total por red de oficinas) para no duplicar.
     df = df[df["subcuenta"].astype(str) != "900"]
-    return a_largo(df, u, "tipoentidad", "codigoentidad", {"cdt_emitido": "monto", "_txm_cdt": "txm"},
-                   u.ds["f441"]["fuente"])
+    f = u.ds["f441"]["fuente"]
+    cdt, aho = df[df["uca"] == "1"], df[df["uca"] == "7"]
+    largo = pd.concat([
+        a_largo(cdt, u, "tipoentidad", "codigoentidad", {"cdt_emitido": "monto", "_txm_cdt": "txm"}, f),
+        a_largo(aho, u, "tipoentidad", "codigoentidad", {"_saldo_ahorro_441": "monto", "_txm_ahorro": "txm"}, f),
+    ], ignore_index=True)
+    # Tabla: CDT por plazo (universo vs. establecimientos de crédito), por mes.
+    cdt = cdt.copy()
+    cdt["orden"] = pd.to_numeric(cdt["subcuenta"], errors="coerce")
+    ids = {e["id"] for e in u.ent["entidades"]}
+    cdt["ent"] = [u.id_entidad(t, c) for t, c in zip(cdt["tipoentidad"], cdt["codigoentidad"])]
+    tipos_ec = {"1", "2", "4", "32"}
+    tabla = {}
+    # Solo plazos (no la fila de tesorería) y una fila por plazo aunque se repita la descripción.
+    cdt = cdt[~cdt["descripcion"].str.contains("TESORER", case=False, na=False)]
+    for fecha, g in cdt.groupby("fecha"):
+        orden = g.groupby("descripcion")["orden"].min()
+        uni = g[(g["nivel"] == "entidad") & g["ent"].isin(ids)].groupby("descripcion")[["monto", "txm"]].sum()
+        sis = g[(g["nivel"] == "sistema") & g["tipoentidad"].astype(str).isin(tipos_ec)].groupby("descripcion")[["monto", "txm"]].sum()
+        total_u = uni["monto"].sum()
+        filas = []
+        for desc in orden.sort_values().index:
+            if desc not in sis.index:
+                continue
+            r = sis.loc[desc]
+            ru = uni.loc[desc] if desc in uni.index else None
+            # Plazos con montos marginales en el universo (<0,5 % de lo emitido) no se comparan: distorsionan la tasa.
+            relevante = ru is not None and total_u and ru["monto"] >= 0.005 * total_u
+            filas.append({"plazo": desc.title(), "monto_u": float(ru["monto"]) if ru is not None else 0.0,
+                          "tasa_u": float(ru["txm"] / ru["monto"]) if relevante else None,
+                          "monto_s": float(r["monto"]), "tasa_s": float(r["txm"] / r["monto"]) if r["monto"] else None})
+        tabla[fecha] = filas
+    return largo, {"cdt_plazos": tabla}
 
 
 def ind_tarjetas(u: Universo) -> pd.DataFrame:
@@ -271,12 +316,34 @@ def ind_tarjetas(u: Universo) -> pd.DataFrame:
     df["codigoentidad"] = df["codigoentidad"].fillna("")
     df["uca"] = df["cod_uca"].astype(str)
     df["sub"] = df["subcuenta"].astype(str)
-    vig = df[df["sub"] == "5"].drop_duplicates(subset=["nivel", "tipoentidad", "codigoentidad", "fecha", "uca"])
+    df = df.drop_duplicates(subset=["nivel", "tipoentidad", "codigoentidad", "fecha", "uca", "sub"])
     f = u.ds["tarjetas"]["fuente"]
-    return pd.concat([
-        a_largo(vig[vig["uca"] != "6"], u, "tipoentidad", "codigoentidad", {"tarjetas_credito": "total"}, f),
-        a_largo(vig[vig["uca"] == "6"], u, "tipoentidad", "codigoentidad", {"tarjetas_debito": "total"}, f),
-    ], ignore_index=True)
+    tc, td = df[df["uca"] != "6"], df[df["uca"] == "6"]
+    piezas = []
+    for sub, nombre, base in (("5", "tarjetas_credito", tc), ("25", "tc_compras_n", tc), ("45", "tc_compras_monto", tc),
+                              ("85", "tc_saldo", tc), ("90", "tc_cupo_libre", tc),
+                              ("5", "tarjetas_debito", td), ("25", "td_compras_n", td), ("35", "td_compras_monto", td)):
+        piezas.append(a_largo(base[base["sub"] == sub], u, "tipoentidad", "codigoentidad", {nombre: "total"}, f))
+    return pd.concat(piezas, ignore_index=True)
+
+
+def ind_solvencia(u: Universo) -> pd.DataFrame:
+    """Relación de solvencia total. Para sumar entidades se usa el denominador implícito
+    (patrimonio técnico / solvencia), así el agregado es un promedio ponderado exacto."""
+    df = leer("solvencia")
+    if df.empty:
+        return pd.DataFrame()
+    df["fecha"] = fin_de_mes(df["fecha"])
+    df["valor"] = num(df["valor"])
+    df["renglon"] = df["renglon"].astype(str)
+    df = df.drop_duplicates(subset=["nivel", "tipo_entidad", "codigo_entidad", "fecha", "renglon"])
+    w = df.pivot_table(index=["nivel", "tipo_entidad", "codigo_entidad", "fecha"], columns="renglon",
+                       values="valor", aggfunc="first").reset_index()
+    if "20" not in w or "60" not in w:
+        return pd.DataFrame()
+    w["den"] = w["20"] / (w["60"] / 100).replace(0, np.nan)
+    return a_largo(w, u, "tipo_entidad", "codigo_entidad", {"patrimonio_tecnico": "20", "_den_solv": "den"},
+                   u.ds["solvencia"]["fuente"])
 
 
 def ind_inclusion(u: Universo) -> pd.DataFrame:
@@ -319,7 +386,9 @@ def ind_canales(u: Universo) -> tuple[pd.DataFrame, dict]:
 # Tasas promedio ponderadas por monto = sum(tasa*monto)/sum(monto): (numerador, denominador, nombre)
 TASAS = [("_txm", "desembolsos", "tasa_desembolsos"), ("_txm_tc", "desembolsos_tc", "tasa_tc"),
          ("_txm_consumo", "desembolsos_consumo", "tasa_consumo"), ("_txm_comercial", "desembolsos_comercial", "tasa_comercial"),
-         ("_txm_cdt", "cdt_emitido", "tasa_cdt")]
+         ("_txm_cdt", "cdt_emitido", "tasa_cdt"), ("_txm_ahorro", "_saldo_ahorro_441", "tasa_ahorro")]
+# Cocientes con factor: (numerador, denominador, nombre, factor)
+COCIENTES = [("patrimonio_tecnico", "_den_solv", "solvencia", 100)]
 
 
 def calcular_tasas(df: pd.DataFrame) -> pd.DataFrame:
@@ -330,6 +399,11 @@ def calcular_tasas(df: pd.DataFrame) -> pd.DataFrame:
         if txm in w and monto in w:
             t = w[["entidad", "fecha"]].assign(valor=w[txm] / w[monto].replace(0, np.nan), indicador=nombre,
                                                fuente=fuentes.get(monto))
+            tasas.append(t[t["valor"].notna()])
+    for num_, den, nombre, factor in COCIENTES:
+        if num_ in w and den in w:
+            t = w[["entidad", "fecha"]].assign(valor=factor * w[num_] / w[den].replace(0, np.nan), indicador=nombre,
+                                               fuente=fuentes.get(num_))
             tasas.append(t[t["valor"].notna()])
     return pd.concat([df[~df["indicador"].str.startswith("_")]] + tasas, ignore_index=True)
 
@@ -349,7 +423,7 @@ def construir() -> pd.DataFrame:
     u = Universo()
     PROC.mkdir(parents=True, exist_ok=True)
     partes, tablas = [], {}
-    for f in (ind_cuif, ind_captaciones, ind_fogafin, ind_cartera, ind_414, ind_441, ind_tarjetas, ind_inclusion,
+    for f in (ind_cuif, ind_captaciones, ind_fogafin, ind_cartera, ind_414, ind_441, ind_tarjetas, ind_solvencia, ind_inclusion,
               ind_canales):
         r = f(u)
         if isinstance(r, tuple):

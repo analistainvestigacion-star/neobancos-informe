@@ -123,14 +123,15 @@ def q_f414(ent, ds, cuif, mes):
 
 def q_f441(ent, ds, cuif, mes):
     d = ds["f441"]
-    base = f"{rango_mes(d['fecha'], mes)} AND uca=1 AND tasa > 0"
-    agg = "sum(monto) as monto_total, sum(tasa * monto) as tasa_x_monto"
-    e = query(d["id"], select=f"tipoentidad,codigoentidad,subcuenta,descripcion,{agg}",
+    # uca 1: emisiones de CDT por plazo; uca 7: saldos de ahorro y su tasa (costo de los depósitos).
+    base = f"{rango_mes(d['fecha'], mes)} AND uca in(1,7) AND tasa > 0"
+    agg = "sum(monto) as monto_total, sum(tasa * monto) as tasa_x_monto, count(*) as dias"
+    e = query(d["id"], select=f"tipoentidad,codigoentidad,uca,subcuenta,descripcion,{agg}",
               where=f"{base} AND {filtro_entidades(ent, d)}",
-              group="tipoentidad,codigoentidad,subcuenta,descripcion")
-    s = query(d["id"], select=f"tipoentidad,subcuenta,descripcion,{agg}",
+              group="tipoentidad,codigoentidad,uca,subcuenta,descripcion")
+    s = query(d["id"], select=f"tipoentidad,uca,subcuenta,descripcion,{agg}",
               where=f"{base} AND {tipos_sistema(ent, d)}",
-              group="tipoentidad,subcuenta,descripcion")
+              group="tipoentidad,uca,subcuenta,descripcion")
     out = pd.concat([e.assign(nivel="entidad"), s.assign(nivel="sistema")], ignore_index=True)
     return out.assign(fechacorte=mes.strftime("%Y-%m-%d"))
 
@@ -139,8 +140,20 @@ def q_tarjetas(ent, ds, cuif, mes):
     d = ds["tarjetas"]
     base = rango_mes(d["fecha"], mes)
     e = query(d["id"], where=f"{base} AND {filtro_entidades(ent, d)}")
-    s = query(d["id"], where=f"{base} AND {tipos_sistema(ent, d)} AND subcuenta=5")
+    # 5 vigentes, 25/35/45 número y monto de compras, 85 saldo de cartera, 90 cupo no utilizado
+    s = query(d["id"], where=f"{base} AND {tipos_sistema(ent, d)} AND subcuenta in(5,25,35,45,85,90)")
     return pd.concat([e.assign(nivel="entidad"), s.assign(nivel="sistema")], ignore_index=True)
+
+
+def q_solvencia(ent, ds, cuif, mes):
+    d = ds["solvencia"]
+    # renglón 20 = patrimonio técnico; 60 = relación de solvencia total (%)
+    base = f"{rango_mes(d['fecha'], mes)} AND renglon in(20,60)"
+    s = query(d["id"], select="tipo_entidad,codigo_entidad,fecha,renglon,valor",
+              where=f"{base} AND {tipos_sistema(ent, d)}")
+    return pd.concat([s[[ (str(t), str(c)) in {(str(e["tipo"]), str(e["codigo"])) for e in ent["entidades"]}
+                         for t, c in zip(s["tipo_entidad"], s["codigo_entidad"])]].assign(nivel="entidad"),
+                      s.assign(nivel="sistema")], ignore_index=True) if not s.empty else s
 
 
 def q_inclusion(ent, ds, cuif, mes):
@@ -180,11 +193,12 @@ CONSULTAS = {
     "tarjetas": q_tarjetas,
     "inclusion": q_inclusion,
     "canales": q_canales,
+    "solvencia": q_solvencia,
 }
 
 
 # Primer mes por dataset (el 414 es pesado: ~6 min por mes).
-DESDE = {"f414": "2024-01-31", "f441": "2024-01-31", "canales": "2024-01-31"}
+DESDE = {"f414": "2024-01-31", "f441": "2024-01-31", "canales": "2024-01-31", "solvencia": "2023-12-31"}
 # Consultas en paralelo por dataset. El 414 va de a una: en paralelo datos.gov.co lo frena.
 HILOS = {"f414": 1, "f441": 3}
 # Fuentes lentas a las que aplica el tope de meses por corrida.
@@ -224,7 +238,9 @@ def extraer(nombres: list[str] | None = None, hasta: date | None = None, forzar:
         lista = meses(DESDE.get(nombre, inf["inicio_series"]), hasta)
         carpeta, pendientes = _pendientes(nombre, lista, forzar)
         # Lo más reciente primero: si la corrida se corta, quedan los meses que más importan.
-        pendientes = sorted(pendientes, reverse=True)
+        # Primero el año del informe (comparaciones anuales), luego lo más reciente hacia atrás.
+        anio = int(inf["corte_informe"][:4])
+        pendientes = sorted(pendientes, key=lambda m: (m.year != anio, -m.value))
         if tope and nombre in LENTOS:
             pendientes = pendientes[:tope]
 

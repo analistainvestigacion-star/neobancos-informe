@@ -18,6 +18,11 @@ universo o comparador sis_ec/sis_bancos/sis_cf/sis_sedpe; corte = informe | base
   {{verbo:indicador:ent}}                "creció" o "se redujo"
   {{lider:indicador:corte}}              entidad con el mayor valor
   {{n_ent:indicador:corte}}              número de entidades con dato
+  {{conc:indicador:corte:n}}             participación de las n entidades más grandes en el universo
+  {{rank:indicador:ent:corte}}           posición de la entidad en el universo
+  {{crec_rel:indicador:ent:comparador}}  diferencia de crecimiento en puntos porcentuales
+  {{veces:indicador:ent:comparador}}     cuántas veces creció ent frente al comparador
+  {{mas_crec:indicador}}                 entidad con mayor crecimiento anual
   {{nombre:ent}} {{corte}} {{base}} {{anio}} {{fecha:indicador}} {{csv}}
 """
 from __future__ import annotations
@@ -34,9 +39,9 @@ SECCIONES = RAIZ / "content" / "secciones"
 BLOQUE = re.compile(r"(<!-- analisis:(?P<id>[\w-]+) -->\n)(?P<texto>.*?)(\n<!-- /analisis -->)", re.S)
 MARCADOR = re.compile(r"\{\{([^}]+)\}\}")
 OPS = {"v", "crec", "crec_anual", "anual", "part", "ratio", "verbo", "fecha", "nombre", "corte", "base", "anio",
-       "lider", "n_ent", "csv"}
+       "lider", "n_ent", "csv", "conc", "rank", "crec_rel", "veces", "mas_crec"}
 PALABRAS_OK = {"informe", "base", "ultimo", "anual", "billones", "milm", "millones", "miles", "pct", "tasa",
-               "entero", "pp"}
+               "entero", "pp", "dec"}
 
 
 def leer_bloques() -> dict[str, dict]:
@@ -64,7 +69,11 @@ def tabla_cifras(u: Universo) -> pd.DataFrame:
 
 def validar_texto(texto: str, indicadores: set[str], entidades: set[str]) -> list[str]:
     errores = []
-    if re.search(r"\d", MARCADOR.sub("", texto)):
+    # Se permiten años de hechos pasados y números de normas (no cambian con los datos).
+    estatico = re.sub(r"\b(Ley|Decreto|Circular Externa|Resolución)\s+\d+\s+de\s+\d{4}\b", "", MARCADOR.sub("", texto))
+    estatico = re.sub(r"\b(19|20)\d{2}\b", "", estatico)
+    estatico = re.sub(r"(?m)^\s*\d+\.\s", "", estatico)  # numeración de listas
+    if re.search(r"\d", estatico):
         errores.append("contiene cifras literales (deben ir como marcadores)")
     if re.search(r"\b(nuestr[oa]s?|observamos|encontramos|leímos|creemos)\b", texto, re.I):
         errores.append("usa primera persona")
@@ -76,7 +85,7 @@ def validar_texto(texto: str, indicadores: set[str], entidades: set[str]) -> lis
             errores.append(f"marcador desconocido {{{{{expr}}}}}")
             continue
         for x in p[1:]:
-            if x in indicadores or x in entidades or x in PALABRAS_OK or re.fullmatch(r"\d{4}(-\d{2})?", x):
+            if x in indicadores or x in entidades or x in PALABRAS_OK or re.fullmatch(r"\d{4}(-\d{2})?|\d{1,2}", x):
                 continue
             errores.append(f"referencia inexistente '{x}' en {{{{{expr}}}}}")
     return errores

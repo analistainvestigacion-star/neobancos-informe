@@ -72,8 +72,9 @@
   function fmt(v, f) {
     if (v === null || v === undefined || isNaN(v)) return "n.d.";
     switch (f) {
-      case "billones": return "$" + nf(1).format(v / 1e12) + " billones";
-      case "milm": return "$" + nf(0).format(v / 1e9) + " mil millones";
+      case "billones": return (v < 0 ? "-$" : "$") + nf(1).format(Math.abs(v) / 1e12) + " billones";
+      case "milm": return (v < 0 ? "-$" : "$") + nf(0).format(Math.abs(v) / 1e9) + " mil millones";
+      case "dec": return nf(1).format(v);
       case "millones": return nf(1).format(v / 1e6) + " millones";
       case "miles": return nf(0).format(v / 1e3) + " mil";
       case "pct": return nf(1).format(v * 100) + " %";
@@ -93,7 +94,7 @@
       millones: function (v) { return nf(1).format(v / 1e6); },
       miles: function (v) { return nf(0).format(v / 1e3); },
       pct: function (v) { return nf(0).format(v * 100) + "%"; },
-      tasa: function (v) { return nf(0).format(v) + "%"; },
+      tasa: function (v) { return nf(1).format(v) + "%"; },
     }[f] || function (v) { return nf(0).format(v); };
   }
   var UNIDAD = { billones: "billones de pesos", milm: "miles de millones de pesos", millones: "millones",
@@ -131,6 +132,35 @@
           var c = p[0] === "verbo" && p[3] === "anual" ? crecAnual(p[1], p[2]) : crec(p[1], p[2]);
           return c === null ? "varió" : c >= 0 ? "creció" : "se redujo";
         }
+        case "conc": {
+          // {{conc:ind:corte:n}} participación de las n entidades más grandes en el total del universo
+          var vals = D.entidades.map(function (e) { return valor(p[1], e.id, p[2]) || 0; }).sort(function (a, b) { return b - a; });
+          var tot = vals.reduce(function (a, b) { return a + b; }, 0), n0 = +(p[3] || 1);
+          return fmt(tot ? vals.slice(0, n0).reduce(function (a, b) { return a + b; }, 0) / tot : null, "pct");
+        }
+        case "rank": {
+          // {{rank:ind:ent:corte}} posición de la entidad dentro del universo
+          var ord = D.entidades.map(function (e) { return { e: e.id, v: valor(p[1], e.id, p[3]) }; })
+            .filter(function (x) { return x.v; }).sort(function (a, b) { return b.v - a.v; });
+          var i0 = ord.findIndex(function (x) { return x.e === p[2]; });
+          return i0 < 0 ? "n.d." : String(i0 + 1);
+        }
+        case "crec_rel": {
+          // {{crec_rel:ind:ent:comparador}} diferencia de crecimiento anual en puntos porcentuales
+          var c1 = crec(p[1], p[2]), c2 = crec(p[1], p[3]);
+          return fmt(c1 !== null && c2 !== null ? c1 - c2 : null, "pp");
+        }
+        case "veces": {
+          // {{veces:ind:ent:comparador}} cuántas veces creció más rápido ent que el comparador
+          var x1 = crec(p[1], p[2]), x2 = crec(p[1], p[3]);
+          return x1 !== null && x2 ? new Intl.NumberFormat("es-CO", { maximumFractionDigits: 1 }).format(x1 / x2) : "n.d.";
+        }
+        case "mas_crec": {
+          // {{mas_crec:ind}} entidad con mayor crecimiento anual (con base > 0)
+          var cr = D.entidades.map(function (e) { return { e: e.id, c: crec(p[1], e.id) }; })
+            .filter(function (x) { return x.c !== null && isFinite(x.c); }).sort(function (a, b) { return b.c - a.c; });
+          return cr.length ? NOMBRES[cr[0].e] : "n.d.";
+        }
         case "lider": case "n_ent": {
           // {{lider:ind:corte}} entidad con mayor valor; {{n_ent:ind:corte}} entidades con dato > 0
           var con = D.entidades.map(function (e) { return { e: e.id, v: valor(p[1], e.id, p[2]) }; })
@@ -162,6 +192,8 @@
     return lista;
   }
   function valorSpec(spec, ent, fecha) {
+    if (spec.crec) return crec(spec.indicador, ent);
+    if (spec.crec_anual) return crecAnual(spec.indicador, ent);
     if (spec.ratio) {
       var n = valor(spec.ratio[0], ent, fecha), d = valor(spec.ratio[1], ent, fecha);
       return n !== null && d ? n / d : null;
@@ -205,7 +237,10 @@
   function lineas(spec) {
     var ents = entidadesDe(spec), fechas = {}, desde = spec.desde || "0000";
     var series = ents.map(function (e) {
-      var pares = spec.ratio
+      // part_de: participación de la entidad en un comparador (p. ej. sis_ec) mes a mes.
+      var pares = spec.part_de
+        ? serie(spec.indicador, e).map(function (p) { var d = valor(spec.indicador, spec.part_de, p[0]); return [p[0], d ? p[1] / d : null]; })
+        : spec.ratio
         ? serie(spec.ratio[0], e).map(function (p) { var d = valor(spec.ratio[1], e, p[0]); return [p[0], d ? p[1] / d : null]; })
         : serie(spec.indicador, e);
       pares = pares.filter(function (p) { return p[0] >= desde; });
@@ -230,6 +265,11 @@
     });
     var orden = ents.map(function (e, i) { return { e: e, t: tot[i] }; }).filter(function (x) { return x.t > 0; })
       .sort(function (a, b) { return b.t - a.t; });
+    // Comparadores (p. ej. sis_ec) al final, para contrastar la composición con el sistema.
+    (spec.comparadores || []).forEach(function (c) {
+      var t = spec.indicadores.reduce(function (a, i) { return a + (valor(i.id, c, f) || 0); }, 0);
+      if (t > 0) orden.push({ e: c, t: t });
+    });
     var o = opcionesBase(spec);
     o.tooltip.trigger = "axis";
     o.yAxis = { type: "category", inverse: true, data: orden.map(function (x) { return NOMBRES[x.e] || x.e; }), axisTick: { show: false } };
@@ -277,7 +317,46 @@
       filas + "</tbody></table></div>";
   }
 
-  var TIPOS = { barras: barras, lineas: lineas, apiladas: apiladas, rangos: rangos, canales: canales };
+  function cdtPlazos(spec) {
+    // Tasa promedio de los CDT emitidos por plazo: universo vs. establecimientos de crédito (mes indicado o último).
+    var t = D.tablas.cdt_plazos || {}, fechas = Object.keys(t).sort();
+    var f = spec.fecha === "informe" && t[D.meta.corte_informe] ? D.meta.corte_informe : fechas[fechas.length - 1];
+    var filas = (t[f] || []).filter(function (r) { return r.tasa_s !== null; });
+    var o = opcionesBase({ formato: "tasa" });
+    o.xAxis = { type: "category", data: filas.map(function (r) { return r.plazo.replace("Entre ", "").replace(" Dias", " d").replace("A ", ""); }), axisLabel: { rotate: 35, fontSize: 10 } };
+    o.yAxis = { type: "value", axisLabel: { formatter: eje("tasa") }, splitLine: { lineStyle: { color: COLOR.linea } }, scale: true };
+    o.series = [
+      { name: "Neobancos y billeteras", type: "bar", data: filas.map(function (r) { return r.tasa_u; }), itemStyle: { color: COLOR.navy } },
+      { name: "Establecimientos de crédito", type: "bar", data: filas.map(function (r) { return r.tasa_s; }), itemStyle: { color: COLOR.sage } },
+    ];
+    return { o: o, alto: 340, fecha: f };
+  }
+
+  function fichas() {
+    // Una tarjeta por entidad con sus cifras principales al corte del informe.
+    var g = function (ind, e) { return valor(ind, e, "informe"); };
+    var cards = D.entidades.filter(function (e) { return g("activo", e.id); })
+      .sort(function (a, b) { return g("activo", b.id) - g("activo", a.id); })
+      .map(function (e) {
+        var cli = Math.max(g("clientes_ahorro", e.id) || 0, g("clientes_depelec", e.id) || 0);
+        var util = g("utilidad", e.id), pat = g("patrimonio", e.id), c = crec("activo", e.id);
+        var kpi = [
+          ["Activos", fmt(g("activo", e.id), "milm").replace(" mil millones", " mm")],
+          ["Crec. activos", c === null || !isFinite(c) ? "n.d." : fmt(c, "pct")],
+          ["Depósitos", fmt(g("depositos_total", e.id), "milm").replace(" mil millones", " mm")],
+          ["Cartera", g("cartera_bruta", e.id) ? fmt(g("cartera_bruta", e.id), "milm").replace(" mil millones", " mm") : "—"],
+          ["Clientes de depósito", cli ? fmt(cli, cli < 1e5 ? "miles" : "millones") : "—"],
+          ["Resultado del año", util === null ? "n.d." : (util >= 0 ? "Utilidad" : "Pérdida") + (pat ? " (" + fmt(util / pat, "pct") + " del patrimonio)" : "")],
+          ["Solvencia", g("solvencia", e.id) ? fmt(g("solvencia", e.id), "tasa").replace(" E.A.", "") : "n.d."],
+        ];
+        return '<div class="cfn-ficha"><div class="cfn-ficha-h"><b>' + e.marca + "</b><span>" + D.grupos[e.grupo] + "</span></div><dl>" +
+          kpi.map(function (k) { return "<dt>" + k[0] + "</dt><dd>" + k[1] + "</dd>"; }).join("") + "</dl></div>";
+      }).join("");
+    return '<div class="cfn-fichas">' + cards + '</div><p class="cfn-nota">Cifras a ' + fmtFecha(D.meta.corte_informe) +
+      ". mm = miles de millones de pesos. Clientes de depósito: el mayor entre ahorro y depósitos electrónicos. Solvencia: relación de solvencia total.</p>";
+  }
+
+  var TIPOS = { barras: barras, lineas: lineas, apiladas: apiladas, rangos: rangos, canales: canales, cdt_plazos: cdtPlazos };
 
   function csvDe(chart) {
     var o = chart.getOption(), lineasCsv = [];
@@ -298,6 +377,7 @@
 
   function montarGrafica(nodo, spec) {
     if (spec.tipo === "tabla_entidades") { nodo.outerHTML = tablaEntidades(); return; }
+    if (spec.tipo === "fichas") { nodo.outerHTML = fichas(); return; }
     var r = TIPOS[spec.tipo](spec);
     var fig = document.createElement("figure");
     fig.className = "cfn-fig";
@@ -348,6 +428,12 @@
     "#cf-neobancos table{border-collapse:collapse;width:100%;font-size:.9em}" +
     "#cf-neobancos th,#cf-neobancos td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--linea)}" +
     "#cf-neobancos th{color:var(--navy)}" +
+    "#cf-neobancos .cfn-fichas{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin:20px 0}" +
+    "#cf-neobancos .cfn-ficha{background:#fff;border:1.5px solid var(--linea);border-radius:18px;padding:14px 16px}" +
+    "#cf-neobancos .cfn-ficha-h{border-bottom:1px solid var(--linea);padding-bottom:6px;margin-bottom:6px}" +
+    "#cf-neobancos .cfn-ficha-h b{display:block;font-size:1.05em}#cf-neobancos .cfn-ficha-h span{font-size:.75em;color:#6B707B}" +
+    "#cf-neobancos .cfn-ficha dl{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;margin:0;font-size:.82em}" +
+    "#cf-neobancos .cfn-ficha dt{color:#6B707B}#cf-neobancos .cfn-ficha dd{margin:0;text-align:right;color:var(--navy);font-weight:600}" +
     "#cf-neobancos .cfn-nota{font-size:.82em;color:#6B707B}" +
     "#cf-neobancos .cfn-error{padding:16px;border-radius:12px;background:#fdf1ec}" +
     "@media (max-width:600px){#cf-neobancos{padding:12px;border-radius:20px}#cf-neobancos .cfn-head{padding:20px 16px}#cf-neobancos .cfn-head h1{font-size:1.5em}#cf-neobancos .cfn-fig{padding:12px}#cf-neobancos .cfn-pie{flex-direction:column}}";

@@ -33,3 +33,4 @@ comparadores:
   - {id: sis_cf,     nombre: Compañías de financiamiento (sistema), tipos: [4]}
   - {id: sis_ec,     nombre: Establecimientos de crédito,      tipos: [1, 2, 4, 32]}
   - {id: sis_sedpe,  nombre: SEDPE (sistema),                  tipos: [128]}
+  - {id: sis_total,  nombre: Sistema (establecimientos de crédito y SEDPE), tipos: [1, 2, 4, 32, 128]}
