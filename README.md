@@ -13,7 +13,7 @@ datos.gov.co ──► etl/extract.py ──► data/raw/<fuente>/<AAAA-MM>.parq
 site/embed.js ──► se inserta en WordPress y dibuja el informe con los datos de site/data/
 ```
 
-- **`.github/workflows/actualizar.yml`** corre los días 1 y 15 de cada mes a las 7:00 a. m. (también se puede correr a mano desde la pestaña Actions). Revisa la fecha de actualización de cada dataset y solo descarga si algo cambió. Si la validación falla, no publica y abre un issue. Si hubo datos nuevos, abre un issue recordando revisar los textos.
+- **`.github/workflows/actualizar.yml`** corre el día 20 de cada mes a las 7:00 a. m. (la SFC publica la información mensual a mediados de mes) (también se puede correr a mano desde la pestaña Actions). Revisa la fecha de actualización de cada dataset y solo descarga si algo cambió. Si la validación falla, no publica y abre un issue. Si hubo datos nuevos, abre un issue recordando revisar los textos.
 - **`.github/workflows/publicar.yml`** publica `site/` en GitHub Pages. Corre después de cada actualización y cuando se aprueba un PR de textos.
 
 ## Fuentes (datos.gov.co)

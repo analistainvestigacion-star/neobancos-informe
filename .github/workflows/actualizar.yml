@@ -1,11 +1,11 @@
 name: Actualizar datos
 
-# Revisa cada dos semanas (días 1 y 15 de cada mes) si la SFC o Fogafín publicaron datos nuevos. Si hubo cambios:
+# Revisa una vez al mes (día 20, cuando la SFC ya publicó el cierre mensual) si la SFC o Fogafín publicaron datos nuevos. Si hubo cambios:
 # descarga, recalcula, valida y publica cifras y gráficas, y abre un issue como
 # recordatorio para revisar los párrafos de análisis desde Claude Code (sin API).
 on:
   schedule:
-    - cron: "0 12 1,15 * *"   # días 1 y 15, 7:00 a. m. hora de Colombia
+    - cron: "0 12 20 * *"   # día 20 de cada mes, 7:00 a. m. hora de Colombia
   workflow_dispatch:
     inputs:
       forzar:
