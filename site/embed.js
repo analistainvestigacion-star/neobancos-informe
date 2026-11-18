@@ -321,8 +321,13 @@
 
   // --------------------------------------------------------------- render
   var CSS = "" +
-    "#cf-neobancos{--navy:#2B3241;--mint:#ADD5C2;--linea:#E1E3DD;--cuerpo:#4A505D;--papel:#F6F7F4;color:var(--cuerpo);line-height:1.6;max-width:960px;margin:0 auto}" +
+    // Fondo propio (papel): el informe se lee igual sobre un tema claro u oscuro del sitio.
+    "#cf-neobancos{--navy:#2B3241;--mint:#ADD5C2;--linea:#E1E3DD;--cuerpo:#4A505D;--papel:#F6F7F4;color:var(--cuerpo);background:var(--papel);border-radius:28px;padding:24px;line-height:1.6;max-width:1008px;margin:0 auto}" +
     "#cf-neobancos *{box-sizing:border-box}" +
+    "#cf-neobancos p,#cf-neobancos li,#cf-neobancos td,#cf-neobancos span{color:var(--cuerpo)}" +
+    "#cf-neobancos strong,#cf-neobancos b{color:var(--navy)}" +
+    "#cf-neobancos a{color:var(--navy);text-decoration:underline}" +
+    "#cf-neobancos table{background:transparent}#cf-neobancos tr{background:transparent!important}" +
     "#cf-neobancos h2,#cf-neobancos h3{color:var(--navy);line-height:1.25}" +
     "#cf-neobancos h2{margin:2.4em 0 .6em;font-size:1.7em}#cf-neobancos h3{margin:1.6em 0 .4em;font-size:1.2em}" +
     "#cf-neobancos .cfn-head{background:var(--mint);border-radius:24px;padding:28px 28px 22px;color:var(--navy)}" +
@@ -345,7 +350,7 @@
     "#cf-neobancos th{color:var(--navy)}" +
     "#cf-neobancos .cfn-nota{font-size:.82em;color:#6B707B}" +
     "#cf-neobancos .cfn-error{padding:16px;border-radius:12px;background:#fdf1ec}" +
-    "@media (max-width:600px){#cf-neobancos .cfn-head{padding:20px 16px}#cf-neobancos .cfn-head h1{font-size:1.5em}#cf-neobancos .cfn-fig{padding:12px}#cf-neobancos .cfn-pie{flex-direction:column}}";
+    "@media (max-width:600px){#cf-neobancos{padding:12px;border-radius:20px}#cf-neobancos .cfn-head{padding:20px 16px}#cf-neobancos .cfn-head h1{font-size:1.5em}#cf-neobancos .cfn-fig{padding:12px}#cf-neobancos .cfn-pie{flex-direction:column}}";
 
   function cifras(lista) {
     // ```cifras  [{"valor":"{{...}}","texto":"..."}]```
