@@ -10,4 +10,6 @@ tarjetas:      {id: h2jg-r3zg, tipo: tipoentidad,  codigo: codigoentidad,  fecha
 inclusion:     {id: kx2f-xjdq, tipo: tipo_entidad, codigo: codigo_entidad, fecha: fecha_corte,    fuente: "SFC, inclusión financiera"}
 canales:       {id: bzdm-fkaz, tipo: tipo_entidad, codigo: codigo_entidad, fecha: fecha_corte,    fuente: "SFC, operaciones por canal (formato 444)"}
 solvencia:     {id: x586-r5d2, tipo: tipo_entidad, codigo: codigo_entidad, fecha: fecha,          fuente: "SFC, solvencia individual"}
+dbm:           {id: kx2f-xjdq, tipo: tipo_entidad, codigo: codigo_entidad, fecha: fecha_corte,    fuente: "SFC, inclusión financiera (depósitos de bajo monto)"}
+depositantes:  {id: uhdk-a4i6, tipo: codigo_tipo_entidad_sfc, codigo: codigo_entidad_sfc, fecha: fecha_de_corte, fuente: "Fogafín, saldos de depósitos y depositantes"}
 entidades:     {id: sr9n-792w, fuente: "SFC, entidades vigiladas"}

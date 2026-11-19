@@ -173,6 +173,25 @@ def q_inclusion(ent, ds, cuif, mes):
     return pd.concat([e.assign(nivel="entidad"), s.assign(nivel="sistema")], ignore_index=True)
 
 
+def q_dbm(ent, ds, cuif, mes):
+    """Depósitos ordinarios (unicap 37), de bajo monto (38) y de bajo monto inclusivos (41), a nivel nacional:
+    número de productos, activos, titulares por sexo y transacciones por tipo (columnas _77 y _78)."""
+    d = ds["dbm"]
+    if mes.month not in (3, 6, 9, 12):
+        return pd.DataFrame()
+    sel = "tipo_entidad,codigo_entidad,fecha_corte,unicap,renglon,desc_renglon,_77_nro_productos_a_nivel,_78_monto_saldo_productos"
+    base = f"{rango_mes(d['fecha'], mes)} AND unicap in(37,38,41)"
+    s = query(d["id"], select=sel, where=f"{base} AND {tipos_sistema(ent, d)}")
+    return s.assign(nivel="sistema")
+
+
+def q_depositantes(ent, ds, cuif):
+    """Fogafín, depositantes por entidad y tipo de persona. La fecha es texto dd/mm/aaaa, así que se baja
+    completo (es pequeño) en vez de mes a mes."""
+    d = ds["depositantes"]
+    return query(d["id"], where=tipos_sistema(ent, d)).assign(nivel="sistema")
+
+
 def q_canales(ent, ds, cuif, mes):
     d = ds["canales"]
     base = rango_mes(d["fecha"], mes)
@@ -194,7 +213,10 @@ CONSULTAS = {
     "inclusion": q_inclusion,
     "canales": q_canales,
     "solvencia": q_solvencia,
+    "dbm": q_dbm,
 }
+# Fuentes que se bajan completas en cada corrida (sin partición mensual).
+COMPLETAS = {"depositantes": q_depositantes}
 
 
 # Primer mes por dataset (el 414 es pesado: ~6 min por mes).
@@ -234,7 +256,17 @@ def extraer(nombres: list[str] | None = None, hasta: date | None = None, forzar:
     # Tope de meses por corrida para fuentes lentas (en GitHub Actions: MAX_MESES_POR_CORRIDA=6).
     tope = int(os.environ.get("MAX_MESES_POR_CORRIDA", "0")) or None
     resumen, errores = {}, {}
-    for nombre in nombres or CONSULTAS:
+    for nombre in [n for n in (nombres or list(CONSULTAS) + list(COMPLETAS)) if n in COMPLETAS]:
+        try:
+            print(f"[{nombre}] completo ...", flush=True)
+            df = COMPLETAS[nombre](ent, ds, cuif)
+            (RAW / nombre).mkdir(parents=True, exist_ok=True)
+            df.astype(str).to_parquet(RAW / nombre / "todo.parquet", index=False)
+            resumen[nombre] = len(df)
+        except Exception as e:
+            errores.setdefault(nombre, []).append(str(e)[:300])
+            print(f"[{nombre}] ERROR: {str(e)[:300]}", flush=True)
+    for nombre in [n for n in (nombres or CONSULTAS) if n in CONSULTAS]:
         lista = meses(DESDE.get(nombre, inf["inicio_series"]), hasta)
         carpeta, pendientes = _pendientes(nombre, lista, forzar)
         # Lo más reciente primero: si la corrida se corta, quedan los meses que más importan.

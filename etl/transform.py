@@ -360,6 +360,66 @@ def ind_inclusion(u: Universo) -> pd.DataFrame:
     return a_largo(df, u, "tipo_entidad", "codigo_entidad", m, u.ds["inclusion"]["fuente"])
 
 
+RENGLONES_DBM = {"5": "cuentas", "10": "activos", "15": "mujeres", "20": "hombres", "25": "trx_deposito",
+                 "30": "trx_pago", "35": "trx_retiro", "40": "trx_envio", "45": "trx_recibo", "998": "trx_total"}
+
+
+def _marcar_universo(df: pd.DataFrame, u: Universo, campo_tipo: str, campo_codigo: str) -> pd.DataFrame:
+    """Para fuentes que se bajan solo a nivel sistema: duplica las filas del universo como nivel 'entidad'."""
+    llaves = {(str(e["tipo"]), str(e["codigo"])) for e in u.ent["entidades"]}
+    mask = [(str(t), str(c)) in llaves for t, c in zip(df[campo_tipo], df[campo_codigo])]
+    return pd.concat([df[mask].assign(nivel="entidad"), df.assign(nivel="sistema")], ignore_index=True)
+
+
+def ind_dbm(u: Universo) -> pd.DataFrame:
+    """Depósitos de bajo monto (unicap 38 + 41 inclusivos) y ordinarios (37), nivel nacional:
+    productos, activos, titulares por sexo y transacciones por tipo (número y monto)."""
+    df = leer("dbm")
+    if df.empty:
+        return pd.DataFrame()
+    df = df.drop(columns=["nivel"]).drop_duplicates(subset=["tipo_entidad", "codigo_entidad", "fecha_corte", "unicap", "renglon"])
+    df["fecha"] = fin_de_mes(df["fecha_corte"])
+    df["n"] = num(df["_77_nro_productos_a_nivel"])
+    df["monto"] = num(df["_78_monto_saldo_productos"])
+    df["renglon"] = df["renglon"].astype(str)
+    df["unicap"] = df["unicap"].astype(str)
+    df = _marcar_universo(df, u, "tipo_entidad", "codigo_entidad")
+    f = u.ds["dbm"]["fuente"]
+    piezas = []
+    for unicaps, pref in ((("38", "41"), "bm"), (("37",), "ord")):
+        base = df[df["unicap"].isin(unicaps)]
+        for reng, nombre in RENGLONES_DBM.items():
+            sub = base[base["renglon"] == reng]
+            if sub.empty:
+                continue
+            cols = {f"{pref}_{nombre}": "n"}
+            if nombre in ("cuentas", "activos") or nombre.startswith("trx"):
+                cols[f"{pref}_{nombre}_monto"] = "monto"
+            piezas.append(a_largo(sub, u, "tipo_entidad", "codigo_entidad", cols, f))
+    return pd.concat(piezas, ignore_index=True) if piezas else pd.DataFrame()
+
+
+def ind_depositantes(u: Universo) -> pd.DataFrame:
+    """Fogafín: depositantes (personas con al menos un depósito en la entidad), por tipo de persona."""
+    df = leer("depositantes")
+    if df.empty:
+        return pd.DataFrame()
+    df = df.drop(columns=["nivel"]).drop_duplicates()
+    f = pd.to_datetime(df["fecha_de_corte"], dayfirst=True, errors="coerce")
+    df["fecha"] = (f + pd.offsets.MonthEnd(0)).dt.strftime("%Y-%m-%d")
+    df["n"] = num(df["numero_total_de_clientes"])
+    df["persona"] = df["tipo_de_persona"].str.upper().str.strip()
+    df = _marcar_universo(df, u, "codigo_tipo_entidad_sfc", "codigo_entidad_sfc")
+    fu = u.ds["depositantes"]["fuente"]
+    return pd.concat([
+        a_largo(df, u, "codigo_tipo_entidad_sfc", "codigo_entidad_sfc", {"depositantes": "n"}, fu),
+        a_largo(df[df["persona"].str.contains("NATURAL", na=False)], u, "codigo_tipo_entidad_sfc", "codigo_entidad_sfc",
+                {"depositantes_pn": "n"}, fu),
+        a_largo(df[df["persona"].str.contains("JUR", na=False)], u, "codigo_tipo_entidad_sfc", "codigo_entidad_sfc",
+                {"depositantes_pj": "n"}, fu),
+    ], ignore_index=True)
+
+
 def ind_canales(u: Universo) -> tuple[pd.DataFrame, dict]:
     import yaml
     df = leer("canales")
@@ -391,7 +451,16 @@ TASAS = [("_txm", "desembolsos", "tasa_desembolsos"), ("_txm_tc", "desembolsos_t
 COCIENTES = [("patrimonio_tecnico", "_den_solv", "solvencia", 100)]
 
 
+# Sumas derivadas: (nombre, [componentes])
+SUMAS = [("bm_titulares_sexo", ["bm_mujeres", "bm_hombres"])]
+
+
 def calcular_tasas(df: pd.DataFrame) -> pd.DataFrame:
+    for nombre, comps in SUMAS:
+        sub = df[df["indicador"].isin(comps)]
+        if not sub.empty:
+            g = sub.groupby(["entidad", "fecha"], as_index=False)["valor"].sum(min_count=1)
+            df = pd.concat([df, g.assign(indicador=nombre, fuente=sub["fuente"].iloc[0])], ignore_index=True)
     w = df.pivot_table(index=["entidad", "fecha"], columns="indicador", values="valor", aggfunc="sum").reset_index()
     fuentes = df.groupby("indicador")["fuente"].first()
     tasas = []
@@ -423,7 +492,7 @@ def construir() -> pd.DataFrame:
     u = Universo()
     PROC.mkdir(parents=True, exist_ok=True)
     partes, tablas = [], {}
-    for f in (ind_cuif, ind_captaciones, ind_fogafin, ind_cartera, ind_414, ind_441, ind_tarjetas, ind_solvencia, ind_inclusion,
+    for f in (ind_cuif, ind_captaciones, ind_fogafin, ind_cartera, ind_414, ind_441, ind_tarjetas, ind_solvencia, ind_inclusion, ind_dbm, ind_depositantes,
               ind_canales):
         r = f(u)
         if isinstance(r, tuple):

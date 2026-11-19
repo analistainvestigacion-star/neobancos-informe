@@ -383,10 +383,12 @@
     fig.className = "cfn-fig";
     var fuente = spec.fuente || D.fuente_indicador[spec.indicador || (spec.ratio && spec.ratio[0]) || (spec.indicadores && spec.indicadores[0].id)] ||
       (spec.tipo === "rangos" ? "SFC, captaciones por rangos" : spec.tipo === "canales" ? "SFC, operaciones por canal (formato 444)" : "");
-    fig.innerHTML = '<figcaption class="cfn-tit">' + (spec.titulo || "") + "</figcaption>" +
+    // Rótulo temático arriba y título afirmativo (puede llevar marcadores que se actualizan con los datos).
+    fig.innerHTML = (spec.rotulo ? '<div class="cfn-rotulo">' + spec.rotulo + "</div>" : "") +
+      '<figcaption class="cfn-tit">' + rellenar(spec.titulo || "") + "</figcaption>" +
       (spec.formato || spec.proporcion ? '<div class="cfn-unidad">' + (spec.proporcion ? "Participación (%)" : (spec.unidad || UNIDAD[spec.formato] || "")) + "</div>" : "") +
       '<div class="cfn-canvas" style="height:' + r.alto + 'px"></div>' +
-      '<div class="cfn-pie"><span>Fuente: ' + fuente + ". Corte: " + fmtFecha(r.fecha) + "." + (spec.nota ? " " + spec.nota : "") +
+      '<div class="cfn-pie"><span>Fuente: ' + fuente + "; cálculos de Colombia Fintech. Corte: " + fmtFecha(r.fecha) + "." + (spec.nota ? " " + rellenar(spec.nota) : "") +
       '</span><button type="button" class="cfn-csv">Descargar CSV</button></div>';
     nodo.replaceWith(fig);
     var ch = window.echarts.init(fig.querySelector(".cfn-canvas"), null, { renderer: "svg" });
@@ -420,6 +422,7 @@
     "#cf-neobancos .cfn-cifra b{display:block;font-size:1.5em;color:var(--navy);line-height:1.2}" +
     "#cf-neobancos .cfn-cifra span{font-size:.85em}" +
     "#cf-neobancos .cfn-fig{margin:24px 0;padding:18px;background:#fff;border:1.5px solid var(--linea);border-radius:24px}" +
+    "#cf-neobancos .cfn-rotulo{font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:#6B707B;margin-bottom:2px}" +
     "#cf-neobancos .cfn-tit{font-weight:700;color:var(--navy);font-size:1.05em}" +
     "#cf-neobancos .cfn-unidad{font-size:.8em;color:#6B707B;margin-bottom:6px}" +
     "#cf-neobancos .cfn-pie{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;font-size:.78em;color:#6B707B;margin-top:8px}" +

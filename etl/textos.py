@@ -72,6 +72,7 @@ def validar_texto(texto: str, indicadores: set[str], entidades: set[str]) -> lis
     # Se permiten años de hechos pasados y números de normas (no cambian con los datos).
     estatico = re.sub(r"\b(Ley|Decreto|Circular Externa|Resolución)\s+\d+\s+de\s+\d{4}\b", "", MARCADOR.sub("", texto))
     estatico = re.sub(r"\b(19|20)\d{2}\b", "", estatico)
+    estatico = re.sub(r"\bformatos?\s+\d+(?:\s*,\s*\d+)*(?:\s+y\s+\d+)?", "", estatico)  # formatos de la SFC
     estatico = re.sub(r"(?m)^\s*\d+\.\s", "", estatico)  # numeración de listas
     if re.search(r"\d", estatico):
         errores.append("contiene cifras literales (deben ir como marcadores)")
@@ -88,6 +89,61 @@ def validar_texto(texto: str, indicadores: set[str], entidades: set[str]) -> lis
             if x in indicadores or x in entidades or x in PALABRAS_OK or re.fullmatch(r"\d{4}(-\d{2})?|\d{1,2}", x):
                 continue
             errores.append(f"referencia inexistente '{x}' en {{{{{expr}}}}}")
+    errores += reglas_de_estilo(texto)
+    return errores
+
+
+# Reglas de la guía de estilo (insumos-neobancos/guia-estilo-informes-cf.md), verificables:
+MAX_PALABRAS_PARRAFO = 120     # objetivo 40-90
+MAX_CIFRAS_PARRAFO = 4
+MAX_PALABRAS_ORACION = 40      # objetivo <= 35
+OPS_CIFRA = {"v", "crec", "crec_anual", "anual", "part", "ratio", "conc", "crec_rel", "veces"}
+GENERICAS = ("evidencia la diversidad", "consolidándose como", "consolidandose como", "juega un papel",
+             "cabe resaltar", "es importante destacar")
+
+
+def reglas_de_estilo(texto: str) -> list[str]:
+    errores = []
+    parrafos = []
+    for p in [p.strip() for p in re.split(r"\n\s*\n", texto) if p.strip()]:
+        # Cada viñeta o punto numerado cuenta como un párrafo propio.
+        parrafos += [l for l in re.split(r"\n(?=\s*(?:[-*]|\d+\.)\s)", p) if l.strip()]
+    for par in parrafos:
+        plano = MARCADOR.sub("X", par)
+        palabras = len(plano.split())
+        cifras = sum(1 for e in MARCADOR.findall(par) if e.split(":")[0] in OPS_CIFRA)
+        inicio = " ".join(plano.split()[:6])
+        if palabras > MAX_PALABRAS_PARRAFO:
+            errores.append(f"párrafo de {palabras} palabras (máx. {MAX_PALABRAS_PARRAFO}): «{inicio}…»")
+        if cifras > MAX_CIFRAS_PARRAFO:
+            errores.append(f"párrafo con {cifras} cifras (máx. {MAX_CIFRAS_PARRAFO}): «{inicio}…»")
+        for oracion in re.split(r"(?<=[.;:])\s+", plano):
+            if len(oracion.split()) > MAX_PALABRAS_ORACION:
+                errores.append(f"oración de {len(oracion.split())} palabras: «{' '.join(oracion.split()[:6])}…»")
+    for g in GENERICAS:
+        if g in texto.lower():
+            errores.append(f"frase genérica: «{g}»")
+    return errores
+
+
+def validar_graficas(indicadores: set[str], entidades: set[str]) -> list[str]:
+    """Títulos y notas de las gráficas: marcadores válidos y título presente."""
+    import json
+    errores = []
+    for f in sorted(SECCIONES.glob("*.md")):
+        for cuerpo in re.findall(r"```grafico\s*\n(.*?)```", f.read_text(encoding="utf-8"), re.S):
+            spec = json.loads(cuerpo)
+            if spec.get("tipo") in ("tabla_entidades", "fichas"):
+                continue
+            if not spec.get("titulo"):
+                errores.append(f"{f.name}: gráfica sin título ({spec.get('id')})")
+            for campo in ("titulo", "nota"):
+                for expr in MARCADOR.findall(spec.get(campo, "")):
+                    p = expr.split(":")
+                    malos = [x for x in p[1:] if not (x in indicadores or x in entidades or x in PALABRAS_OK
+                                                      or re.fullmatch(r"\d{4}(-\d{2})?|\d{1,2}", x))]
+                    if p[0] not in OPS or malos:
+                        errores.append(f"{f.name}: marcador inválido en {campo} de {spec.get('id')}: {{{{{expr}}}}}")
     return errores
 
 
@@ -111,7 +167,10 @@ def main(argv: list[str]) -> int:
             if errores:
                 malos += 1
                 print(f"✗ {k} ({v['archivo']}): {'; '.join(errores)}")
-        print("Textos OK" if not malos else f"{malos} bloque(s) con errores")
+        for e in validar_graficas(indicadores, entidades):
+            malos += 1
+            print(f"✗ {e}")
+        print("Textos OK" if not malos else f"{malos} problema(s)")
         return 1 if malos else 0
     print(__doc__)
     return 2
