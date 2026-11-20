@@ -17328,6 +17328,7 @@ universo,2026-08-31,clientes_pn,17776806.0,"SFC, captaciones por rangos",Total n
 universo,2026-09-30,clientes_pn,47570515.0,"SFC, captaciones por rangos",Total neobancos y billeteras
 bold,2025-06-30,creditos,1.0,"SFC, formato 414",Bold
 bold,2025-07-31,creditos,32.0,"SFC, formato 414",Bold
+bold,2025-08-31,creditos,11.0,"SFC, formato 414",Bold
 bold,2025-09-30,creditos,8.0,"SFC, formato 414",Bold
 bold,2025-10-31,creditos,78.0,"SFC, formato 414",Bold
 bold,2025-11-30,creditos,294.0,"SFC, formato 414",Bold
@@ -17337,10 +17338,13 @@ bold,2026-07-31,creditos,14633.0,"SFC, formato 414",Bold
 bold,2026-08-31,creditos,12810.0,"SFC, formato 414",Bold
 bold,2026-09-30,creditos,15031.0,"SFC, formato 414",Bold
 bold,2026-10-31,creditos,20484.0,"SFC, formato 414",Bold
+grupo_banco,2025-02-28,creditos,6622.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,creditos,6333.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,creditos,6222.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,creditos,8390.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,creditos,5272.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,creditos,7283.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,creditos,10014.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,creditos,6848.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,creditos,7918.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,creditos,8907.0,"SFC, formato 414",Bancos digitales
@@ -17350,10 +17354,13 @@ grupo_banco,2026-07-31,creditos,10190.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-08-31,creditos,8439.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,creditos,7382.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,creditos,9021.0,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,creditos,580.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,creditos,1278.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,creditos,2040.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,creditos,1394.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,creditos,1200.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,creditos,2028.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,creditos,1100.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,creditos,946.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,creditos,3580.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,creditos,7910.0,"SFC, formato 414",Compañías de financiamiento digitales
@@ -17363,10 +17370,13 @@ grupo_cf,2026-07-31,creditos,38364.0,"SFC, formato 414",Compañías de financiam
 grupo_cf,2026-08-31,creditos,31985.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,creditos,152848.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,creditos,267461.0,"SFC, formato 414",Compañías de financiamiento digitales
+iris,2025-02-28,creditos,580.0,"SFC, formato 414",Iris
+iris,2025-03-31,creditos,1278.0,"SFC, formato 414",Iris
 iris,2025-04-30,creditos,2035.0,"SFC, formato 414",Iris
 iris,2025-05-31,creditos,1272.0,"SFC, formato 414",Iris
 iris,2025-06-30,creditos,1022.0,"SFC, formato 414",Iris
 iris,2025-07-31,creditos,1752.0,"SFC, formato 414",Iris
+iris,2025-08-31,creditos,623.0,"SFC, formato 414",Iris
 iris,2025-09-30,creditos,452.0,"SFC, formato 414",Iris
 iris,2025-10-31,creditos,2115.0,"SFC, formato 414",Iris
 iris,2025-11-30,creditos,2271.0,"SFC, formato 414",Iris
@@ -17376,10 +17386,13 @@ iris,2026-07-31,creditos,1973.0,"SFC, formato 414",Iris
 iris,2026-08-31,creditos,1336.0,"SFC, formato 414",Iris
 iris,2026-09-30,creditos,1970.0,"SFC, formato 414",Iris
 iris,2026-10-31,creditos,1519.0,"SFC, formato 414",Iris
+lulo,2025-02-28,creditos,6622.0,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,creditos,6333.0,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,creditos,6222.0,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,creditos,8390.0,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,creditos,5272.0,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,creditos,7283.0,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,creditos,10014.0,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,creditos,6848.0,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,creditos,7918.0,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,creditos,8907.0,"SFC, formato 414",Lulo Bank
@@ -17407,6 +17420,7 @@ rappipay,2025-04-30,creditos,3.0,"SFC, formato 414",RappiPay
 rappipay,2025-05-31,creditos,118.0,"SFC, formato 414",RappiPay
 rappipay,2025-06-30,creditos,177.0,"SFC, formato 414",RappiPay
 rappipay,2025-07-31,creditos,243.0,"SFC, formato 414",RappiPay
+rappipay,2025-08-31,creditos,466.0,"SFC, formato 414",RappiPay
 rappipay,2025-09-30,creditos,485.0,"SFC, formato 414",RappiPay
 rappipay,2025-10-31,creditos,1217.0,"SFC, formato 414",RappiPay
 rappipay,2025-11-30,creditos,1715.0,"SFC, formato 414",RappiPay
@@ -17416,10 +17430,13 @@ rappipay,2026-07-31,creditos,4571.0,"SFC, formato 414",RappiPay
 rappipay,2026-08-31,creditos,3183.0,"SFC, formato 414",RappiPay
 rappipay,2026-09-30,creditos,3902.0,"SFC, formato 414",RappiPay
 rappipay,2026-10-31,creditos,4589.0,"SFC, formato 414",RappiPay
+sis_bancos,2025-02-28,creditos,1679289.0,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,creditos,1623603.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,creditos,1520217.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,creditos,1664034.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,creditos,1213328.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,creditos,1205874.0,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,creditos,1567536.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,creditos,1327730.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,creditos,1668339.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,creditos,1321131.0,"SFC, formato 414",Bancos (sistema)
@@ -17429,10 +17446,13 @@ sis_bancos,2026-07-31,creditos,1670989.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-08-31,creditos,1317243.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,creditos,1330053.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,creditos,1676184.0,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,creditos,23815.0,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,creditos,26484.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,creditos,18912.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,creditos,40642.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,creditos,29611.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,creditos,18834.0,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,creditos,24866.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,creditos,18070.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,creditos,28560.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,creditos,31857.0,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -17442,10 +17462,13 @@ sis_cf,2026-07-31,creditos,94544.0,"SFC, formato 414",Compañías de financiamie
 sis_cf,2026-08-31,creditos,75615.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,creditos,203215.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,creditos,337649.0,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,creditos,1721293.0,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,creditos,1666721.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,creditos,1554856.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,creditos,1726204.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,creditos,1258220.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,creditos,1240565.0,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,creditos,1613399.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,creditos,1363618.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,creditos,1718161.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,creditos,1370064.0,"SFC, formato 414",Establecimientos de crédito
@@ -17455,10 +17478,13 @@ sis_ec,2026-07-31,creditos,1783435.0,"SFC, formato 414",Establecimientos de cré
 sis_ec,2026-08-31,creditos,1408044.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,creditos,1550184.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,creditos,2034432.0,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,creditos,1721293.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,creditos,1666721.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,creditos,1554856.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,creditos,1726204.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,creditos,1258220.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,creditos,1240565.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,creditos,1613399.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,creditos,1363618.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,creditos,1718161.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,creditos,1370064.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -17468,10 +17494,13 @@ sis_total,2026-07-31,creditos,1783435.0,"SFC, formato 414",Sistema (establecimie
 sis_total,2026-08-31,creditos,1408044.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-09-30,creditos,1550184.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-10-31,creditos,2034432.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+universo,2025-02-28,creditos,7202.0,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,creditos,7611.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,creditos,8262.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,creditos,9784.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,creditos,6472.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,creditos,9311.0,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,creditos,11114.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,creditos,7794.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,creditos,11498.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,creditos,16817.0,"SFC, formato 414",Total neobancos y billeteras
@@ -17483,6 +17512,7 @@ universo,2026-09-30,creditos,160230.0,"SFC, formato 414",Total neobancos y bille
 universo,2026-10-31,creditos,276482.0,"SFC, formato 414",Total neobancos y billeteras
 bold,2025-06-30,creditos_hombre,1.0,"SFC, formato 414",Bold
 bold,2025-07-31,creditos_hombre,17.0,"SFC, formato 414",Bold
+bold,2025-08-31,creditos_hombre,11.0,"SFC, formato 414",Bold
 bold,2025-09-30,creditos_hombre,7.0,"SFC, formato 414",Bold
 bold,2025-10-31,creditos_hombre,50.0,"SFC, formato 414",Bold
 bold,2025-11-30,creditos_hombre,174.0,"SFC, formato 414",Bold
@@ -17492,10 +17522,13 @@ bold,2026-07-31,creditos_hombre,7155.0,"SFC, formato 414",Bold
 bold,2026-08-31,creditos_hombre,6302.0,"SFC, formato 414",Bold
 bold,2026-09-30,creditos_hombre,7584.0,"SFC, formato 414",Bold
 bold,2026-10-31,creditos_hombre,10103.0,"SFC, formato 414",Bold
+grupo_banco,2025-02-28,creditos_hombre,4132.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,creditos_hombre,3849.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,creditos_hombre,3743.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,creditos_hombre,5090.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,creditos_hombre,2771.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,creditos_hombre,4228.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,creditos_hombre,6127.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,creditos_hombre,4050.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,creditos_hombre,4628.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,creditos_hombre,5175.0,"SFC, formato 414",Bancos digitales
@@ -17505,10 +17538,13 @@ grupo_banco,2026-07-31,creditos_hombre,5819.0,"SFC, formato 414",Bancos digitale
 grupo_banco,2026-08-31,creditos_hombre,4976.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,creditos_hombre,4150.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,creditos_hombre,5083.0,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,creditos_hombre,69.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,creditos_hombre,401.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,creditos_hombre,712.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,creditos_hombre,273.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,creditos_hombre,439.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,creditos_hombre,669.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,creditos_hombre,525.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,creditos_hombre,428.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,creditos_hombre,1742.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,creditos_hombre,4149.0,"SFC, formato 414",Compañías de financiamiento digitales
@@ -17518,10 +17554,13 @@ grupo_cf,2026-07-31,creditos_hombre,20129.0,"SFC, formato 414",Compañías de fi
 grupo_cf,2026-08-31,creditos_hombre,16702.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,creditos_hombre,76621.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,creditos_hombre,136000.0,"SFC, formato 414",Compañías de financiamiento digitales
+iris,2025-02-28,creditos_hombre,69.0,"SFC, formato 414",Iris
+iris,2025-03-31,creditos_hombre,401.0,"SFC, formato 414",Iris
 iris,2025-04-30,creditos_hombre,708.0,"SFC, formato 414",Iris
 iris,2025-05-31,creditos_hombre,178.0,"SFC, formato 414",Iris
 iris,2025-06-30,creditos_hombre,299.0,"SFC, formato 414",Iris
 iris,2025-07-31,creditos_hombre,489.0,"SFC, formato 414",Iris
+iris,2025-08-31,creditos_hombre,180.0,"SFC, formato 414",Iris
 iris,2025-09-30,creditos_hombre,90.0,"SFC, formato 414",Iris
 iris,2025-10-31,creditos_hombre,739.0,"SFC, formato 414",Iris
 iris,2025-11-30,creditos_hombre,854.0,"SFC, formato 414",Iris
@@ -17531,10 +17570,13 @@ iris,2026-07-31,creditos_hombre,383.0,"SFC, formato 414",Iris
 iris,2026-08-31,creditos_hombre,204.0,"SFC, formato 414",Iris
 iris,2026-09-30,creditos_hombre,452.0,"SFC, formato 414",Iris
 iris,2026-10-31,creditos_hombre,240.0,"SFC, formato 414",Iris
+lulo,2025-02-28,creditos_hombre,4132.0,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,creditos_hombre,3849.0,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,creditos_hombre,3743.0,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,creditos_hombre,5090.0,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,creditos_hombre,2771.0,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,creditos_hombre,4228.0,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,creditos_hombre,6127.0,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,creditos_hombre,4050.0,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,creditos_hombre,4628.0,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,creditos_hombre,5175.0,"SFC, formato 414",Lulo Bank
@@ -17562,6 +17604,7 @@ rappipay,2025-04-30,creditos_hombre,2.0,"SFC, formato 414",RappiPay
 rappipay,2025-05-31,creditos_hombre,92.0,"SFC, formato 414",RappiPay
 rappipay,2025-06-30,creditos_hombre,139.0,"SFC, formato 414",RappiPay
 rappipay,2025-07-31,creditos_hombre,162.0,"SFC, formato 414",RappiPay
+rappipay,2025-08-31,creditos_hombre,334.0,"SFC, formato 414",RappiPay
 rappipay,2025-09-30,creditos_hombre,330.0,"SFC, formato 414",RappiPay
 rappipay,2025-10-31,creditos_hombre,849.0,"SFC, formato 414",RappiPay
 rappipay,2025-11-30,creditos_hombre,1102.0,"SFC, formato 414",RappiPay
@@ -17571,10 +17614,13 @@ rappipay,2026-07-31,creditos_hombre,3013.0,"SFC, formato 414",RappiPay
 rappipay,2026-08-31,creditos_hombre,2058.0,"SFC, formato 414",RappiPay
 rappipay,2026-09-30,creditos_hombre,2526.0,"SFC, formato 414",RappiPay
 rappipay,2026-10-31,creditos_hombre,2978.0,"SFC, formato 414",RappiPay
+universo,2025-02-28,creditos_hombre,4201.0,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,creditos_hombre,4250.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,creditos_hombre,4455.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,creditos_hombre,5363.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,creditos_hombre,3210.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,creditos_hombre,4897.0,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,creditos_hombre,6652.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,creditos_hombre,4478.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,creditos_hombre,6370.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,creditos_hombre,9324.0,"SFC, formato 414",Total neobancos y billeteras
@@ -17594,10 +17640,13 @@ bold,2026-07-31,creditos_mujer,4947.0,"SFC, formato 414",Bold
 bold,2026-08-31,creditos_mujer,4402.0,"SFC, formato 414",Bold
 bold,2026-09-30,creditos_mujer,4870.0,"SFC, formato 414",Bold
 bold,2026-10-31,creditos_mujer,6829.0,"SFC, formato 414",Bold
+grupo_banco,2025-02-28,creditos_mujer,2489.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,creditos_mujer,2483.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,creditos_mujer,2479.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,creditos_mujer,3298.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,creditos_mujer,2500.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,creditos_mujer,3054.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,creditos_mujer,3886.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,creditos_mujer,2798.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,creditos_mujer,3287.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,creditos_mujer,3731.0,"SFC, formato 414",Bancos digitales
@@ -17607,10 +17656,13 @@ grupo_banco,2026-07-31,creditos_mujer,4247.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-08-31,creditos_mujer,3365.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,creditos_mujer,3116.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,creditos_mujer,3773.0,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,creditos_mujer,66.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,creditos_mujer,412.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,creditos_mujer,657.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,creditos_mujer,191.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,creditos_mujer,231.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,creditos_mujer,477.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,creditos_mujer,230.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,creditos_mujer,222.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,creditos_mujer,968.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,creditos_mujer,2974.0,"SFC, formato 414",Compañías de financiamiento digitales
@@ -17620,10 +17672,13 @@ grupo_cf,2026-07-31,creditos_mujer,14405.0,"SFC, formato 414",Compañías de fin
 grupo_cf,2026-08-31,creditos_mujer,12214.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,creditos_mujer,72387.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,creditos_mujer,126631.0,"SFC, formato 414",Compañías de financiamiento digitales
+iris,2025-02-28,creditos_mujer,66.0,"SFC, formato 414",Iris
+iris,2025-03-31,creditos_mujer,412.0,"SFC, formato 414",Iris
 iris,2025-04-30,creditos_mujer,656.0,"SFC, formato 414",Iris
 iris,2025-05-31,creditos_mujer,164.0,"SFC, formato 414",Iris
 iris,2025-06-30,creditos_mujer,193.0,"SFC, formato 414",Iris
 iris,2025-07-31,creditos_mujer,381.0,"SFC, formato 414",Iris
+iris,2025-08-31,creditos_mujer,98.0,"SFC, formato 414",Iris
 iris,2025-09-30,creditos_mujer,66.0,"SFC, formato 414",Iris
 iris,2025-10-31,creditos_mujer,506.0,"SFC, formato 414",Iris
 iris,2025-11-30,creditos_mujer,640.0,"SFC, formato 414",Iris
@@ -17633,10 +17688,13 @@ iris,2026-07-31,creditos_mujer,291.0,"SFC, formato 414",Iris
 iris,2026-08-31,creditos_mujer,169.0,"SFC, formato 414",Iris
 iris,2026-09-30,creditos_mujer,362.0,"SFC, formato 414",Iris
 iris,2026-10-31,creditos_mujer,198.0,"SFC, formato 414",Iris
+lulo,2025-02-28,creditos_mujer,2489.0,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,creditos_mujer,2483.0,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,creditos_mujer,2479.0,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,creditos_mujer,3298.0,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,creditos_mujer,2500.0,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,creditos_mujer,3054.0,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,creditos_mujer,3886.0,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,creditos_mujer,2798.0,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,creditos_mujer,3287.0,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,creditos_mujer,3731.0,"SFC, formato 414",Lulo Bank
@@ -17661,6 +17719,7 @@ rappipay,2025-04-30,creditos_mujer,1.0,"SFC, formato 414",RappiPay
 rappipay,2025-05-31,creditos_mujer,26.0,"SFC, formato 414",RappiPay
 rappipay,2025-06-30,creditos_mujer,38.0,"SFC, formato 414",RappiPay
 rappipay,2025-07-31,creditos_mujer,81.0,"SFC, formato 414",RappiPay
+rappipay,2025-08-31,creditos_mujer,132.0,"SFC, formato 414",RappiPay
 rappipay,2025-09-30,creditos_mujer,155.0,"SFC, formato 414",RappiPay
 rappipay,2025-10-31,creditos_mujer,368.0,"SFC, formato 414",RappiPay
 rappipay,2025-11-30,creditos_mujer,613.0,"SFC, formato 414",RappiPay
@@ -17670,10 +17729,13 @@ rappipay,2026-07-31,creditos_mujer,1558.0,"SFC, formato 414",RappiPay
 rappipay,2026-08-31,creditos_mujer,1125.0,"SFC, formato 414",RappiPay
 rappipay,2026-09-30,creditos_mujer,1376.0,"SFC, formato 414",RappiPay
 rappipay,2026-10-31,creditos_mujer,1611.0,"SFC, formato 414",RappiPay
+universo,2025-02-28,creditos_mujer,2555.0,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,creditos_mujer,2895.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,creditos_mujer,3136.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,creditos_mujer,3489.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,creditos_mujer,2731.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,creditos_mujer,3531.0,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,creditos_mujer,4116.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,creditos_mujer,3020.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,creditos_mujer,4255.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,creditos_mujer,6705.0,"SFC, formato 414",Total neobancos y billeteras
@@ -17683,10 +17745,13 @@ universo,2026-07-31,creditos_mujer,18652.0,"SFC, formato 414",Total neobancos y 
 universo,2026-08-31,creditos_mujer,15579.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2026-09-30,creditos_mujer,75503.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2026-10-31,creditos_mujer,130404.0,"SFC, formato 414",Total neobancos y billeteras
+grupo_banco,2025-02-28,creditos_tc,282.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,creditos_tc,1510.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,creditos_tc,1352.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,creditos_tc,4486.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,creditos_tc,32403.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,creditos_tc,56102.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,creditos_tc,99181.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,creditos_tc,96445.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,creditos_tc,142349.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,creditos_tc,125833.0,"SFC, formato 414",Bancos digitales
@@ -17696,10 +17761,13 @@ grupo_banco,2026-07-31,creditos_tc,260981.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-08-31,creditos_tc,216682.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,creditos_tc,219799.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,creditos_tc,298646.0,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,creditos_tc,4944777.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,creditos_tc,5220518.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,creditos_tc,5286184.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,creditos_tc,7076828.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,creditos_tc,5808305.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,creditos_tc,5872397.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,creditos_tc,7551756.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,creditos_tc,6404965.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,creditos_tc,8110434.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,creditos_tc,6740437.0,"SFC, formato 414",Compañías de financiamiento digitales
@@ -17709,10 +17777,13 @@ grupo_cf,2026-07-31,creditos_tc,12816593.0,"SFC, formato 414",Compañías de fin
 grupo_cf,2026-08-31,creditos_tc,10994837.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,creditos_tc,12009344.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,creditos_tc,15950641.0,"SFC, formato 414",Compañías de financiamiento digitales
+lulo,2025-02-28,creditos_tc,282.0,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,creditos_tc,1510.0,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,creditos_tc,1352.0,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,creditos_tc,4486.0,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,creditos_tc,32403.0,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,creditos_tc,56102.0,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,creditos_tc,99181.0,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,creditos_tc,96445.0,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,creditos_tc,142349.0,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,creditos_tc,125833.0,"SFC, formato 414",Lulo Bank
@@ -17722,10 +17793,13 @@ lulo,2026-07-31,creditos_tc,260981.0,"SFC, formato 414",Lulo Bank
 lulo,2026-08-31,creditos_tc,216682.0,"SFC, formato 414",Lulo Bank
 lulo,2026-09-30,creditos_tc,219799.0,"SFC, formato 414",Lulo Bank
 lulo,2026-10-31,creditos_tc,298646.0,"SFC, formato 414",Lulo Bank
+nu,2025-02-28,creditos_tc,4944777.0,"SFC, formato 414",Nu
+nu,2025-03-31,creditos_tc,5220518.0,"SFC, formato 414",Nu
 nu,2025-04-30,creditos_tc,5286184.0,"SFC, formato 414",Nu
 nu,2025-05-31,creditos_tc,7076828.0,"SFC, formato 414",Nu
 nu,2025-06-30,creditos_tc,5808305.0,"SFC, formato 414",Nu
 nu,2025-07-31,creditos_tc,5872397.0,"SFC, formato 414",Nu
+nu,2025-08-31,creditos_tc,7551756.0,"SFC, formato 414",Nu
 nu,2025-09-30,creditos_tc,6404965.0,"SFC, formato 414",Nu
 nu,2025-10-31,creditos_tc,8110434.0,"SFC, formato 414",Nu
 nu,2025-11-30,creditos_tc,6740437.0,"SFC, formato 414",Nu
@@ -17735,10 +17809,13 @@ nu,2026-07-31,creditos_tc,12816593.0,"SFC, formato 414",Nu
 nu,2026-08-31,creditos_tc,10994837.0,"SFC, formato 414",Nu
 nu,2026-09-30,creditos_tc,12009344.0,"SFC, formato 414",Nu
 nu,2026-10-31,creditos_tc,15950641.0,"SFC, formato 414",Nu
+sis_bancos,2025-02-28,creditos_tc,37807185.0,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,creditos_tc,39975648.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,creditos_tc,39528082.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,creditos_tc,51438666.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,creditos_tc,41802215.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,creditos_tc,41943873.0,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,creditos_tc,53114120.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,creditos_tc,44469194.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,creditos_tc,56805021.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,creditos_tc,47253990.0,"SFC, formato 414",Bancos (sistema)
@@ -17748,10 +17825,13 @@ sis_bancos,2026-07-31,creditos_tc,61234839.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-08-31,creditos_tc,50577296.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,creditos_tc,52704157.0,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,creditos_tc,66708729.0,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,creditos_tc,6403752.0,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,creditos_tc,6640792.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,creditos_tc,6691749.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,creditos_tc,8926654.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,creditos_tc,7322475.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,creditos_tc,7382702.0,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,creditos_tc,9392190.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,creditos_tc,7980675.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,creditos_tc,10086332.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,creditos_tc,8380599.0,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -17761,10 +17841,13 @@ sis_cf,2026-07-31,creditos_tc,14821202.0,"SFC, formato 414",Compañías de finan
 sis_cf,2026-08-31,creditos_tc,12610072.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,creditos_tc,13692453.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,creditos_tc,18105480.0,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,creditos_tc,44220714.0,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,creditos_tc,46626103.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,creditos_tc,46229514.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,creditos_tc,60377619.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,creditos_tc,49134015.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,creditos_tc,49335658.0,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,creditos_tc,62518228.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,creditos_tc,52459933.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,creditos_tc,66903511.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,creditos_tc,55644614.0,"SFC, formato 414",Establecimientos de crédito
@@ -17774,10 +17857,13 @@ sis_ec,2026-07-31,creditos_tc,76075466.0,"SFC, formato 414",Establecimientos de 
 sis_ec,2026-08-31,creditos_tc,63208413.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,creditos_tc,66420320.0,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,creditos_tc,84844735.0,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,creditos_tc,44220714.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,creditos_tc,46626103.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,creditos_tc,46229514.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,creditos_tc,60377619.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,creditos_tc,49134015.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,creditos_tc,49335658.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,creditos_tc,62518228.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,creditos_tc,52459933.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,creditos_tc,66903511.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,creditos_tc,55644614.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -17787,10 +17873,13 @@ sis_total,2026-07-31,creditos_tc,76075466.0,"SFC, formato 414",Sistema (establec
 sis_total,2026-08-31,creditos_tc,63208413.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-09-30,creditos_tc,66420320.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-10-31,creditos_tc,84844735.0,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+universo,2025-02-28,creditos_tc,4945059.0,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,creditos_tc,5222028.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,creditos_tc,5287536.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,creditos_tc,7081314.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,creditos_tc,5840708.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,creditos_tc,5928499.0,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,creditos_tc,7650937.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,creditos_tc,6501410.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,creditos_tc,8252783.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,creditos_tc,6866270.0,"SFC, formato 414",Total neobancos y billeteras
@@ -25981,6 +26070,7 @@ universo,2026-08-31,depositos_total,14837662616047.43,"SFC, CUIF",Total neobanco
 universo,2026-09-30,depositos_total,21927273045568.16,"SFC, CUIF",Total neobancos y billeteras
 bold,2025-06-30,desembolsos,627790.0,"SFC, formato 414",Bold
 bold,2025-07-31,desembolsos,2498887.94,"SFC, formato 414",Bold
+bold,2025-08-31,desembolsos,6831995.0,"SFC, formato 414",Bold
 bold,2025-09-30,desembolsos,7634300.0,"SFC, formato 414",Bold
 bold,2025-10-31,desembolsos,266745408.42000002,"SFC, formato 414",Bold
 bold,2025-11-30,desembolsos,692036177.34,"SFC, formato 414",Bold
@@ -25990,10 +26080,13 @@ bold,2026-07-31,desembolsos,16945734430.56,"SFC, formato 414",Bold
 bold,2026-08-31,desembolsos,18454574543.62,"SFC, formato 414",Bold
 bold,2026-09-30,desembolsos,21461667595.61,"SFC, formato 414",Bold
 bold,2026-10-31,desembolsos,28842732205.399998,"SFC, formato 414",Bold
+grupo_banco,2025-02-28,desembolsos,44679308940.56,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,desembolsos,45151732528.729996,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,desembolsos,44473971993.93,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,desembolsos,62673000256.92,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,desembolsos,49489795054.95,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,desembolsos,49173796852.92,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,desembolsos,68421561233.23,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,desembolsos,52022888397.01,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,desembolsos,66720001737.65,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,desembolsos,66427034550.31,"SFC, formato 414",Bancos digitales
@@ -26003,10 +26096,13 @@ grupo_banco,2026-07-31,desembolsos,107446045524.32,"SFC, formato 414",Bancos dig
 grupo_banco,2026-08-31,desembolsos,87504472247.76001,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,desembolsos,90136614718.48,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,desembolsos,107053131475.96,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,desembolsos,52009406689.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,desembolsos,42588413444.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,desembolsos,53102131439.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,desembolsos,69619023258.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,desembolsos,64091967112.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,desembolsos,54282499322.94,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,desembolsos,70475377912.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,desembolsos,65504660222.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,desembolsos,97112490101.42,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,desembolsos,101360129231.67,"SFC, formato 414",Compañías de financiamiento digitales
@@ -26016,10 +26112,13 @@ grupo_cf,2026-07-31,desembolsos,214075874435.37,"SFC, formato 414",Compañías d
 grupo_cf,2026-08-31,desembolsos,158504818850.22998,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,desembolsos,380366340673.79,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,desembolsos,566746438927.19,"SFC, formato 414",Compañías de financiamiento digitales
+iris,2025-02-28,desembolsos,52009406689.0,"SFC, formato 414",Iris
+iris,2025-03-31,desembolsos,42588413444.0,"SFC, formato 414",Iris
 iris,2025-04-30,desembolsos,53100861439.0,"SFC, formato 414",Iris
 iris,2025-05-31,desembolsos,67857537140.0,"SFC, formato 414",Iris
 iris,2025-06-30,desembolsos,61421173322.0,"SFC, formato 414",Iris
 iris,2025-07-31,desembolsos,51001448435.0,"SFC, formato 414",Iris
+iris,2025-08-31,desembolsos,63174418989.0,"SFC, formato 414",Iris
 iris,2025-09-30,desembolsos,58005877922.0,"SFC, formato 414",Iris
 iris,2025-10-31,desembolsos,80641455224.0,"SFC, formato 414",Iris
 iris,2025-11-30,desembolsos,71978509201.0,"SFC, formato 414",Iris
@@ -26029,10 +26128,13 @@ iris,2026-07-31,desembolsos,100156911176.0,"SFC, formato 414",Iris
 iris,2026-08-31,desembolsos,70730724402.0,"SFC, formato 414",Iris
 iris,2026-09-30,desembolsos,84943592573.0,"SFC, formato 414",Iris
 iris,2026-10-31,desembolsos,93654997589.0,"SFC, formato 414",Iris
+lulo,2025-02-28,desembolsos,44679308940.56,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,desembolsos,45151732528.729996,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,desembolsos,44473971993.93,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,desembolsos,62673000256.92,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,desembolsos,49489795054.95,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,desembolsos,49173796852.92,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,desembolsos,68421561233.23,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,desembolsos,52022888397.01,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,desembolsos,66720001737.65,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,desembolsos,66427034550.31,"SFC, formato 414",Lulo Bank
@@ -26060,6 +26162,7 @@ rappipay,2025-04-30,desembolsos,1150000.0,"SFC, formato 414",RappiPay
 rappipay,2025-05-31,desembolsos,1761206118.0,"SFC, formato 414",RappiPay
 rappipay,2025-06-30,desembolsos,2670166000.0,"SFC, formato 414",RappiPay
 rappipay,2025-07-31,desembolsos,3278492000.0,"SFC, formato 414",RappiPay
+rappipay,2025-08-31,desembolsos,7294126928.0,"SFC, formato 414",RappiPay
 rappipay,2025-09-30,desembolsos,7491048000.0,"SFC, formato 414",RappiPay
 rappipay,2025-10-31,desembolsos,13802294469.0,"SFC, formato 414",RappiPay
 rappipay,2025-11-30,desembolsos,18372779817.0,"SFC, formato 414",RappiPay
@@ -26069,10 +26172,13 @@ rappipay,2026-07-31,desembolsos,51408069683.0,"SFC, formato 414",RappiPay
 rappipay,2026-08-31,desembolsos,32630632380.0,"SFC, formato 414",RappiPay
 rappipay,2026-09-30,desembolsos,39149170363.0,"SFC, formato 414",RappiPay
 rappipay,2026-10-31,desembolsos,47244820696.16,"SFC, formato 414",RappiPay
+sis_bancos,2025-02-28,desembolsos,46754855621621.15,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,desembolsos,40846736650110.29,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,desembolsos,37177125353838.34,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,desembolsos,57971844807090.234,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,desembolsos,43762952183457.28,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,desembolsos,40558543409714.58,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,desembolsos,55674933060634.125,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,desembolsos,48534899434583.93,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,desembolsos,55779526015717.03,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,desembolsos,46497816312417.6,"SFC, formato 414",Bancos (sistema)
@@ -26082,10 +26188,13 @@ sis_bancos,2026-07-31,desembolsos,56733391672364.88,"SFC, formato 414",Bancos (s
 sis_bancos,2026-08-31,desembolsos,43547567587411.79,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,desembolsos,51899739324406.65,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,desembolsos,63829666353777.79,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,desembolsos,589533744569.62,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,desembolsos,614415425209.67,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,desembolsos,532435793316.30005,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,desembolsos,1054630060194.51,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,desembolsos,855947978549.53,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,desembolsos,541934380179.24,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,desembolsos,1188600953255.57,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,desembolsos,821831495759.27,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,desembolsos,1319220144053.06,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,desembolsos,929160951440.03,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -26095,10 +26204,13 @@ sis_cf,2026-07-31,desembolsos,1341335572000.53,"SFC, formato 414",Compañías de
 sis_cf,2026-08-31,desembolsos,1052226419720.21,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,desembolsos,1238297978684.8599,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,desembolsos,1743009617751.67,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,desembolsos,47572865157120.25,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,desembolsos,41666441070673.96,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,desembolsos,37905253763541.74,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,desembolsos,59306610793669.62,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,desembolsos,44831330262796.38,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,desembolsos,41314768975834.8,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,desembolsos,57146693537481.73,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,desembolsos,49585668347117.336,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,desembolsos,57389185036873.53,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,desembolsos,47650174722506.54,"SFC, formato 414",Establecimientos de crédito
@@ -26108,10 +26220,13 @@ sis_ec,2026-07-31,desembolsos,58344517732251.16,"SFC, formato 414",Establecimien
 sis_ec,2026-08-31,desembolsos,44812829029367.83,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,desembolsos,53382236851208.04,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,desembolsos,65881590903272.266,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,desembolsos,47572865157120.25,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,desembolsos,41666441070673.96,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,desembolsos,37905253763541.74,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,desembolsos,59306610793669.62,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,desembolsos,44831330262796.38,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,desembolsos,41314768975834.8,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,desembolsos,57146693537481.73,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,desembolsos,49585668347117.336,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,desembolsos,57389185036873.53,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,desembolsos,47650174722506.54,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -26121,10 +26236,13 @@ sis_total,2026-07-31,desembolsos,58344517732251.16,"SFC, formato 414",Sistema (e
 sis_total,2026-08-31,desembolsos,44812829029367.83,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-09-30,desembolsos,53382236851208.04,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-10-31,desembolsos,65881590903272.266,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+universo,2025-02-28,desembolsos,96688715629.56,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,desembolsos,87740145972.73,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,desembolsos,97576103432.93,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,desembolsos,132292023514.92,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,desembolsos,113581762166.95,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,desembolsos,103456296175.86,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,desembolsos,138896939145.23,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,desembolsos,117527548619.01001,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,desembolsos,163832491839.07,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,desembolsos,167787163781.97998,"SFC, formato 414",Total neobancos y billeteras
@@ -26136,8 +26254,11 @@ universo,2026-09-30,desembolsos,470502955392.27,"SFC, formato 414",Total neobanc
 universo,2026-10-31,desembolsos,673799570403.1499,"SFC, formato 414",Total neobancos y billeteras
 bold,2026-09-30,desembolsos_comercial,8100000.0,"SFC, formato 414",Bold
 bold,2026-10-31,desembolsos_comercial,12320000.0,"SFC, formato 414",Bold
+grupo_banco,2025-02-28,desembolsos_comercial,299780180.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,desembolsos_comercial,300000000.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,desembolsos_comercial,600000000.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,desembolsos_comercial,250000000.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,desembolsos_comercial,150000000.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,desembolsos_comercial,250000000.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,desembolsos_comercial,500000000.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-12-31,desembolsos_comercial,3100000000.0,"SFC, formato 414",Bancos digitales
@@ -26146,10 +26267,13 @@ grupo_banco,2026-07-31,desembolsos_comercial,18656374337.85,"SFC, formato 414",B
 grupo_banco,2026-08-31,desembolsos_comercial,17318600303.14,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,desembolsos_comercial,22373369564.36,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,desembolsos_comercial,20778294665.53,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,desembolsos_comercial,51063832875.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,desembolsos_comercial,34684313726.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,desembolsos_comercial,39098412347.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,desembolsos_comercial,65362293888.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,desembolsos_comercial,57409838504.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,desembolsos_comercial,38479667664.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,desembolsos_comercial,60198408999.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,desembolsos_comercial,56593082924.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,desembolsos_comercial,58156200641.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,desembolsos_comercial,53157974251.0,"SFC, formato 414",Compañías de financiamiento digitales
@@ -26159,10 +26283,13 @@ grupo_cf,2026-07-31,desembolsos_comercial,84810900195.0,"SFC, formato 414",Compa
 grupo_cf,2026-08-31,desembolsos_comercial,62261520848.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,desembolsos_comercial,63763264270.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,desembolsos_comercial,82054448712.0,"SFC, formato 414",Compañías de financiamiento digitales
+iris,2025-02-28,desembolsos_comercial,51063832875.0,"SFC, formato 414",Iris
+iris,2025-03-31,desembolsos_comercial,34684313726.0,"SFC, formato 414",Iris
 iris,2025-04-30,desembolsos_comercial,39098412347.0,"SFC, formato 414",Iris
 iris,2025-05-31,desembolsos_comercial,65362293888.0,"SFC, formato 414",Iris
 iris,2025-06-30,desembolsos_comercial,57409838504.0,"SFC, formato 414",Iris
 iris,2025-07-31,desembolsos_comercial,38479667664.0,"SFC, formato 414",Iris
+iris,2025-08-31,desembolsos_comercial,60198408999.0,"SFC, formato 414",Iris
 iris,2025-09-30,desembolsos_comercial,56593082924.0,"SFC, formato 414",Iris
 iris,2025-10-31,desembolsos_comercial,58156200641.0,"SFC, formato 414",Iris
 iris,2025-11-30,desembolsos_comercial,53157974251.0,"SFC, formato 414",Iris
@@ -26172,8 +26299,11 @@ iris,2026-07-31,desembolsos_comercial,84810900195.0,"SFC, formato 414",Iris
 iris,2026-08-31,desembolsos_comercial,62261520848.0,"SFC, formato 414",Iris
 iris,2026-09-30,desembolsos_comercial,63755164270.0,"SFC, formato 414",Iris
 iris,2026-10-31,desembolsos_comercial,82042128712.0,"SFC, formato 414",Iris
+lulo,2025-02-28,desembolsos_comercial,299780180.0,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,desembolsos_comercial,300000000.0,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,desembolsos_comercial,600000000.0,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,desembolsos_comercial,250000000.0,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,desembolsos_comercial,150000000.0,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,desembolsos_comercial,250000000.0,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,desembolsos_comercial,500000000.0,"SFC, formato 414",Lulo Bank
 lulo,2025-12-31,desembolsos_comercial,3100000000.0,"SFC, formato 414",Lulo Bank
@@ -26182,10 +26312,13 @@ lulo,2026-07-31,desembolsos_comercial,18656374337.85,"SFC, formato 414",Lulo Ban
 lulo,2026-08-31,desembolsos_comercial,17318600303.14,"SFC, formato 414",Lulo Bank
 lulo,2026-09-30,desembolsos_comercial,22373369564.36,"SFC, formato 414",Lulo Bank
 lulo,2026-10-31,desembolsos_comercial,20778294665.53,"SFC, formato 414",Lulo Bank
+sis_bancos,2025-02-28,desembolsos_comercial,24384416849870.008,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,desembolsos_comercial,21938178045760.15,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,desembolsos_comercial,20753795238648.3,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,desembolsos_comercial,31710649868620.953,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,desembolsos_comercial,24429110906551.047,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,desembolsos_comercial,22506007078119.688,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,desembolsos_comercial,29238604871831.793,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,desembolsos_comercial,26144399746903.1,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,desembolsos_comercial,28216823213656.04,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,desembolsos_comercial,24945841757803.02,"SFC, formato 414",Bancos (sistema)
@@ -26195,10 +26328,13 @@ sis_bancos,2026-07-31,desembolsos_comercial,31450323018954.75,"SFC, formato 414"
 sis_bancos,2026-08-31,desembolsos_comercial,25161271078586.78,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,desembolsos_comercial,30837285960875.64,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,desembolsos_comercial,35977795345998.625,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,desembolsos_comercial,360240659108.07,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,desembolsos_comercial,420530936762.57,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,desembolsos_comercial,353987407776.72,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,desembolsos_comercial,726391946035.22,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,desembolsos_comercial,622697630205.3301,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,desembolsos_comercial,341066265300.51,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,desembolsos_comercial,854324942032.42,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,desembolsos_comercial,628418342308.03,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,desembolsos_comercial,935068555569.4199,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,desembolsos_comercial,615029671644.99,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -26208,10 +26344,13 @@ sis_cf,2026-07-31,desembolsos_comercial,868766218203.1599,"SFC, formato 414",Com
 sis_cf,2026-08-31,desembolsos_comercial,728887996736.3,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,desembolsos_comercial,630746863030.8401,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,desembolsos_comercial,807615688116.74,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,desembolsos_comercial,24776562475626.4,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,desembolsos_comercial,22386588915922.72,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,desembolsos_comercial,21137982139225.12,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,desembolsos_comercial,32478109112245.043,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,desembolsos_comercial,25086007941470.945,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,desembolsos_comercial,22873008829008.176,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,desembolsos_comercial,30127703218870.242,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,desembolsos_comercial,26801811601302.273,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,desembolsos_comercial,29190448984539.9,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,desembolsos_comercial,25591858933814.918,"SFC, formato 414",Establecimientos de crédito
@@ -26221,10 +26360,13 @@ sis_ec,2026-07-31,desembolsos_comercial,32359042603852.65,"SFC, formato 414",Est
 sis_ec,2026-08-31,desembolsos_comercial,25921759336980.91,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,desembolsos_comercial,31504843171252.01,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,desembolsos_comercial,36823148044458.17,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,desembolsos_comercial,24776562475626.4,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,desembolsos_comercial,22386588915922.72,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,desembolsos_comercial,21137982139225.12,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,desembolsos_comercial,32478109112245.043,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,desembolsos_comercial,25086007941470.945,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,desembolsos_comercial,22873008829008.176,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,desembolsos_comercial,30127703218870.242,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,desembolsos_comercial,26801811601302.273,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,desembolsos_comercial,29190448984539.9,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,desembolsos_comercial,25591858933814.918,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -26234,10 +26376,13 @@ sis_total,2026-07-31,desembolsos_comercial,32359042603852.65,"SFC, formato 414",
 sis_total,2026-08-31,desembolsos_comercial,25921759336980.91,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-09-30,desembolsos_comercial,31504843171252.01,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-10-31,desembolsos_comercial,36823148044458.17,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+universo,2025-02-28,desembolsos_comercial,51363613055.0,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,desembolsos_comercial,34984313726.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,desembolsos_comercial,39098412347.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,desembolsos_comercial,65962293888.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,desembolsos_comercial,57409838504.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,desembolsos_comercial,38729667664.0,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,desembolsos_comercial,60348408999.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,desembolsos_comercial,56593082924.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,desembolsos_comercial,58406200641.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,desembolsos_comercial,53657974251.0,"SFC, formato 414",Total neobancos y billeteras
@@ -26252,10 +26397,13 @@ bold,2026-07-31,desembolsos_consumo,519288642.07,"SFC, formato 414",Bold
 bold,2026-08-31,desembolsos_consumo,128401293.63,"SFC, formato 414",Bold
 bold,2026-09-30,desembolsos_consumo,87897461.82,"SFC, formato 414",Bold
 bold,2026-10-31,desembolsos_consumo,155286388.14999998,"SFC, formato 414",Bold
+grupo_banco,2025-02-28,desembolsos_consumo,44379528760.56,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,desembolsos_consumo,44851732528.729996,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,desembolsos_consumo,44473971993.93,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,desembolsos_consumo,62073000256.92,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,desembolsos_consumo,40489795054.95,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,desembolsos_consumo,48923796852.92,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,desembolsos_consumo,68271561233.23,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,desembolsos_consumo,52022888397.01,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,desembolsos_consumo,62470001737.65,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,desembolsos_consumo,65927034550.31,"SFC, formato 414",Bancos digitales
@@ -26265,10 +26413,13 @@ grupo_banco,2026-07-31,desembolsos_consumo,88789671186.47,"SFC, formato 414",Ban
 grupo_banco,2026-08-31,desembolsos_consumo,70185871944.62,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,desembolsos_consumo,67763245154.119995,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,desembolsos_consumo,86274836810.43001,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,desembolsos_consumo,945573814.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,desembolsos_consumo,7904099718.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,desembolsos_consumo,14003719092.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,desembolsos_consumo,4256729370.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,desembolsos_consumo,6681500818.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,desembolsos_consumo,15800332771.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,desembolsos_consumo,10270136918.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,desembolsos_consumo,8903942998.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,desembolsos_consumo,38689544052.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,desembolsos_consumo,47510118803.33,"SFC, formato 414",Compañías de financiamiento digitales
@@ -26278,10 +26429,13 @@ grupo_cf,2026-07-31,desembolsos_consumo,112838528451.88,"SFC, formato 414",Compa
 grupo_cf,2026-08-31,desembolsos_consumo,77917124752.23999,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,desembolsos_consumo,295237406270.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,desembolsos_consumo,456016864397.94,"SFC, formato 414",Compañías de financiamiento digitales
+iris,2025-02-28,desembolsos_consumo,945573814.0,"SFC, formato 414",Iris
+iris,2025-03-31,desembolsos_consumo,7904099718.0,"SFC, formato 414",Iris
 iris,2025-04-30,desembolsos_consumo,14002449092.0,"SFC, formato 414",Iris
 iris,2025-05-31,desembolsos_consumo,2495243252.0,"SFC, formato 414",Iris
 iris,2025-06-30,desembolsos_consumo,4011334818.0,"SFC, formato 414",Iris
 iris,2025-07-31,desembolsos_consumo,12521780771.0,"SFC, formato 414",Iris
+iris,2025-08-31,desembolsos_consumo,2976009990.0,"SFC, formato 414",Iris
 iris,2025-09-30,desembolsos_consumo,1412794998.0,"SFC, formato 414",Iris
 iris,2025-10-31,desembolsos_consumo,22485254583.0,"SFC, formato 414",Iris
 iris,2025-11-30,desembolsos_consumo,18820534950.0,"SFC, formato 414",Iris
@@ -26291,10 +26445,13 @@ iris,2026-07-31,desembolsos_consumo,15346010981.0,"SFC, formato 414",Iris
 iris,2026-08-31,desembolsos_consumo,8469203554.0,"SFC, formato 414",Iris
 iris,2026-09-30,desembolsos_consumo,21188428303.0,"SFC, formato 414",Iris
 iris,2026-10-31,desembolsos_consumo,11612868877.0,"SFC, formato 414",Iris
+lulo,2025-02-28,desembolsos_consumo,44379528760.56,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,desembolsos_consumo,44851732528.729996,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,desembolsos_consumo,44473971993.93,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,desembolsos_consumo,62073000256.92,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,desembolsos_consumo,40489795054.95,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,desembolsos_consumo,48923796852.92,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,desembolsos_consumo,68271561233.23,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,desembolsos_consumo,52022888397.01,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,desembolsos_consumo,62470001737.65,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,desembolsos_consumo,65927034550.31,"SFC, formato 414",Lulo Bank
@@ -26322,6 +26479,7 @@ rappipay,2025-04-30,desembolsos_consumo,1150000.0,"SFC, formato 414",RappiPay
 rappipay,2025-05-31,desembolsos_consumo,1761206118.0,"SFC, formato 414",RappiPay
 rappipay,2025-06-30,desembolsos_consumo,2670166000.0,"SFC, formato 414",RappiPay
 rappipay,2025-07-31,desembolsos_consumo,3278492000.0,"SFC, formato 414",RappiPay
+rappipay,2025-08-31,desembolsos_consumo,7294126928.0,"SFC, formato 414",RappiPay
 rappipay,2025-09-30,desembolsos_consumo,7491048000.0,"SFC, formato 414",RappiPay
 rappipay,2025-10-31,desembolsos_consumo,13802294469.0,"SFC, formato 414",RappiPay
 rappipay,2025-11-30,desembolsos_consumo,18372779817.0,"SFC, formato 414",RappiPay
@@ -26331,10 +26489,13 @@ rappipay,2026-07-31,desembolsos_consumo,51408069683.0,"SFC, formato 414",RappiPa
 rappipay,2026-08-31,desembolsos_consumo,32630632380.0,"SFC, formato 414",RappiPay
 rappipay,2026-09-30,desembolsos_consumo,39149170363.0,"SFC, formato 414",RappiPay
 rappipay,2026-10-31,desembolsos_consumo,47244820696.16,"SFC, formato 414",RappiPay
+sis_bancos,2025-02-28,desembolsos_consumo,8049388605562.33,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,desembolsos_consumo,6936614026441.61,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,desembolsos_consumo,7239258018637.991,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,desembolsos_consumo,10213888521279.281,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,desembolsos_consumo,7172154644443.761,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,desembolsos_consumo,7494723288966.551,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,desembolsos_consumo,10780362081203.15,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,desembolsos_consumo,8329554442827.551,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,desembolsos_consumo,11425348998194.64,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,desembolsos_consumo,8340524317464.721,"SFC, formato 414",Bancos (sistema)
@@ -26344,10 +26505,13 @@ sis_bancos,2026-07-31,desembolsos_consumo,9407818355298.38,"SFC, formato 414",Ba
 sis_bancos,2026-08-31,desembolsos_consumo,7510829048638.259,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,desembolsos_consumo,8476668854389.85,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,desembolsos_consumo,11243945660999.12,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,desembolsos_consumo,187304961960.55,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,desembolsos_consumo,163188428915.1,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,desembolsos_consumo,149508200301.32,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,desembolsos_consumo,277774582852.29,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,desembolsos_consumo,189949064364.93,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,desembolsos_consumo,165774573182.2,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,desembolsos_consumo,267600783099.97,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,desembolsos_consumo,147874639231.6,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,desembolsos_consumo,303545078273.78,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,desembolsos_consumo,256093037129.53,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -26357,10 +26521,13 @@ sis_cf,2026-07-31,desembolsos_consumo,405973432605.88,"SFC, formato 414",Compañ
 sis_cf,2026-08-31,desembolsos_consumo,276734012814.01,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,desembolsos_consumo,545110502817.23,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,desembolsos_consumo,852756106633.94,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,desembolsos_consumo,8405705682643.88,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,desembolsos_consumo,7253695140590.71,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,desembolsos_consumo,7530249956246.312,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,desembolsos_consumo,10697809303024.57,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,desembolsos_consumo,7510727888464.69,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,desembolsos_consumo,7818308003266.751,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,desembolsos_consumo,11259166264828.121,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,desembolsos_consumo,8645606175118.15,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,desembolsos_consumo,11935972621536.42,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,desembolsos_consumo,8757943617882.251,"SFC, formato 414",Establecimientos de crédito
@@ -26370,10 +26537,13 @@ sis_ec,2026-07-31,desembolsos_consumo,9998113253248.262,"SFC, formato 414",Estab
 sis_ec,2026-08-31,desembolsos_consumo,7942899751440.269,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,desembolsos_consumo,9198404476017.08,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,desembolsos_consumo,12309897798068.059,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,desembolsos_consumo,8405705682643.88,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,desembolsos_consumo,7253695140590.71,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,desembolsos_consumo,7530249956246.312,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,desembolsos_consumo,10697809303024.57,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,desembolsos_consumo,7510727888464.69,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,desembolsos_consumo,7818308003266.751,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,desembolsos_consumo,11259166264828.121,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,desembolsos_consumo,8645606175118.15,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,desembolsos_consumo,11935972621536.42,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,desembolsos_consumo,8757943617882.251,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -26383,10 +26553,13 @@ sis_total,2026-07-31,desembolsos_consumo,9998113253248.262,"SFC, formato 414",Si
 sis_total,2026-08-31,desembolsos_consumo,7942899751440.269,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-09-30,desembolsos_consumo,9198404476017.08,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-10-31,desembolsos_consumo,12309897798068.059,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+universo,2025-02-28,desembolsos_consumo,45325102574.56,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,desembolsos_consumo,52755832246.729996,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,desembolsos_consumo,58477691085.93,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,desembolsos_consumo,66329729626.92,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,desembolsos_consumo,47171295872.95,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,desembolsos_consumo,64724129623.92,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,desembolsos_consumo,78541698151.23001,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,desembolsos_consumo,60926831395.01,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,desembolsos_consumo,101159545789.65,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,desembolsos_consumo,113437153353.64,"SFC, formato 414",Total neobancos y billeteras
@@ -26398,6 +26571,7 @@ universo,2026-09-30,desembolsos_consumo,363000651424.12,"SFC, formato 414",Total
 universo,2026-10-31,desembolsos_consumo,542291701208.37,"SFC, formato 414",Total neobancos y billeteras
 bold,2025-06-30,desembolsos_hombre,627790.0,"SFC, formato 414",Bold
 bold,2025-07-31,desembolsos_hombre,1114468.79,"SFC, formato 414",Bold
+bold,2025-08-31,desembolsos_hombre,6831995.0,"SFC, formato 414",Bold
 bold,2025-09-30,desembolsos_hombre,3084300.0,"SFC, formato 414",Bold
 bold,2025-10-31,desembolsos_hombre,151322970.42000002,"SFC, formato 414",Bold
 bold,2025-11-30,desembolsos_hombre,360464310.15999997,"SFC, formato 414",Bold
@@ -26407,10 +26581,13 @@ bold,2026-07-31,desembolsos_hombre,6205375610.62,"SFC, formato 414",Bold
 bold,2026-08-31,desembolsos_hombre,7631414658.889999,"SFC, formato 414",Bold
 bold,2026-09-30,desembolsos_hombre,8177231882.55,"SFC, formato 414",Bold
 bold,2026-10-31,desembolsos_hombre,10050032567.31,"SFC, formato 414",Bold
+grupo_banco,2025-02-28,desembolsos_hombre,28292183401.06,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,desembolsos_hombre,27389341342.47,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,desembolsos_hombre,26995712583.93,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,desembolsos_hombre,37706884634.22,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,desembolsos_hombre,21670512227.39,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,desembolsos_hombre,28982584447.29,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,desembolsos_hombre,41894378382.16,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,desembolsos_hombre,31389492211.83,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,desembolsos_hombre,37631625606.29,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,desembolsos_hombre,40164902185.8,"SFC, formato 414",Bancos digitales
@@ -26420,10 +26597,13 @@ grupo_banco,2026-07-31,desembolsos_hombre,53081601148.24,"SFC, formato 414",Banc
 grupo_banco,2026-08-31,desembolsos_hombre,43626331999.54,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,desembolsos_hombre,40161364456.21,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,desembolsos_hombre,51946118659.69,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,desembolsos_hombre,503009147.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,desembolsos_hombre,4162438519.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,desembolsos_hombre,7361172595.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,desembolsos_hombre,2757586248.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,desembolsos_hombre,4881011656.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,desembolsos_hombre,9548625104.79,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,desembolsos_hombre,7398255122.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,desembolsos_hombre,6252005798.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,desembolsos_hombre,24543057342.42,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,desembolsos_hombre,29210014776.16,"SFC, formato 414",Compañías de financiamiento digitales
@@ -26433,10 +26613,13 @@ grupo_cf,2026-07-31,desembolsos_hombre,74402814256.86,"SFC, formato 414",Compañ
 grupo_cf,2026-08-31,desembolsos_hombre,54863402240.89,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,desembolsos_hombre,166449413632.12,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,desembolsos_hombre,254623292213.31,"SFC, formato 414",Compañías de financiamiento digitales
+iris,2025-02-28,desembolsos_hombre,503009147.0,"SFC, formato 414",Iris
+iris,2025-03-31,desembolsos_hombre,4162438519.0,"SFC, formato 414",Iris
 iris,2025-04-30,desembolsos_hombre,7360302595.0,"SFC, formato 414",Iris
 iris,2025-05-31,desembolsos_hombre,1352040151.0,"SFC, formato 414",Iris
 iris,2025-06-30,desembolsos_hombre,2722373866.0,"SFC, formato 414",Iris
 iris,2025-07-31,desembolsos_hombre,7216358636.0,"SFC, formato 414",Iris
+iris,2025-08-31,desembolsos_hombre,1895146199.0,"SFC, formato 414",Iris
 iris,2025-09-30,desembolsos_hombre,848893498.0,"SFC, formato 414",Iris
 iris,2025-10-31,desembolsos_hombre,12929431903.0,"SFC, formato 414",Iris
 iris,2025-11-30,desembolsos_hombre,10950012800.0,"SFC, formato 414",Iris
@@ -26446,10 +26629,13 @@ iris,2026-07-31,desembolsos_hombre,8278298436.0,"SFC, formato 414",Iris
 iris,2026-08-31,desembolsos_hombre,4711743536.0,"SFC, formato 414",Iris
 iris,2026-09-30,desembolsos_hombre,11180738373.0,"SFC, formato 414",Iris
 iris,2026-10-31,desembolsos_hombre,6873463373.0,"SFC, formato 414",Iris
+lulo,2025-02-28,desembolsos_hombre,28292183401.06,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,desembolsos_hombre,27389341342.47,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,desembolsos_hombre,26995712583.93,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,desembolsos_hombre,37706884634.22,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,desembolsos_hombre,21670512227.39,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,desembolsos_hombre,28982584447.29,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,desembolsos_hombre,41894378382.16,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,desembolsos_hombre,31389492211.83,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,desembolsos_hombre,37631625606.29,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,desembolsos_hombre,40164902185.8,"SFC, formato 414",Lulo Bank
@@ -26477,6 +26663,7 @@ rappipay,2025-04-30,desembolsos_hombre,750000.0,"SFC, formato 414",RappiPay
 rappipay,2025-05-31,desembolsos_hombre,1405326097.0,"SFC, formato 414",RappiPay
 rappipay,2025-06-30,desembolsos_hombre,2158010000.0,"SFC, formato 414",RappiPay
 rappipay,2025-07-31,desembolsos_hombre,2331092000.0,"SFC, formato 414",RappiPay
+rappipay,2025-08-31,desembolsos_hombre,5496276928.0,"SFC, formato 414",RappiPay
 rappipay,2025-09-30,desembolsos_hombre,5399928000.0,"SFC, formato 414",RappiPay
 rappipay,2025-10-31,desembolsos_hombre,9755047469.0,"SFC, formato 414",RappiPay
 rappipay,2025-11-30,desembolsos_hombre,12112492266.0,"SFC, formato 414",RappiPay
@@ -26486,10 +26673,13 @@ rappipay,2026-07-31,desembolsos_hombre,34692951130.0,"SFC, formato 414",RappiPay
 rappipay,2026-08-31,desembolsos_hombre,21719647676.0,"SFC, formato 414",RappiPay
 rappipay,2026-09-30,desembolsos_hombre,25818207184.0,"SFC, formato 414",RappiPay
 rappipay,2026-10-31,desembolsos_hombre,31239789808.56,"SFC, formato 414",RappiPay
+universo,2025-02-28,desembolsos_hombre,28795192548.06,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,desembolsos_hombre,31551779861.47,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,desembolsos_hombre,34356885178.93,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,desembolsos_hombre,40464470882.22,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,desembolsos_hombre,26551523883.39,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,desembolsos_hombre,38531209552.08,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,desembolsos_hombre,49292633504.16,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,desembolsos_hombre,37641498009.83,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,desembolsos_hombre,62174682948.71,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,desembolsos_hombre,69374916961.96,"SFC, formato 414",Total neobancos y billeteras
@@ -26509,10 +26699,13 @@ bold,2026-07-31,desembolsos_mujer,5154145938.33,"SFC, formato 414",Bold
 bold,2026-08-31,desembolsos_mujer,5588248739.469999,"SFC, formato 414",Bold
 bold,2026-09-30,desembolsos_mujer,6524117313.299999,"SFC, formato 414",Bold
 bold,2026-10-31,desembolsos_mujer,7357548136.84,"SFC, formato 414",Bold
+grupo_banco,2025-02-28,desembolsos_mujer,16087345359.5,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,desembolsos_mujer,17462391186.26,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,desembolsos_mujer,17478259410.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,desembolsos_mujer,24366115622.7,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,desembolsos_mujer,18819282827.56,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,desembolsos_mujer,19941212405.63,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,desembolsos_mujer,26377182851.07,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,desembolsos_mujer,20633396185.18,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,desembolsos_mujer,24838376131.36,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,desembolsos_mujer,25762132364.51,"SFC, formato 414",Bancos digitales
@@ -26522,10 +26715,13 @@ grupo_banco,2026-07-31,desembolsos_mujer,35708070038.23,"SFC, formato 414",Banco
 grupo_banco,2026-08-31,desembolsos_mujer,26559539945.08,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,desembolsos_mujer,27601880697.91,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,desembolsos_mujer,34328718150.74,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,desembolsos_mujer,442564667.0,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,desembolsos_mujer,3741661199.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,desembolsos_mujer,6642546497.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,desembolsos_mujer,1499143122.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,desembolsos_mujer,1801116952.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,desembolsos_mujer,6254206554.15,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,desembolsos_mujer,2878713791.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,desembolsos_mujer,2659571500.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,desembolsos_mujer,14413232118.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,desembolsos_mujer,18990726972.16,"SFC, formato 414",Compañías de financiamiento digitales
@@ -26535,10 +26731,13 @@ grupo_cf,2026-07-31,desembolsos_mujer,49275947101.9,"SFC, formato 414",Compañí
 grupo_cf,2026-08-31,desembolsos_mujer,36144984616.08,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,desembolsos_mujer,143332016260.83002,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,desembolsos_mujer,218714269228.87,"SFC, formato 414",Compañías de financiamiento digitales
+iris,2025-02-28,desembolsos_mujer,442564667.0,"SFC, formato 414",Iris
+iris,2025-03-31,desembolsos_mujer,3741661199.0,"SFC, formato 414",Iris
 iris,2025-04-30,desembolsos_mujer,6642146497.0,"SFC, formato 414",Iris
 iris,2025-05-31,desembolsos_mujer,1143203101.0,"SFC, formato 414",Iris
 iris,2025-06-30,desembolsos_mujer,1288960952.0,"SFC, formato 414",Iris
 iris,2025-07-31,desembolsos_mujer,5305422135.0,"SFC, formato 414",Iris
+iris,2025-08-31,desembolsos_mujer,1080863791.0,"SFC, formato 414",Iris
 iris,2025-09-30,desembolsos_mujer,563901500.0,"SFC, formato 414",Iris
 iris,2025-10-31,desembolsos_mujer,9555822680.0,"SFC, formato 414",Iris
 iris,2025-11-30,desembolsos_mujer,7870522150.0,"SFC, formato 414",Iris
@@ -26548,10 +26747,13 @@ iris,2026-07-31,desembolsos_mujer,7067712545.0,"SFC, formato 414",Iris
 iris,2026-08-31,desembolsos_mujer,3757460018.0,"SFC, formato 414",Iris
 iris,2026-09-30,desembolsos_mujer,10082062497.0,"SFC, formato 414",Iris
 iris,2026-10-31,desembolsos_mujer,5050771980.0,"SFC, formato 414",Iris
+lulo,2025-02-28,desembolsos_mujer,16087345359.5,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,desembolsos_mujer,17462391186.26,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,desembolsos_mujer,17478259410.0,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,desembolsos_mujer,24366115622.7,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,desembolsos_mujer,18819282827.56,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,desembolsos_mujer,19941212405.63,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,desembolsos_mujer,26377182851.07,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,desembolsos_mujer,20633396185.18,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,desembolsos_mujer,24838376131.36,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,desembolsos_mujer,25762132364.51,"SFC, formato 414",Lulo Bank
@@ -26576,6 +26778,7 @@ rappipay,2025-04-30,desembolsos_mujer,400000.0,"SFC, formato 414",RappiPay
 rappipay,2025-05-31,desembolsos_mujer,355880021.0,"SFC, formato 414",RappiPay
 rappipay,2025-06-30,desembolsos_mujer,512156000.0,"SFC, formato 414",RappiPay
 rappipay,2025-07-31,desembolsos_mujer,947400000.0,"SFC, formato 414",RappiPay
+rappipay,2025-08-31,desembolsos_mujer,1797850000.0,"SFC, formato 414",RappiPay
 rappipay,2025-09-30,desembolsos_mujer,2091120000.0,"SFC, formato 414",RappiPay
 rappipay,2025-10-31,desembolsos_mujer,4047247000.0,"SFC, formato 414",RappiPay
 rappipay,2025-11-30,desembolsos_mujer,6260287551.0,"SFC, formato 414",RappiPay
@@ -26585,10 +26788,13 @@ rappipay,2026-07-31,desembolsos_mujer,16715118553.0,"SFC, formato 414",RappiPay
 rappipay,2026-08-31,desembolsos_mujer,10910984704.0,"SFC, formato 414",RappiPay
 rappipay,2026-09-30,desembolsos_mujer,13330963179.0,"SFC, formato 414",RappiPay
 rappipay,2026-10-31,desembolsos_mujer,16005030887.6,"SFC, formato 414",RappiPay
+universo,2025-02-28,desembolsos_mujer,16529910026.5,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,desembolsos_mujer,21204052385.26,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,desembolsos_mujer,24120805907.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,desembolsos_mujer,25865258744.7,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,desembolsos_mujer,20620399779.56,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,desembolsos_mujer,26195418959.780003,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,desembolsos_mujer,29255896642.07,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,desembolsos_mujer,23292967685.18,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,desembolsos_mujer,39251608249.36,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,desembolsos_mujer,44752859336.67,"SFC, formato 414",Total neobancos y billeteras
@@ -26600,6 +26806,7 @@ universo,2026-09-30,desembolsos_mujer,170933896958.74,"SFC, formato 414",Total n
 universo,2026-10-31,desembolsos_mujer,253042987379.61002,"SFC, formato 414",Total neobancos y billeteras
 bold,2025-06-30,desembolsos_productivo,627790.0,"SFC, formato 414",Bold
 bold,2025-07-31,desembolsos_productivo,2498887.94,"SFC, formato 414",Bold
+bold,2025-08-31,desembolsos_productivo,6831995.0,"SFC, formato 414",Bold
 bold,2025-09-30,desembolsos_productivo,7634300.0,"SFC, formato 414",Bold
 bold,2025-10-31,desembolsos_productivo,266745408.42000002,"SFC, formato 414",Bold
 bold,2025-11-30,desembolsos_productivo,692036177.34,"SFC, formato 414",Bold
@@ -26611,6 +26818,7 @@ bold,2026-09-30,desembolsos_productivo,21365670133.79,"SFC, formato 414",Bold
 bold,2026-10-31,desembolsos_productivo,28675125817.25,"SFC, formato 414",Bold
 grupo_cf,2025-06-30,desembolsos_productivo,627790.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,desembolsos_productivo,2498887.94,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,desembolsos_productivo,6831995.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,desembolsos_productivo,7634300.0,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,desembolsos_productivo,266745408.42000002,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,desembolsos_productivo,692036177.34,"SFC, formato 414",Compañías de financiamiento digitales
@@ -26620,10 +26828,13 @@ grupo_cf,2026-07-31,desembolsos_productivo,16426445788.489998,"SFC, formato 414"
 grupo_cf,2026-08-31,desembolsos_productivo,18326173249.99,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,desembolsos_productivo,21365670133.79,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,desembolsos_productivo,28675125817.25,"SFC, formato 414",Compañías de financiamiento digitales
+sis_bancos,2025-02-28,desembolsos_productivo,1218448284315.81,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,desembolsos_productivo,1042543533001.0898,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,desembolsos_productivo,1064417609048.0499,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,desembolsos_productivo,1587865090197.52,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,desembolsos_productivo,1126353618492.05,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,desembolsos_productivo,1215525402803.73,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,desembolsos_productivo,1655312923580.48,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,desembolsos_productivo,1307658253519.52,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,desembolsos_productivo,1750358616193.9102,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,desembolsos_productivo,1350481781219.51,"SFC, formato 414",Bancos (sistema)
@@ -26633,10 +26844,13 @@ sis_bancos,2026-07-31,desembolsos_productivo,1877889485361.23,"SFC, formato 414"
 sis_bancos,2026-08-31,desembolsos_productivo,1411250294775.96,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,desembolsos_productivo,1628703211404.8,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,desembolsos_productivo,2145390272086.79,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,desembolsos_productivo,23887978482.0,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,desembolsos_productivo,20312367299.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,desembolsos_productivo,20269059966.6,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,desembolsos_productivo,27874088863.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,desembolsos_productivo,23390244392.94,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,desembolsos_productivo,21808393427.57,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,desembolsos_productivo,33251194507.149998,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,desembolsos_productivo,25728323147.19,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,desembolsos_productivo,49754261918.62,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,desembolsos_productivo,31845229779.51,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -26646,10 +26860,13 @@ sis_cf,2026-07-31,desembolsos_productivo,52079176882.490005,"SFC, formato 414",C
 sis_cf,2026-08-31,desembolsos_productivo,40581751312.99,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,desembolsos_productivo,47655415960.79001,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,desembolsos_productivo,62002949185.25001,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,desembolsos_productivo,1261009997581.97,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,desembolsos_productivo,1079089253648.0898,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,desembolsos_productivo,1100085489527.65,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,desembolsos_productivo,1638675889503.52,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,desembolsos_productivo,1167081016544.99,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,desembolsos_productivo,1256068292554.3,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,desembolsos_productivo,1712542914335.63,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,desembolsos_productivo,1354148136431.71,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,desembolsos_productivo,1826119417030.5303,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,desembolsos_productivo,1400138366188.02,"SFC, formato 414",Establecimientos de crédito
@@ -26659,10 +26876,13 @@ sis_ec,2026-07-31,desembolsos_productivo,1953512248407.72,"SFC, formato 414",Est
 sis_ec,2026-08-31,desembolsos_productivo,1467786581094.95,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,desembolsos_productivo,1695532051851.59,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,desembolsos_productivo,2233260726048.04,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,desembolsos_productivo,1261009997581.97,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,desembolsos_productivo,1079089253648.0898,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,desembolsos_productivo,1100085489527.65,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,desembolsos_productivo,1638675889503.52,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,desembolsos_productivo,1167081016544.99,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,desembolsos_productivo,1256068292554.3,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,desembolsos_productivo,1712542914335.63,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,desembolsos_productivo,1354148136431.71,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,desembolsos_productivo,1826119417030.5303,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,desembolsos_productivo,1400138366188.02,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -26674,6 +26894,7 @@ sis_total,2026-09-30,desembolsos_productivo,1695532051851.59,"SFC, formato 414",
 sis_total,2026-10-31,desembolsos_productivo,2233260726048.04,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 universo,2025-06-30,desembolsos_productivo,627790.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,desembolsos_productivo,2498887.94,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,desembolsos_productivo,6831995.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,desembolsos_productivo,7634300.0,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,desembolsos_productivo,266745408.42000002,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,desembolsos_productivo,692036177.34,"SFC, formato 414",Total neobancos y billeteras
@@ -26683,10 +26904,13 @@ universo,2026-07-31,desembolsos_productivo,16426445788.489998,"SFC, formato 414"
 universo,2026-08-31,desembolsos_productivo,18326173249.99,"SFC, formato 414",Total neobancos y billeteras
 universo,2026-09-30,desembolsos_productivo,21365670133.79,"SFC, formato 414",Total neobancos y billeteras
 universo,2026-10-31,desembolsos_productivo,28675125817.25,"SFC, formato 414",Total neobancos y billeteras
+grupo_banco,2025-02-28,desembolsos_tc,32969057.79,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,desembolsos_tc,176853764.84,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,desembolsos_tc,564481035.96,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,desembolsos_tc,739056370.09,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,desembolsos_tc,5306801522.66,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,desembolsos_tc,9066475404.650002,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,desembolsos_tc,14010685358.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,desembolsos_tc,13006242540.23,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,desembolsos_tc,18831165602.38,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,desembolsos_tc,16972662891.96,"SFC, formato 414",Bancos digitales
@@ -26696,10 +26920,13 @@ grupo_banco,2026-07-31,desembolsos_tc,33120064663.76,"SFC, formato 414",Bancos d
 grupo_banco,2026-08-31,desembolsos_tc,27199107483.72,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,desembolsos_tc,28755099985.440002,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,desembolsos_tc,39161770487.799995,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,desembolsos_tc,621578383947.46,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,desembolsos_tc,650443733256.37,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,desembolsos_tc,659167394274.88,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,desembolsos_tc,873515671779.8301,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,desembolsos_tc,728107998844.46,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,desembolsos_tc,739325137976.68,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,desembolsos_tc,918723352055.13,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,desembolsos_tc,763812484421.52,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,desembolsos_tc,965810481790.97,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,desembolsos_tc,851306620233.55,"SFC, formato 414",Compañías de financiamiento digitales
@@ -26709,10 +26936,13 @@ grupo_cf,2026-07-31,desembolsos_tc,1613086046506.12,"SFC, formato 414",Compañí
 grupo_cf,2026-08-31,desembolsos_tc,1324315571229.94,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,desembolsos_tc,1453926517175.21,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,desembolsos_tc,1948821611004.95,"SFC, formato 414",Compañías de financiamiento digitales
+lulo,2025-02-28,desembolsos_tc,32969057.79,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,desembolsos_tc,176853764.84,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,desembolsos_tc,564481035.96,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,desembolsos_tc,739056370.09,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,desembolsos_tc,5306801522.66,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,desembolsos_tc,9066475404.650002,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,desembolsos_tc,14010685358.0,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,desembolsos_tc,13006242540.23,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,desembolsos_tc,18831165602.38,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,desembolsos_tc,16972662891.96,"SFC, formato 414",Lulo Bank
@@ -26722,10 +26952,13 @@ lulo,2026-07-31,desembolsos_tc,33120064663.76,"SFC, formato 414",Lulo Bank
 lulo,2026-08-31,desembolsos_tc,27199107483.72,"SFC, formato 414",Lulo Bank
 lulo,2026-09-30,desembolsos_tc,28755099985.440002,"SFC, formato 414",Lulo Bank
 lulo,2026-10-31,desembolsos_tc,39161770487.799995,"SFC, formato 414",Lulo Bank
+nu,2025-02-28,desembolsos_tc,621578383947.46,"SFC, formato 414",Nu
+nu,2025-03-31,desembolsos_tc,650443733256.37,"SFC, formato 414",Nu
 nu,2025-04-30,desembolsos_tc,659167394274.88,"SFC, formato 414",Nu
 nu,2025-05-31,desembolsos_tc,873515671779.8301,"SFC, formato 414",Nu
 nu,2025-06-30,desembolsos_tc,728107998844.46,"SFC, formato 414",Nu
 nu,2025-07-31,desembolsos_tc,739325137976.68,"SFC, formato 414",Nu
+nu,2025-08-31,desembolsos_tc,918723352055.13,"SFC, formato 414",Nu
 nu,2025-09-30,desembolsos_tc,763812484421.52,"SFC, formato 414",Nu
 nu,2025-10-31,desembolsos_tc,965810481790.97,"SFC, formato 414",Nu
 nu,2025-11-30,desembolsos_tc,851306620233.55,"SFC, formato 414",Nu
@@ -26735,10 +26968,13 @@ nu,2026-07-31,desembolsos_tc,1613086046506.12,"SFC, formato 414",Nu
 nu,2026-08-31,desembolsos_tc,1324315571229.94,"SFC, formato 414",Nu
 nu,2026-09-30,desembolsos_tc,1453926517175.21,"SFC, formato 414",Nu
 nu,2026-10-31,desembolsos_tc,1948821611004.95,"SFC, formato 414",Nu
+sis_bancos,2025-02-28,desembolsos_tc,8785302477904.2,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,desembolsos_tc,9259871568687.46,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,desembolsos_tc,9278257982329.42,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,desembolsos_tc,12066689218373.08,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,desembolsos_tc,9817659053286.17,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,desembolsos_tc,9828961563388.17,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,desembolsos_tc,12065869077810.549,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,desembolsos_tc,10171696705473.6,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,desembolsos_tc,12999220468629.32,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,desembolsos_tc,11020920751693.58,"SFC, formato 414",Bancos (sistema)
@@ -26748,10 +26984,13 @@ sis_bancos,2026-07-31,desembolsos_tc,13849760030217.55,"SFC, formato 414",Bancos
 sis_bancos,2026-08-31,desembolsos_tc,11275351996256.21,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,desembolsos_tc,12437216749567.059,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,desembolsos_tc,15188934051150.559,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,desembolsos_tc,1013684621360.08,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,desembolsos_tc,1006386148162.6501,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,desembolsos_tc,1004154050693.8201,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,desembolsos_tc,1336890628465.43,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,desembolsos_tc,1115395914986.99,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,desembolsos_tc,1169121780581.08,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,desembolsos_tc,1400165766943.27,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,desembolsos_tc,1170008500194.72,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,desembolsos_tc,1469657206960.76,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,desembolsos_tc,1301501207806.17,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -26761,10 +27000,13 @@ sis_cf,2026-07-31,desembolsos_tc,2174477307653.12,"SFC, formato 414",Compañías
 sis_cf,2026-08-31,desembolsos_tc,1744951001345.94,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,desembolsos_tc,1892371647295.21,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,desembolsos_tc,2505347013838.19,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,desembolsos_tc,9802767121942.28,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,desembolsos_tc,10269970574155.111,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,desembolsos_tc,10286122151143.24,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,desembolsos_tc,13408362070080.51,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,desembolsos_tc,10936772556969.16,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,desembolsos_tc,11001613751525.25,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,desembolsos_tc,13470766533215.818,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,desembolsos_tc,11345618802462.32,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,desembolsos_tc,14473529355459.08,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,desembolsos_tc,12326440573890.75,"SFC, formato 414",Establecimientos de crédito
@@ -26774,10 +27016,13 @@ sis_ec,2026-07-31,desembolsos_tc,16029964994879.672,"SFC, formato 414",Estableci
 sis_ec,2026-08-31,desembolsos_tc,13026001501219.15,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,desembolsos_tc,14335803418317.27,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,desembolsos_tc,17701632204240.75,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,desembolsos_tc,9802767121942.28,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,desembolsos_tc,10269970574155.111,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,desembolsos_tc,10286122151143.24,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,desembolsos_tc,13408362070080.51,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,desembolsos_tc,10936772556969.16,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,desembolsos_tc,11001613751525.25,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,desembolsos_tc,13470766533215.818,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,desembolsos_tc,11345618802462.32,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,desembolsos_tc,14473529355459.08,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,desembolsos_tc,12326440573890.75,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -26787,10 +27032,13 @@ sis_total,2026-07-31,desembolsos_tc,16029964994879.672,"SFC, formato 414",Sistem
 sis_total,2026-08-31,desembolsos_tc,13026001501219.15,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-09-30,desembolsos_tc,14335803418317.27,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-10-31,desembolsos_tc,17701632204240.75,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+universo,2025-02-28,desembolsos_tc,621611353005.25,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,desembolsos_tc,650620587021.21,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,desembolsos_tc,659731875310.84,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,desembolsos_tc,874254728149.92,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,desembolsos_tc,733414800367.12,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,desembolsos_tc,748391613381.3301,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,desembolsos_tc,932734037413.13,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,desembolsos_tc,776818726961.75,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,desembolsos_tc,984641647393.35,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,desembolsos_tc,868279283125.51,"SFC, formato 414",Total neobancos y billeteras
@@ -26800,10 +27048,13 @@ universo,2026-07-31,desembolsos_tc,1646206111169.8801,"SFC, formato 414",Total n
 universo,2026-08-31,desembolsos_tc,1351514678713.66,"SFC, formato 414",Total neobancos y billeteras
 universo,2026-09-30,desembolsos_tc,1482681617160.65,"SFC, formato 414",Total neobancos y billeteras
 universo,2026-10-31,desembolsos_tc,1987983381492.75,"SFC, formato 414",Total neobancos y billeteras
+sis_bancos,2025-02-28,desembolsos_vivienda,2619489602409.2603,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,desembolsos_vivienda,1949356653905.12,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,desembolsos_vivienda,1844508982302.69,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,desembolsos_vivienda,3027224342077.47,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,desembolsos_vivienda,2249506509685.95,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,desembolsos_vivienda,1987384497730.8198,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,desembolsos_vivienda,3122515190115.9697,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,desembolsos_vivienda,2237674868570.02,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,desembolsos_vivienda,3298206860687.2803,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,desembolsos_vivienda,2547988871315.98,"SFC, formato 414",Bancos (sistema)
@@ -26813,10 +27064,13 @@ sis_bancos,2026-07-31,desembolsos_vivienda,2512443242131.31,"SFC, formato 414",B
 sis_bancos,2026-08-31,desembolsos_vivienda,1592586437181.3499,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,desembolsos_vivienda,1926649027792.2202,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,desembolsos_vivienda,2844021940838.56,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,desembolsos_vivienda,18100145019.0,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,desembolsos_vivienda,10383692233.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,desembolsos_vivienda,8671125271.66,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,desembolsos_vivienda,22589442444.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,desembolsos_vivienda,19911039586.33,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,desembolsos_vivienda,13285148268.96,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,desembolsos_vivienda,33424033616.030003,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,desembolsos_vivienda,19810191072.45,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,desembolsos_vivienda,30852248291.24,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,desembolsos_vivienda,26193012886.0,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -26826,10 +27080,13 @@ sis_cf,2026-07-31,desembolsos_vivienda,14516744309.0,"SFC, formato 414",Compañ�
 sis_cf,2026-08-31,desembolsos_vivienda,6022658856.91,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,desembolsos_vivienda,14785196876.0,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,desembolsos_vivienda,20634873815.74,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,desembolsos_vivienda,2646474721804.2603,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,desembolsos_vivienda,1967023369510.12,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,desembolsos_vivienda,1861772173341.3499,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,desembolsos_vivienda,3059799503981.47,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,desembolsos_vivienda,2281686912031.2803,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,desembolsos_vivienda,2012480708911.7798,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,desembolsos_vivienda,3169143145544.9995,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,desembolsos_vivienda,2268490311501.47,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,desembolsos_vivienda,3342628686781.5205,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,desembolsos_vivienda,2580529220006.98,"SFC, formato 414",Establecimientos de crédito
@@ -26839,10 +27096,13 @@ sis_ec,2026-07-31,desembolsos_vivienda,2540932056123.31,"SFC, formato 414",Estab
 sis_ec,2026-08-31,desembolsos_vivienda,1605752631622.2598,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,desembolsos_vivienda,1953024882143.2202,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,desembolsos_vivienda,2878771200843.3003,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,desembolsos_vivienda,2646474721804.2603,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,desembolsos_vivienda,1967023369510.12,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,desembolsos_vivienda,1861772173341.3499,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,desembolsos_vivienda,3059799503981.47,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,desembolsos_vivienda,2281686912031.2803,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,desembolsos_vivienda,2012480708911.7798,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,desembolsos_vivienda,3169143145544.9995,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,desembolsos_vivienda,2268490311501.47,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,desembolsos_vivienda,3342628686781.5205,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,desembolsos_vivienda,2580529220006.98,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -38550,8 +38810,11 @@ universo,2026-09-30,tasa_cdt,10.637582313786028,"SFC, formato 441",Total neobanc
 universo,2026-10-31,tasa_cdt,10.514911243720892,"SFC, formato 441",Total neobancos y billeteras
 bold,2026-09-30,tasa_comercial,18.16,"SFC, formato 414",Bold
 bold,2026-10-31,tasa_comercial,18.16,"SFC, formato 414",Bold
+grupo_banco,2025-02-28,tasa_comercial,20.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,tasa_comercial,20.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,tasa_comercial,20.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,tasa_comercial,20.0,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,tasa_comercial,20.0,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,tasa_comercial,14.55,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,tasa_comercial,14.44,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-12-31,tasa_comercial,15.89225806451613,"SFC, formato 414",Bancos digitales
@@ -38560,10 +38823,13 @@ grupo_banco,2026-07-31,tasa_comercial,17.82900574450815,"SFC, formato 414",Banco
 grupo_banco,2026-08-31,tasa_comercial,17.381068131809545,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,tasa_comercial,17.112029843016984,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,tasa_comercial,17.145039023450387,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,tasa_comercial,19.053528877159714,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,tasa_comercial,19.777206979370117,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,tasa_comercial,18.36400808693507,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,tasa_comercial,19.119748438567072,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,tasa_comercial,18.893030531522186,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,tasa_comercial,18.042687763441023,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,tasa_comercial,18.05566112912146,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,tasa_comercial,18.48611827280544,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,tasa_comercial,18.42363443668655,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,tasa_comercial,18.32819975552232,"SFC, formato 414",Compañías de financiamiento digitales
@@ -38573,10 +38839,13 @@ grupo_cf,2026-07-31,tasa_comercial,19.172031069570348,"SFC, formato 414",Compañ
 grupo_cf,2026-08-31,tasa_comercial,18.95789197947155,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,tasa_comercial,19.167383099678002,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,tasa_comercial,19.529592359649417,"SFC, formato 414",Compañías de financiamiento digitales
+iris,2025-02-28,tasa_comercial,19.053528877159714,"SFC, formato 414",Iris
+iris,2025-03-31,tasa_comercial,19.777206979370117,"SFC, formato 414",Iris
 iris,2025-04-30,tasa_comercial,18.36400808693507,"SFC, formato 414",Iris
 iris,2025-05-31,tasa_comercial,19.119748438567072,"SFC, formato 414",Iris
 iris,2025-06-30,tasa_comercial,18.893030531522186,"SFC, formato 414",Iris
 iris,2025-07-31,tasa_comercial,18.042687763441023,"SFC, formato 414",Iris
+iris,2025-08-31,tasa_comercial,18.05566112912146,"SFC, formato 414",Iris
 iris,2025-09-30,tasa_comercial,18.48611827280544,"SFC, formato 414",Iris
 iris,2025-10-31,tasa_comercial,18.42363443668655,"SFC, formato 414",Iris
 iris,2025-11-30,tasa_comercial,18.32819975552232,"SFC, formato 414",Iris
@@ -38586,8 +38855,11 @@ iris,2026-07-31,tasa_comercial,19.172031069570348,"SFC, formato 414",Iris
 iris,2026-08-31,tasa_comercial,18.95789197947155,"SFC, formato 414",Iris
 iris,2026-09-30,tasa_comercial,19.167511086221534,"SFC, formato 414",Iris
 iris,2026-10-31,tasa_comercial,19.5297980268857,"SFC, formato 414",Iris
+lulo,2025-02-28,tasa_comercial,20.0,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,tasa_comercial,20.0,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,tasa_comercial,20.0,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,tasa_comercial,20.0,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,tasa_comercial,20.0,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,tasa_comercial,14.55,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,tasa_comercial,14.44,"SFC, formato 414",Lulo Bank
 lulo,2025-12-31,tasa_comercial,15.89225806451613,"SFC, formato 414",Lulo Bank
@@ -38596,10 +38868,13 @@ lulo,2026-07-31,tasa_comercial,17.82900574450815,"SFC, formato 414",Lulo Bank
 lulo,2026-08-31,tasa_comercial,17.381068131809545,"SFC, formato 414",Lulo Bank
 lulo,2026-09-30,tasa_comercial,17.112029843016984,"SFC, formato 414",Lulo Bank
 lulo,2026-10-31,tasa_comercial,17.145039023450387,"SFC, formato 414",Lulo Bank
+sis_bancos,2025-02-28,tasa_comercial,15.483671068530567,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,tasa_comercial,15.558189160346926,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,tasa_comercial,15.807033981672584,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,tasa_comercial,15.287845943915338,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,tasa_comercial,15.168571175973371,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,tasa_comercial,14.782423022274209,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,tasa_comercial,15.273996883246559,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,tasa_comercial,14.555447478709231,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,tasa_comercial,15.136223970853631,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,tasa_comercial,14.745322249909425,"SFC, formato 414",Bancos (sistema)
@@ -38609,10 +38884,13 @@ sis_bancos,2026-07-31,tasa_comercial,17.933179405687188,"SFC, formato 414",Banco
 sis_bancos,2026-08-31,tasa_comercial,18.158514989206793,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,tasa_comercial,17.712337479672957,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,tasa_comercial,17.122545767853588,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,tasa_comercial,17.367041289687013,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,tasa_comercial,16.46855217612975,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,tasa_comercial,16.84268095809101,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,tasa_comercial,16.30875474427013,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,tasa_comercial,15.860366134015852,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,tasa_comercial,16.616703601310636,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,tasa_comercial,15.946244645396439,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,tasa_comercial,16.05020488411184,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,tasa_comercial,15.771802768788428,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,tasa_comercial,16.03724742105858,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -38622,10 +38900,13 @@ sis_cf,2026-07-31,tasa_comercial,19.150260378588804,"SFC, formato 414",Compañí
 sis_cf,2026-08-31,tasa_comercial,19.659107533450154,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,tasa_comercial,18.506575131234193,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,tasa_comercial,18.82449124901482,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,tasa_comercial,15.514838726264724,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,tasa_comercial,15.579025673437577,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,tasa_comercial,15.830514730195128,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,tasa_comercial,15.314407702195345,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,tasa_comercial,15.190625001922433,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,tasa_comercial,14.814367230793147,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,tasa_comercial,15.297291868128436,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,tasa_comercial,14.594764280056658,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,tasa_comercial,15.160662495924901,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,tasa_comercial,14.780730875953356,"SFC, formato 414",Establecimientos de crédito
@@ -38635,10 +38916,13 @@ sis_ec,2026-07-31,tasa_comercial,17.969396007763148,"SFC, formato 414",Estableci
 sis_ec,2026-08-31,tasa_comercial,18.204070619620126,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,tasa_comercial,17.73166452557343,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,tasa_comercial,17.16414295986236,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,tasa_comercial,15.514838726264724,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,tasa_comercial,15.579025673437577,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,tasa_comercial,15.830514730195128,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,tasa_comercial,15.314407702195345,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,tasa_comercial,15.190625001922433,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,tasa_comercial,14.814367230793147,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,tasa_comercial,15.297291868128436,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,tasa_comercial,14.594764280056658,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,tasa_comercial,15.160662495924901,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,tasa_comercial,14.780730875953356,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -38648,10 +38932,13 @@ sis_total,2026-07-31,tasa_comercial,17.969396007763148,"SFC, formato 414",Sistem
 sis_total,2026-08-31,tasa_comercial,18.204070619620126,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-09-30,tasa_comercial,17.73166452557343,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-10-31,tasa_comercial,17.16414295986236,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+universo,2025-02-28,tasa_comercial,19.059052890497053,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,tasa_comercial,19.779117490083934,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,tasa_comercial,18.36400808693507,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,tasa_comercial,19.12775529984689,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,tasa_comercial,18.893030531522186,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,tasa_comercial,18.05532221368689,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,tasa_comercial,18.060493913207562,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,tasa_comercial,18.48611827280544,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,tasa_comercial,18.407053857937317,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,tasa_comercial,18.291968423555385,"SFC, formato 414",Total neobancos y billeteras
@@ -38666,10 +38953,13 @@ bold,2026-07-31,tasa_consumo,0.0,"SFC, formato 414",Bold
 bold,2026-08-31,tasa_consumo,0.0,"SFC, formato 414",Bold
 bold,2026-09-30,tasa_consumo,0.0,"SFC, formato 414",Bold
 bold,2026-10-31,tasa_consumo,0.0,"SFC, formato 414",Bold
+grupo_banco,2025-02-28,tasa_consumo,22.57622599159223,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,tasa_consumo,21.56916367985223,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,tasa_consumo,21.312899438984278,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,tasa_consumo,21.57013110519876,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,tasa_consumo,21.730629826501215,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,tasa_consumo,21.49254123607178,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,tasa_consumo,21.073653713351067,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,tasa_consumo,21.028067738676192,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,tasa_consumo,20.786662293460044,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,tasa_consumo,20.905640199711883,"SFC, formato 414",Bancos digitales
@@ -38679,10 +38969,13 @@ grupo_banco,2026-07-31,tasa_consumo,21.737104078984267,"SFC, formato 414",Bancos
 grupo_banco,2026-08-31,tasa_consumo,22.049703382696556,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,tasa_consumo,22.11190337950558,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,tasa_consumo,22.2140159540178,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,tasa_consumo,21.245639186556406,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,tasa_consumo,18.75,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,tasa_consumo,18.89058736892935,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,tasa_consumo,19.868794493169766,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,tasa_consumo,20.246916243305023,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,tasa_consumo,20.442042480009615,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,tasa_consumo,21.891495259859006,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,tasa_consumo,22.030395203502625,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,tasa_consumo,19.21175192608677,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,tasa_consumo,21.85546454349027,"SFC, formato 414",Compañías de financiamiento digitales
@@ -38692,10 +38985,13 @@ grupo_cf,2026-07-31,tasa_consumo,25.42323928038618,"SFC, formato 414",Compañía
 grupo_cf,2026-08-31,tasa_consumo,27.056163819612433,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,tasa_consumo,34.62433021777209,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,tasa_consumo,36.60618766891441,"SFC, formato 414",Compañías de financiamiento digitales
+iris,2025-02-28,tasa_consumo,21.245639186556406,"SFC, formato 414",Iris
+iris,2025-03-31,tasa_consumo,18.75,"SFC, formato 414",Iris
 iris,2025-04-30,tasa_consumo,18.8906432053015,"SFC, formato 414",Iris
 iris,2025-05-31,tasa_consumo,19.219169565865638,"SFC, formato 414",Iris
 iris,2025-06-30,tasa_consumo,19.505736317625928,"SFC, formato 414",Iris
 iris,2025-07-31,tasa_consumo,19.914300612943546,"SFC, formato 414",Iris
+iris,2025-08-31,tasa_consumo,19.322700299625,"SFC, formato 414",Iris
 iris,2025-09-30,tasa_consumo,18.66291887550978,"SFC, formato 414",Iris
 iris,2025-10-31,tasa_consumo,16.96827500535754,"SFC, formato 414",Iris
 iris,2025-11-30,tasa_consumo,17.18474656328937,"SFC, formato 414",Iris
@@ -38705,10 +39001,13 @@ iris,2026-07-31,tasa_consumo,18.358006025738682,"SFC, formato 414",Iris
 iris,2026-08-31,tasa_consumo,18.476566742702005,"SFC, formato 414",Iris
 iris,2026-09-30,tasa_consumo,18.410479298820317,"SFC, formato 414",Iris
 iris,2026-10-31,tasa_consumo,18.668416770667548,"SFC, formato 414",Iris
+lulo,2025-02-28,tasa_consumo,22.57622599159223,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,tasa_consumo,21.56916367985223,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,tasa_consumo,21.312899438984278,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,tasa_consumo,21.57013110519876,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,tasa_consumo,21.730629826501215,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,tasa_consumo,21.49254123607178,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,tasa_consumo,21.073653713351067,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,tasa_consumo,21.028067738676192,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,tasa_consumo,20.786662293460044,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,tasa_consumo,20.905640199711883,"SFC, formato 414",Lulo Bank
@@ -38736,6 +39035,7 @@ rappipay,2025-04-30,tasa_consumo,18.14086956521739,"SFC, formato 414",RappiPay
 rappipay,2025-05-31,tasa_consumo,20.789219798349578,"SFC, formato 414",RappiPay
 rappipay,2025-06-30,tasa_consumo,21.360375422352018,"SFC, formato 414",RappiPay
 rappipay,2025-07-31,tasa_consumo,22.457701168708052,"SFC, formato 414",RappiPay
+rappipay,2025-08-31,tasa_consumo,22.939565788296353,"SFC, formato 414",RappiPay
 rappipay,2025-09-30,tasa_consumo,22.66552673003831,"SFC, formato 414",RappiPay
 rappipay,2025-10-31,tasa_consumo,22.731962409242957,"SFC, formato 414",RappiPay
 rappipay,2025-11-30,tasa_consumo,23.388816786493035,"SFC, formato 414",RappiPay
@@ -38745,10 +39045,13 @@ rappipay,2026-07-31,tasa_consumo,25.24730727129819,"SFC, formato 414",RappiPay
 rappipay,2026-08-31,tasa_consumo,25.489059322666424,"SFC, formato 414",RappiPay
 rappipay,2026-09-30,tasa_consumo,25.456809670959007,"SFC, formato 414",RappiPay
 rappipay,2026-10-31,tasa_consumo,23.33532015264531,"SFC, formato 414",RappiPay
+sis_bancos,2025-02-28,tasa_consumo,19.404752455681237,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,tasa_consumo,19.322126301966836,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,tasa_consumo,19.53511817524326,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,tasa_consumo,19.458391257325747,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,tasa_consumo,19.363406446195153,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,tasa_consumo,19.370106326648276,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,tasa_consumo,18.86710473700406,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,tasa_consumo,19.23076430551113,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,tasa_consumo,19.1281228205651,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,tasa_consumo,19.47546932100425,"SFC, formato 414",Bancos (sistema)
@@ -38758,10 +39061,13 @@ sis_bancos,2026-07-31,tasa_consumo,22.436747003458475,"SFC, formato 414",Bancos 
 sis_bancos,2026-08-31,tasa_consumo,22.317050157725426,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,tasa_consumo,21.311930411968465,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,tasa_consumo,21.435072570853777,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,tasa_consumo,22.140182957483447,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,tasa_consumo,21.75381544330725,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,tasa_consumo,21.745664398519956,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,tasa_consumo,22.357660900966874,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,tasa_consumo,21.59582110150912,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,tasa_consumo,21.218156598275684,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,tasa_consumo,21.590646625420284,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,tasa_consumo,21.511117144153655,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,tasa_consumo,20.89255571842166,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,tasa_consumo,21.751102771062165,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -38771,10 +39077,13 @@ sis_cf,2026-07-31,tasa_consumo,24.12565778368705,"SFC, formato 414",Compañías 
 sis_cf,2026-08-31,tasa_consumo,24.89485378202224,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,tasa_consumo,29.881797869095404,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,tasa_consumo,30.80922346537793,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,tasa_consumo,19.45030582702028,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,tasa_consumo,19.363789759327435,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,tasa_consumo,19.566520521388192,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,tasa_consumo,19.52644445729627,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,tasa_consumo,19.40068803179181,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,tasa_consumo,19.384709073818144,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,tasa_consumo,18.916389680388104,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,tasa_consumo,19.25701721059448,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,tasa_consumo,19.16335463233714,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,tasa_consumo,19.52603329756709,"SFC, formato 414",Establecimientos de crédito
@@ -38784,10 +39093,13 @@ sis_ec,2026-07-31,tasa_consumo,22.456808496807934,"SFC, formato 414",Establecimi
 sis_ec,2026-08-31,tasa_consumo,22.365839963712485,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,tasa_consumo,21.801996180541728,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,tasa_consumo,22.07355028823963,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,tasa_consumo,19.45030582702028,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,tasa_consumo,19.363789759327435,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,tasa_consumo,19.566520521388192,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,tasa_consumo,19.52644445729627,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,tasa_consumo,19.40068803179181,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,tasa_consumo,19.384709073818144,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,tasa_consumo,18.916389680388104,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,tasa_consumo,19.25701721059448,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,tasa_consumo,19.16335463233714,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,tasa_consumo,19.52603329756709,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -38797,10 +39109,13 @@ sis_total,2026-07-31,tasa_consumo,22.456808496807934,"SFC, formato 414",Sistema 
 sis_total,2026-08-31,tasa_consumo,22.365839963712485,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-09-30,tasa_consumo,21.801996180541728,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-10-31,tasa_consumo,22.07355028823963,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+universo,2025-02-28,tasa_consumo,22.548467244923625,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,tasa_consumo,21.146784771247354,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,tasa_consumo,20.732825616774633,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,tasa_consumo,21.46094734151671,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,tasa_consumo,21.520471650085973,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,tasa_consumo,21.236095455838846,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,tasa_consumo,21.180594928750974,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,tasa_consumo,21.174549451376507,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,tasa_consumo,20.184321075329805,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,tasa_consumo,21.303448731406302,"SFC, formato 414",Total neobancos y billeteras
@@ -38812,6 +39127,7 @@ universo,2026-09-30,tasa_consumo,32.28856954079247,"SFC, formato 414",Total neob
 universo,2026-10-31,tasa_consumo,34.31649327882216,"SFC, formato 414",Total neobancos y billeteras
 bold,2025-06-30,tasa_desembolsos,84.95,"SFC, formato 414",Bold
 bold,2025-07-31,tasa_desembolsos,85.0,"SFC, formato 414",Bold
+bold,2025-08-31,tasa_desembolsos,49.324762723040635,"SFC, formato 414",Bold
 bold,2025-09-30,tasa_desembolsos,82.14464312379656,"SFC, formato 414",Bold
 bold,2025-10-31,tasa_desembolsos,64.81458811164941,"SFC, formato 414",Bold
 bold,2025-11-30,tasa_desembolsos,65.43754354761028,"SFC, formato 414",Bold
@@ -38821,10 +39137,13 @@ bold,2026-07-31,tasa_desembolsos,50.22448204986358,"SFC, formato 414",Bold
 bold,2026-08-31,tasa_desembolsos,55.77436965593253,"SFC, formato 414",Bold
 bold,2026-09-30,tasa_desembolsos,51.06356871427636,"SFC, formato 414",Bold
 bold,2026-10-31,tasa_desembolsos,48.662522350337746,"SFC, formato 414",Bold
+grupo_banco,2025-02-28,tasa_desembolsos,22.558940552094775,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,tasa_desembolsos,21.55873774318067,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,tasa_desembolsos,21.312899438984278,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,tasa_desembolsos,21.555099454260443,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,tasa_desembolsos,20.16110082860851,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,tasa_desembolsos,21.48495314377673,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,tasa_desembolsos,21.071299951552884,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,tasa_desembolsos,21.028067738676192,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,tasa_desembolsos,20.333037983523518,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,tasa_desembolsos,20.856972964726292,"SFC, formato 414",Bancos digitales
@@ -38834,10 +39153,13 @@ grupo_banco,2026-07-31,tasa_desembolsos,21.05852214401104,"SFC, formato 414",Ban
 grupo_banco,2026-08-31,tasa_desembolsos,21.125702291159982,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,tasa_desembolsos,20.870853682262087,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,tasa_desembolsos,21.23016153645921,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,tasa_desembolsos,19.09338324655023,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,tasa_desembolsos,19.586564836604154,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,tasa_desembolsos,18.502873856441624,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,tasa_desembolsos,19.165547505989977,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,tasa_desembolsos,19.0348183218663,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,tasa_desembolsos,18.74416470817343,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,tasa_desembolsos,18.617675455779114,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,tasa_desembolsos,18.97530527000113,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,tasa_desembolsos,18.865045012860172,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,tasa_desembolsos,20.30315914872212,"SFC, formato 414",Compañías de financiamiento digitales
@@ -38847,10 +39169,13 @@ grupo_cf,2026-07-31,tasa_desembolsos,24.97156146756232,"SFC, formato 414",Compa�
 grupo_cf,2026-08-31,tasa_desembolsos,27.240673009963466,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,tasa_desembolsos,32.969096532193824,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,tasa_desembolsos,34.75781031753922,"SFC, formato 414",Compañías de financiamiento digitales
+iris,2025-02-28,tasa_desembolsos,19.09338324655023,"SFC, formato 414",Iris
+iris,2025-03-31,tasa_desembolsos,19.586564836604154,"SFC, formato 414",Iris
 iris,2025-04-30,tasa_desembolsos,18.502879307385165,"SFC, formato 414",Iris
 iris,2025-05-31,tasa_desembolsos,19.123404331596113,"SFC, formato 414",Iris
 iris,2025-06-30,tasa_desembolsos,18.933045528306817,"SFC, formato 414",Iris
 iris,2025-07-31,tasa_desembolsos,18.502202669562283,"SFC, formato 414",Iris
+iris,2025-08-31,tasa_desembolsos,18.115348598978468,"SFC, formato 414",Iris
 iris,2025-09-30,tasa_desembolsos,18.490424439974912,"SFC, formato 414",Iris
 iris,2025-10-31,tasa_desembolsos,18.01783660934943,"SFC, formato 414",Iris
 iris,2025-11-30,tasa_desembolsos,18.029216058763424,"SFC, formato 414",Iris
@@ -38860,10 +39185,13 @@ iris,2026-07-31,tasa_desembolsos,19.047306403895526,"SFC, formato 414",Iris
 iris,2026-08-31,tasa_desembolsos,18.900258731115294,"SFC, formato 414",Iris
 iris,2026-09-30,tasa_desembolsos,18.978676198685342,"SFC, formato 414",Iris
 iris,2026-10-31,tasa_desembolsos,19.42298997777907,"SFC, formato 414",Iris
+lulo,2025-02-28,tasa_desembolsos,22.558940552094775,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,tasa_desembolsos,21.55873774318067,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,tasa_desembolsos,21.312899438984278,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,tasa_desembolsos,21.555099454260443,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,tasa_desembolsos,20.16110082860851,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,tasa_desembolsos,21.48495314377673,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,tasa_desembolsos,21.071299951552884,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,tasa_desembolsos,21.028067738676192,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,tasa_desembolsos,20.333037983523518,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,tasa_desembolsos,20.856972964726292,"SFC, formato 414",Lulo Bank
@@ -38891,6 +39219,7 @@ rappipay,2025-04-30,tasa_desembolsos,18.14086956521739,"SFC, formato 414",RappiP
 rappipay,2025-05-31,tasa_desembolsos,20.789219798349578,"SFC, formato 414",RappiPay
 rappipay,2025-06-30,tasa_desembolsos,21.360375422352018,"SFC, formato 414",RappiPay
 rappipay,2025-07-31,tasa_desembolsos,22.457701168708052,"SFC, formato 414",RappiPay
+rappipay,2025-08-31,tasa_desembolsos,22.939565788296353,"SFC, formato 414",RappiPay
 rappipay,2025-09-30,tasa_desembolsos,22.66552673003831,"SFC, formato 414",RappiPay
 rappipay,2025-10-31,tasa_desembolsos,22.731962409242957,"SFC, formato 414",RappiPay
 rappipay,2025-11-30,tasa_desembolsos,23.388816786493035,"SFC, formato 414",RappiPay
@@ -38900,10 +39229,13 @@ rappipay,2026-07-31,tasa_desembolsos,25.24730727129819,"SFC, formato 414",RappiP
 rappipay,2026-08-31,tasa_desembolsos,25.489059322666424,"SFC, formato 414",RappiPay
 rappipay,2026-09-30,tasa_desembolsos,25.456809670959007,"SFC, formato 414",RappiPay
 rappipay,2026-10-31,tasa_desembolsos,23.33532015264531,"SFC, formato 414",RappiPay
+sis_bancos,2025-02-28,tasa_desembolsos,15.554385175963157,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,tasa_desembolsos,15.628914946552543,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,tasa_desembolsos,16.18705233009662,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,tasa_desembolsos,15.617608523571592,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,tasa_desembolsos,15.397440765104983,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,tasa_desembolsos,15.3499825440968,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,tasa_desembolsos,15.534684699127387,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,tasa_desembolsos,14.993599507432968,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,tasa_desembolsos,15.61150268006121,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,tasa_desembolsos,15.34059727283578,"SFC, formato 414",Bancos (sistema)
@@ -38913,10 +39245,13 @@ sis_bancos,2026-07-31,tasa_desembolsos,18.379600810711622,"SFC, formato 414",Ban
 sis_bancos,2026-08-31,tasa_desembolsos,18.55216345273081,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,tasa_desembolsos,18.053550855960186,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,tasa_desembolsos,17.859040516911097,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,tasa_desembolsos,19.642148065077592,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,tasa_desembolsos,18.666514207569506,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,tasa_desembolsos,19.07121531864401,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,tasa_desembolsos,18.31350834646551,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,tasa_desembolsos,17.52485699401171,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,tasa_desembolsos,18.67058098971669,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,tasa_desembolsos,17.568563442128916,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,tasa_desembolsos,17.55287682311178,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,tasa_desembolsos,17.474509639401415,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,tasa_desembolsos,18.20548369662433,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -38926,10 +39261,13 @@ sis_cf,2026-07-31,tasa_desembolsos,21.583605306489616,"SFC, formato 414",Compañ
 sis_cf,2026-08-31,tasa_desembolsos,22.203710279091283,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,tasa_desembolsos,24.57701250230707,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,tasa_desembolsos,25.628823368589607,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,tasa_desembolsos,15.622825745791404,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,tasa_desembolsos,15.691987632537387,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,tasa_desembolsos,16.245445259123468,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,tasa_desembolsos,15.684510873469534,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,tasa_desembolsos,15.454542086712435,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,tasa_desembolsos,15.410671027055388,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,tasa_desembolsos,15.592785306116431,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,tasa_desembolsos,15.055236346172212,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,tasa_desembolsos,15.672067513016353,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,tasa_desembolsos,15.413386730984069,"SFC, formato 414",Establecimientos de crédito
@@ -38939,10 +39277,13 @@ sis_ec,2026-07-31,tasa_desembolsos,18.463196654353148,"SFC, formato 414",Estable
 sis_ec,2026-08-31,tasa_desembolsos,18.649568941247157,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,tasa_desembolsos,18.219211544484804,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,tasa_desembolsos,18.080331648765288,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,tasa_desembolsos,15.622825745791404,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,tasa_desembolsos,15.691987632537387,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,tasa_desembolsos,16.245445259123468,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,tasa_desembolsos,15.684510873469534,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,tasa_desembolsos,15.454542086712435,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,tasa_desembolsos,15.410671027055388,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,tasa_desembolsos,15.592785306116431,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,tasa_desembolsos,15.055236346172212,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,tasa_desembolsos,15.672067513016353,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,tasa_desembolsos,15.413386730984069,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -38952,10 +39293,13 @@ sis_total,2026-07-31,tasa_desembolsos,18.463196654353148,"SFC, formato 414",Sist
 sis_total,2026-08-31,tasa_desembolsos,18.649568941247157,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-09-30,tasa_desembolsos,18.219211544484804,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-10-31,tasa_desembolsos,18.080331648765288,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+universo,2025-02-28,tasa_desembolsos,20.694797687702465,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,tasa_desembolsos,20.601459701331496,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,tasa_desembolsos,19.78364849965261,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,tasa_desembolsos,20.297591493895176,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,tasa_desembolsos,19.525561636367073,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,tasa_desembolsos,20.046888454634374,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,tasa_desembolsos,19.826347293431365,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,tasa_desembolsos,19.88394868227579,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,tasa_desembolsos,19.462878156054536,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,tasa_desembolsos,20.522414356694707,"SFC, formato 414",Total neobancos y billeteras
@@ -38965,10 +39309,13 @@ universo,2026-07-31,tasa_desembolsos,23.663903808173323,"SFC, formato 414",Total
 universo,2026-08-31,tasa_desembolsos,25.065603592173595,"SFC, formato 414",Total neobancos y billeteras
 universo,2026-09-30,tasa_desembolsos,30.65137537436235,"SFC, formato 414",Total neobancos y billeteras
 universo,2026-10-31,tasa_desembolsos,32.60854037565562,"SFC, formato 414",Total neobancos y billeteras
+grupo_banco,2025-02-28,tasa_tc,4.995007942797506,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-03-31,tasa_tc,7.9420265292103,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-04-30,tasa_tc,16.78511000323491,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-05-31,tasa_tc,10.030159706808135,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-06-30,tasa_tc,11.275841143883456,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-07-31,tasa_tc,11.843382293861135,"SFC, formato 414",Bancos digitales
+grupo_banco,2025-08-31,tasa_tc,11.254990668629409,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-09-30,tasa_tc,11.349676411485625,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-10-31,tasa_tc,10.24476035331371,"SFC, formato 414",Bancos digitales
 grupo_banco,2025-11-30,tasa_tc,12.144083212882666,"SFC, formato 414",Bancos digitales
@@ -38978,10 +39325,13 @@ grupo_banco,2026-07-31,tasa_tc,13.103611001253752,"SFC, formato 414",Bancos digi
 grupo_banco,2026-08-31,tasa_tc,12.126783275248103,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-09-30,tasa_tc,13.355912554313358,"SFC, formato 414",Bancos digitales
 grupo_banco,2026-10-31,tasa_tc,13.838486636976217,"SFC, formato 414",Bancos digitales
+grupo_cf,2025-02-28,tasa_tc,25.88143175318317,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-03-31,tasa_tc,24.128223212428587,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-04-30,tasa_tc,24.75607700183434,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-05-31,tasa_tc,25.035792663272378,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-06-30,tasa_tc,24.291463860273698,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-07-31,tasa_tc,23.549589747238535,"SFC, formato 414",Compañías de financiamiento digitales
+grupo_cf,2025-08-31,tasa_tc,23.886139256101234,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-09-30,tasa_tc,23.871854362506085,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-10-31,tasa_tc,23.265093311445966,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2025-11-30,tasa_tc,23.611716970759904,"SFC, formato 414",Compañías de financiamiento digitales
@@ -38991,10 +39341,13 @@ grupo_cf,2026-07-31,tasa_tc,27.34245878945413,"SFC, formato 414",Compañías de 
 grupo_cf,2026-08-31,tasa_tc,28.108634381582867,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-09-30,tasa_tc,27.795374917735035,"SFC, formato 414",Compañías de financiamiento digitales
 grupo_cf,2026-10-31,tasa_tc,27.210011966254662,"SFC, formato 414",Compañías de financiamiento digitales
+lulo,2025-02-28,tasa_tc,4.995007942797506,"SFC, formato 414",Lulo Bank
+lulo,2025-03-31,tasa_tc,7.9420265292103,"SFC, formato 414",Lulo Bank
 lulo,2025-04-30,tasa_tc,16.78511000323491,"SFC, formato 414",Lulo Bank
 lulo,2025-05-31,tasa_tc,10.030159706808135,"SFC, formato 414",Lulo Bank
 lulo,2025-06-30,tasa_tc,11.275841143883456,"SFC, formato 414",Lulo Bank
 lulo,2025-07-31,tasa_tc,11.843382293861135,"SFC, formato 414",Lulo Bank
+lulo,2025-08-31,tasa_tc,11.254990668629409,"SFC, formato 414",Lulo Bank
 lulo,2025-09-30,tasa_tc,11.349676411485625,"SFC, formato 414",Lulo Bank
 lulo,2025-10-31,tasa_tc,10.24476035331371,"SFC, formato 414",Lulo Bank
 lulo,2025-11-30,tasa_tc,12.144083212882666,"SFC, formato 414",Lulo Bank
@@ -39004,10 +39357,13 @@ lulo,2026-07-31,tasa_tc,13.103611001253752,"SFC, formato 414",Lulo Bank
 lulo,2026-08-31,tasa_tc,12.126783275248103,"SFC, formato 414",Lulo Bank
 lulo,2026-09-30,tasa_tc,13.355912554313358,"SFC, formato 414",Lulo Bank
 lulo,2026-10-31,tasa_tc,13.838486636976217,"SFC, formato 414",Lulo Bank
+nu,2025-02-28,tasa_tc,25.88143175318317,"SFC, formato 414",Nu
+nu,2025-03-31,tasa_tc,24.128223212428587,"SFC, formato 414",Nu
 nu,2025-04-30,tasa_tc,24.75607700183434,"SFC, formato 414",Nu
 nu,2025-05-31,tasa_tc,25.035792663272378,"SFC, formato 414",Nu
 nu,2025-06-30,tasa_tc,24.291463860273698,"SFC, formato 414",Nu
 nu,2025-07-31,tasa_tc,23.549589747238535,"SFC, formato 414",Nu
+nu,2025-08-31,tasa_tc,23.886139256101234,"SFC, formato 414",Nu
 nu,2025-09-30,tasa_tc,23.871854362506085,"SFC, formato 414",Nu
 nu,2025-10-31,tasa_tc,23.265093311445966,"SFC, formato 414",Nu
 nu,2025-11-30,tasa_tc,23.611716970759904,"SFC, formato 414",Nu
@@ -39017,10 +39373,13 @@ nu,2026-07-31,tasa_tc,27.34245878945413,"SFC, formato 414",Nu
 nu,2026-08-31,tasa_tc,28.108634381582867,"SFC, formato 414",Nu
 nu,2026-09-30,tasa_tc,27.795374917735035,"SFC, formato 414",Nu
 nu,2026-10-31,tasa_tc,27.210011966254662,"SFC, formato 414",Nu
+sis_bancos,2025-02-28,tasa_tc,15.297924659788999,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-03-31,tasa_tc,14.574434608312975,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-04-30,tasa_tc,15.240299449686312,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-05-31,tasa_tc,15.26146699039353,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-06-30,tasa_tc,14.591474893122355,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-07-31,tasa_tc,14.402547499357027,"SFC, formato 414",Bancos (sistema)
+sis_bancos,2025-08-31,tasa_tc,14.501648590831321,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-09-30,tasa_tc,14.595621393945574,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-10-31,tasa_tc,14.214081434114307,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2025-11-30,tasa_tc,14.339108540617163,"SFC, formato 414",Bancos (sistema)
@@ -39030,10 +39389,13 @@ sis_bancos,2026-07-31,tasa_tc,16.3159482499007,"SFC, formato 414",Bancos (sistem
 sis_bancos,2026-08-31,tasa_tc,17.402519799979775,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-09-30,tasa_tc,17.02562321368442,"SFC, formato 414",Bancos (sistema)
 sis_bancos,2026-10-31,tasa_tc,16.654078074158708,"SFC, formato 414",Bancos (sistema)
+sis_cf,2025-02-28,tasa_tc,24.783645013789346,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-03-31,tasa_tc,23.40230116042351,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-04-30,tasa_tc,23.957688502348507,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-05-31,tasa_tc,24.289216709982885,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-06-30,tasa_tc,23.68414831636925,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-07-31,tasa_tc,23.10089053888858,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_cf,2025-08-31,tasa_tc,22.976599476335146,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-09-30,tasa_tc,23.276129716246423,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-10-31,tasa_tc,22.77045086651592,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2025-11-30,tasa_tc,23.041497972080716,"SFC, formato 414",Compañías de financiamiento (sistema)
@@ -39043,10 +39405,13 @@ sis_cf,2026-07-31,tasa_tc,26.69984707026174,"SFC, formato 414",Compañías de fi
 sis_cf,2026-08-31,tasa_tc,27.37321761553567,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-09-30,tasa_tc,27.39076782834161,"SFC, formato 414",Compañías de financiamiento (sistema)
 sis_cf,2026-10-31,tasa_tc,26.841492009607716,"SFC, formato 414",Compañías de financiamiento (sistema)
+sis_ec,2025-02-28,tasa_tc,16.2826406277241,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-03-31,tasa_tc,15.442994021440136,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-04-30,tasa_tc,16.0945588895246,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-05-31,tasa_tc,16.164781757133976,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-06-30,tasa_tc,15.522065586360252,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-07-31,tasa_tc,15.330050378005351,"SFC, formato 414",Establecimientos de crédito
+sis_ec,2025-08-31,tasa_tc,15.386053799179242,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-09-30,tasa_tc,15.494185944583748,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-10-31,tasa_tc,15.08607038849214,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2025-11-30,tasa_tc,15.2610914140897,"SFC, formato 414",Establecimientos de crédito
@@ -39056,10 +39421,13 @@ sis_ec,2026-07-31,tasa_tc,17.728249853748704,"SFC, formato 414",Establecimientos
 sis_ec,2026-08-31,tasa_tc,18.742552791085007,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-09-30,tasa_tc,18.398334395556272,"SFC, formato 414",Establecimientos de crédito
 sis_ec,2026-10-31,tasa_tc,18.10034400404956,"SFC, formato 414",Establecimientos de crédito
+sis_total,2025-02-28,tasa_tc,16.2826406277241,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-03-31,tasa_tc,15.442994021440136,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-04-30,tasa_tc,16.0945588895246,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-05-31,tasa_tc,16.164781757133976,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-06-30,tasa_tc,15.522065586360252,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-07-31,tasa_tc,15.330050378005351,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+sis_total,2025-08-31,tasa_tc,15.386053799179242,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-09-30,tasa_tc,15.494185944583748,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-10-31,tasa_tc,15.08607038849214,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2025-11-30,tasa_tc,15.2610914140897,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
@@ -39069,10 +39437,13 @@ sis_total,2026-07-31,tasa_tc,17.728249853748704,"SFC, formato 414",Sistema (esta
 sis_total,2026-08-31,tasa_tc,18.742552791085007,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-09-30,tasa_tc,18.398334395556272,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
 sis_total,2026-10-31,tasa_tc,18.10034400404956,"SFC, formato 414",Sistema (establecimientos de crédito y SEDPE)
+universo,2025-02-28,tasa_tc,25.88032397786616,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-03-31,tasa_tc,24.123823428777452,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-04-30,tasa_tc,24.749256867962753,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-05-31,tasa_tc,25.023107563304805,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-06-30,tasa_tc,24.197286150176854,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-07-31,tasa_tc,23.407773564293553,"SFC, formato 414",Total neobancos y billeteras
+universo,2025-08-31,tasa_tc,23.696405589835525,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-09-30,tasa_tc,23.662196075559418,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-10-31,tasa_tc,23.016080844035308,"SFC, formato 414",Total neobancos y billeteras
 universo,2025-11-30,tasa_tc,23.387553748483903,"SFC, formato 414",Total neobancos y billeteras

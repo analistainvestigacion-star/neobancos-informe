@@ -1,7 +1,7 @@
 {
  "errores": [],
  "alertas": [
-  "Formato 414 sin meses todavía: 2025-08-31, 2026-01-31, 2026-02-28, 2026-03-31, 2026-04-30, 2026-05-31",
+  "Formato 414 sin meses todavía: 2026-01-31, 2026-02-28, 2026-03-31, 2026-04-30, 2026-05-31",
   "Salto activo bold 2024-06-30: +59%",
   "Salto activo movii 2024-09-30: +219%",
   "Salto activo movii 2024-10-31: -61%",

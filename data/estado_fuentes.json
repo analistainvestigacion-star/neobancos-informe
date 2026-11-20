@@ -1,0 +1,72 @@
+{
+ "cuif": {
+  "id": "mxk5-ce6w",
+  "nombre": "Información financiera con fines de supervisión – CUIF por moneda Entidades vigiladas",
+  "rows_updated_at": "2026-11-17T22:36:48+00:00"
+ },
+ "captaciones": {
+  "id": "p22c-4r9c",
+  "nombre": "Captaciones por rangos",
+  "rows_updated_at": "2026-11-17T21:18:40+00:00"
+ },
+ "fogafin": {
+  "id": "frdr-biuv",
+  "nombre": "Saldos por producto de depósito y entidad inscrita",
+  "rows_updated_at": "2026-11-13T17:08:55+00:00"
+ },
+ "cartera": {
+  "id": "rvii-eis8",
+  "nombre": "Distribución de cartera por producto",
+  "rows_updated_at": "2026-11-17T21:15:11+00:00"
+ },
+ "f414": {
+  "id": "w9zh-vetq",
+  "nombre": "Tasas de interés activas por tipo de crédito – Histórico",
+  "rows_updated_at": "2026-10-30T16:50:04+00:00"
+ },
+ "f414_reciente": {
+  "id": "qzsc-9esp",
+  "nombre": "Tasas de interés activas por tipo de crédito – Últimos dos meses",
+  "rows_updated_at": "2026-11-20T22:04:20+00:00"
+ },
+ "f441": {
+  "id": "axk9-g2nh",
+  "nombre": "Tasas de interés de captación y operaciones del mercado monetario.",
+  "rows_updated_at": "2026-11-20T14:09:03+00:00"
+ },
+ "tarjetas": {
+  "id": "h2jg-r3zg",
+  "nombre": "Tarjetas de crédito y débito",
+  "rows_updated_at": "2026-11-17T21:40:47+00:00"
+ },
+ "inclusion": {
+  "id": "kx2f-xjdq",
+  "nombre": "Inclusión Financiera",
+  "rows_updated_at": "2026-09-10T19:42:49+00:00"
+ },
+ "canales": {
+  "id": "bzdm-fkaz",
+  "nombre": "Operaciones efectuadas a través de los canales de distribución o servicios transaccionales",
+  "rows_updated_at": "2026-08-21T18:51:25+00:00"
+ },
+ "solvencia": {
+  "id": "x586-r5d2",
+  "nombre": "Solvencia Individual",
+  "rows_updated_at": "2026-11-17T21:23:40+00:00"
+ },
+ "dbm": {
+  "id": "kx2f-xjdq",
+  "nombre": "Inclusión Financiera",
+  "rows_updated_at": "2026-09-10T19:42:49+00:00"
+ },
+ "depositantes": {
+  "id": "uhdk-a4i6",
+  "nombre": "Saldos de depósitos y depositantes por entidad inscrita",
+  "rows_updated_at": "2026-11-03T15:27:37+00:00"
+ },
+ "entidades": {
+  "id": "sr9n-792w",
+  "nombre": "Entidades  vigiladas por la Superfinanciera",
+  "rows_updated_at": "2026-11-20T13:00:04+00:00"
+ }
+}
