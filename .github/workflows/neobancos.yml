@@ -1,6 +1,9 @@
 # Actualización periódica de los datos públicos del informe de Neobancos.
 # Descarga de datos.gov.co (SFC y Fogafín), consolida, valida y publica en colombiafintech.co.
 # La fecha de la corrida programada se explica en docs/neobancos/actualizacion_datos_publicos.md.
+#
+# Ampliación (informe web): también descarga los totales del sistema (fuentes "_sistema"),
+# arma el informe web (etl/), lo publica en GitHub Pages y abre un issue para revisar los textos.
 
 name: neobancos-datos-publicos
 
@@ -13,7 +16,7 @@ on:
   workflow_dispatch:
     inputs:
       desde:
-        description: "Fecha inicial para el formato 414 (AAAA-MM-DD). Vacío = todo el histórico."
+        description: "Fecha inicial para el formato 414 (AAAA-MM-DD). Vacío = últimos tres meses."
         required: false
         default: ""
       publicar:
@@ -23,6 +26,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   actualizar:
@@ -31,6 +35,7 @@ jobs:
     env:
       SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
       NEOBANCOS_HILOS: "8"
+      HAY_WP: ${{ secrets.WP_URL != '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -44,15 +49,21 @@ jobs:
       - name: Extraer fuentes livianas
         run: uv run python -m scripts.neobancos.extraer entidades_sfc captaciones fogafin_productos fogafin_depositantes tarjetas quejas inclusion cartera tasas_captacion cuif canales
 
+      - name: Extraer fuentes del sistema y solvencia (ampliación para el informe web)
+        run: uv run python -m scripts.neobancos.extraer solvencia solvencia_sistema cuif_sistema captaciones_sistema fogafin_productos_sistema fogafin_depositantes_sistema inclusion_sistema cartera_sistema tarjetas_sistema tasas_captacion_sistema
+
       - name: Extraer formato 414 (pesado)
         run: |
           DESDE="${{ github.event.inputs.desde }}"
           if [ -z "$DESDE" ]; then DESDE="$(date -d '-3 months' +%Y-%m-01)"; fi
-          uv run python -m scripts.neobancos.extraer --desde "$DESDE" tasas_colocacion
-          uv run python -m scripts.neobancos.extraer tasas_colocacion_recientes
+          uv run python -m scripts.neobancos.extraer --desde "$DESDE" tasas_colocacion tasas_colocacion_sistema
+          uv run python -m scripts.neobancos.extraer tasas_colocacion_recientes tasas_colocacion_recientes_sistema
 
       - name: Consolidar y validar
         run: uv run python -m scripts.neobancos.consolidar
+
+      - name: Informe web (indicadores, validación y datos de la página)
+        run: uv run python -m etl.cli todo
 
       - name: Guardar resultados
         uses: actions/upload-artifact@v4
@@ -63,20 +74,39 @@ jobs:
             data/neobancos/web/
             data/neobancos/raw/_extraccion.json
 
-      - name: Guardar el histórico del formato 414 en el repositorio
+      - name: Guardar el histórico del formato 414 y el informe web en el repositorio
         # El 414 se descarga de forma incremental; el histórico vive en el repo para que la
         # siguiente corrida no tenga que bajarlo completo otra vez.
         run: |
           git config user.name "neobancos-bot"
           git config user.email "neobancos-bot@users.noreply.github.com"
-          git add data/neobancos/raw/tasas_colocacion.csv data/neobancos/raw/_extraccion.json
+          git add data/neobancos/raw/tasas_colocacion.csv data/neobancos/raw/tasas_colocacion_sistema.csv data/neobancos/raw/_extraccion.json data/processed site/data
           git diff --cached --quiet || git commit -m "Neobancos: actualización de datos públicos"
           git push
 
       - name: Publicar en WordPress
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.publicar == 'true' }}
+        # Solo si están configurados los secretos de WordPress (ver docs/neobancos/).
+        if: ${{ env.HAY_WP == 'true' && (github.event_name == 'schedule' || github.event.inputs.publicar == 'true') }}
         env:
           WP_URL: ${{ secrets.WP_URL }}
           WP_USER: ${{ secrets.WP_USER }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
         run: uv run python -m scripts.neobancos.publicar_wp
+
+      - name: Recordatorio para revisar los textos del informe web
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner, repo: context.repo.repo,
+              title: `Datos nuevos (${new Date().toISOString().slice(0, 10)}): revisar textos del informe`,
+              body: "Las cifras y gráficas del informe web ya se actualizaron. Para revisar los párrafos de análisis, abrir Claude Code en la carpeta CF y pedir: /actualizar-textos-neobancos"
+            });
+
+  informe-web:
+    needs: actualizar
+    uses: ./.github/workflows/publicar.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

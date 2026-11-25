@@ -156,7 +156,9 @@ def extraer_fuente(
     where = filtro_entidades(fuente, entidades)
     if fuente.filtro:
         where += f" AND {fuente.filtro}"
-    if desde and fuente.campo_fecha in ("fecha_corte", "fechacorte"):
+    # Ampliación: una fuente puede fijar su propia fecha mínima (fuente.desde).
+    desde = max(filter(None, [desde, fuente.desde]), default=None)
+    if desde and fuente.campo_fecha in ("fecha_corte", "fechacorte", "fecha"):
         where += f" AND {fuente.campo_fecha} >= '{desde}T00:00:00'"
 
     if fuente.modo == "por_fecha":

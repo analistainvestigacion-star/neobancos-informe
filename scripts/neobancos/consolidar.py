@@ -474,7 +474,9 @@ def main(argv: list[str]) -> int:
 
     crudas = {}
     for f in FUENTES:
-        if f.clave == "entidades_sfc":
+        # Las fuentes de alcance "sistema" son de la ampliación para el informe web (etl/);
+        # no se consolidan en el Excel ni en los JSON de esta automatización.
+        if f.clave == "entidades_sfc" or f.alcance == "sistema":
             continue
         df = leer(f.clave)
         crudas[f.clave] = (

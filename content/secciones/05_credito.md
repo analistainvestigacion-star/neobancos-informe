@@ -19,7 +19,7 @@ La brecha indica que la captación avanzó más rápido que la capacidad de orig
 ```
 
 ```grafico
-{"id": "cartera_serie", "tipo": "lineas", "indicador": "cartera_bruta", "entidades": ["universo", "grupo_cf", "grupo_banco"], "formato": "billones", "rotulo": "Evolución de la cartera bruta", "titulo": "La cartera del grupo llegó a {{v:cartera_bruta:universo:ultimo:billones}} en {{fecha:cartera_bruta}}", "nota": "El salto de 2026 corresponde al inicio de operaciones de Nequi como compañía de financiamiento."}
+{"id": "cartera_serie", "tipo": "lineas", "indicador": "cartera_bruta", "entidades": ["universo", "grupo_cf", "grupo_banco"], "formato": "billones", "rotulo": "Evolución de la cartera bruta", "titulo": "La cartera del grupo llegó a {{v:cartera_bruta:universo:ultimo:billones}} en {{fecha:cartera_bruta}}"}
 ```
 
 ### Calidad de cartera: mora y calificación por riesgo
@@ -36,7 +36,7 @@ La calificación por riesgo debe leerse con cautela: solo {{ratio:cartera_calif_
 ```
 
 ```grafico
-{"id": "icv_serie", "tipo": "lineas", "ratio": ["cartera_vencida", "cartera_consumo_dist"], "entidades": ["universo", "sis_ec", "sis_cf"], "formato": "pct", "escala_libre": true, "fuente": "SFC, distribución de cartera por producto", "rotulo": "Evolución de la cartera de consumo vencida", "titulo": "La mora de consumo del grupo se mantiene por debajo de la de las compañías de financiamiento"}
+{"id": "icv_serie", "tipo": "lineas", "ratio": ["cartera_vencida", "cartera_consumo_dist"], "entidades": ["universo", "sis_ec", "sis_cf"], "formato": "pct", "escala_libre": true, "fuente": "SFC, distribución de cartera por producto", "rotulo": "Evolución de la cartera de consumo vencida", "titulo": "Mora de consumo: {{ratio:cartera_vencida:cartera_consumo_dist:universo:ultimo}} en el grupo y {{ratio:cartera_vencida:cartera_consumo_dist:sis_cf:ultimo}} en las compañías de financiamiento ({{fecha:cartera_vencida}})"}
 ```
 
 ```grafico

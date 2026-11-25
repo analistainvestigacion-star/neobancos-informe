@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
-from .extract import RAIZ
+from .fuentes_jefe import RAIZ
 from .transform import PROC, Universo
 
 SITE = RAIZ / "site" / "data"
@@ -28,7 +28,7 @@ def publicar() -> None:
     SITE.mkdir(parents=True, exist_ok=True)
     df = pd.read_parquet(PROC / "indicadores.parquet")
     tablas = json.loads((PROC / "tablas.json").read_text(encoding="utf-8"))
-    estado = RAIZ / "data" / "estado_fuentes.json"
+    estado = RAIZ / "data" / "neobancos" / "raw" / "_extraccion.json"  # registro de la automatización oficial
 
     series: dict = {}
     for (ind, ent), g in df.groupby(["indicador", "entidad"]):

@@ -7,3 +7,7 @@ data/*.log
 .claude/
 data/neobancos/raw/_cortes/
 data/neobancos/*.xlsx
+data/neobancos/raw/*.csv
+!data/neobancos/raw/tasas_colocacion.csv
+!data/neobancos/raw/tasas_colocacion_sistema.csv
+data/neobancos/web/

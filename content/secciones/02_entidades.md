@@ -8,7 +8,7 @@ El crecimiento está concentrado. {{lider:activo:informe}} reúne {{conc:activo:
 
 Por licencia, las compañías de financiamiento digitales suman {{v:activo:grupo_cf:informe:billones}}, el banco digital {{v:activo:grupo_banco:informe:billones}} y las SEDPE {{v:activo:grupo_sedpe:informe:billones}}. Entre las entidades que ya operaban en {{base}}, la de mayor crecimiento fue {{mas_crec:activo}}.
 
-Después del corte, el mapa cambió: en 2026 Nequi inició operaciones como compañía de financiamiento. En {{fecha:activo}} ya registraba activos por {{v:activo:nequi:ultimo:billones}}, lo que explica el salto de las series en 2026.
+Después del corte llegaron nuevas licencias: Addi y Plata como compañías de financiamiento y Revolut como banco. Sus series empiezan cuando comienzan a reportar, por lo que no entran en las comparaciones anuales.
 <!-- /analisis -->
 
 ```grafico
@@ -27,7 +27,7 @@ Después del corte, el mapa cambió: en 2026 Nequi inició operaciones como comp
 <!-- analisis:solidez -->
 La expansión todavía no se traduce en utilidades para el grupo. En {{anio}} registró un resultado neto de {{v:utilidad:universo:informe:milm}}, equivalente a {{ratio:utilidad:patrimonio:universo:informe}} de su patrimonio. Los establecimientos de crédito obtuvieron {{ratio:utilidad:patrimonio:sis_ec:informe}}.
 
-Es el patrón de entidades en etapa de crecimiento, que invierten en adquirir clientes y en tecnología antes de alcanzar escala. Algunas, sobre todo SEDPE y negocios de pagos, ya reportan utilidades.
+Es el patrón de entidades en etapa de crecimiento, que invierten en adquirir clientes y en tecnología antes de alcanzar escala. Algunas ya reportan utilidades: tanto entidades de crédito con más trayectoria como negocios de pagos.
 
 La pérdida no compromete la solidez. La relación de solvencia total del universo fue {{v:solvencia:universo:informe:dec}} %, frente a {{v:solvencia:sis_ec:informe:dec}} % de los establecimientos de crédito y un mínimo regulatorio de nueve por ciento. El patrimonio conjunto llegó a {{v:patrimonio:universo:informe:billones}}.
 <!-- /analisis -->

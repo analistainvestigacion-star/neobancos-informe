@@ -1,0 +1,170 @@
+{
+  "entidades_sfc": {
+    "dataset": "sr9n-792w",
+    "filas": 19,
+    "ultimo_corte": "",
+    "extraido": "2026-11-25T22:18:03+00:00",
+    "segundos": 1.0,
+    "desde": null
+  },
+  "captaciones": {
+    "dataset": "p22c-4r9c",
+    "filas": 28448,
+    "ultimo_corte": "2026-09-30",
+    "extraido": "2026-11-25T22:18:10+00:00",
+    "segundos": 6.6,
+    "desde": null
+  },
+  "fogafin_productos": {
+    "dataset": "frdr-biuv",
+    "filas": 1140,
+    "ultimo_corte": "2026-07-31",
+    "extraido": "2026-11-25T22:18:11+00:00",
+    "segundos": 1.7,
+    "desde": null
+  },
+  "fogafin_depositantes": {
+    "dataset": "uhdk-a4i6",
+    "filas": 617,
+    "ultimo_corte": "2026-07-31",
+    "extraido": "2026-11-25T22:18:13+00:00",
+    "segundos": 1.2,
+    "desde": null
+  },
+  "tarjetas": {
+    "dataset": "h2jg-r3zg",
+    "filas": 7380,
+    "ultimo_corte": "2026-09-30",
+    "extraido": "2026-11-25T22:18:14+00:00",
+    "segundos": 1.6,
+    "desde": null
+  },
+  "quejas": {
+    "dataset": "xyy7-rn7p",
+    "filas": 13179,
+    "ultimo_corte": "2026-10",
+    "extraido": "2026-11-25T22:18:19+00:00",
+    "segundos": 5.0,
+    "desde": null
+  },
+  "inclusion": {
+    "dataset": "kx2f-xjdq",
+    "filas": 6272,
+    "ultimo_corte": "2026-06-30",
+    "extraido": "2026-11-25T22:18:54+00:00",
+    "segundos": 34.7,
+    "desde": null
+  },
+  "cartera": {
+    "dataset": "rvii-eis8",
+    "filas": 4983,
+    "ultimo_corte": "2026-09-30",
+    "extraido": "2026-11-25T22:18:56+00:00",
+    "segundos": 1.9,
+    "desde": null
+  },
+  "tasas_captacion": {
+    "dataset": "axk9-g2nh",
+    "filas": 7010,
+    "ultimo_corte": "2026-11-01",
+    "extraido": "2026-11-25T22:19:00+00:00",
+    "segundos": 4.4,
+    "desde": null
+  },
+  "cuif": {
+    "dataset": "mxk5-ce6w",
+    "filas": 30220,
+    "ultimo_corte": "2026-09-30",
+    "extraido": "2026-11-25T22:19:15+00:00",
+    "segundos": 14.3,
+    "desde": null
+  },
+  "canales": {
+    "dataset": "bzdm-fkaz",
+    "filas": 4637,
+    "ultimo_corte": "2026-09-30",
+    "extraido": "2026-11-25T22:19:21+00:00",
+    "segundos": 6.7,
+    "desde": null
+  },
+  "solvencia": {
+    "dataset": "x586-r5d2",
+    "filas": 822,
+    "ultimo_corte": "2026-09-30",
+    "extraido": "2026-11-25T22:19:23+00:00",
+    "segundos": 1.5,
+    "desde": null
+  },
+  "solvencia_sistema": {
+    "dataset": "x586-r5d2",
+    "filas": 6088,
+    "ultimo_corte": "2026-09-30",
+    "extraido": "2026-11-25T22:19:25+00:00",
+    "segundos": 1.9,
+    "desde": null
+  },
+  "cuif_sistema": {
+    "dataset": "mxk5-ce6w",
+    "filas": 33765,
+    "ultimo_corte": "2026-09-30",
+    "extraido": "2026-11-25T22:19:36+00:00",
+    "segundos": 11.4,
+    "desde": null
+  },
+  "captaciones_sistema": {
+    "dataset": "p22c-4r9c",
+    "filas": 64504,
+    "ultimo_corte": "2026-09-30",
+    "extraido": "2026-11-25T22:19:51+00:00",
+    "segundos": 14.6,
+    "desde": null
+  },
+  "fogafin_productos_sistema": {
+    "dataset": "frdr-biuv",
+    "filas": 15984,
+    "ultimo_corte": "2026-07-31",
+    "extraido": "2026-11-25T22:19:54+00:00",
+    "segundos": 3.2,
+    "desde": null
+  },
+  "fogafin_depositantes_sistema": {
+    "dataset": "uhdk-a4i6",
+    "filas": 3049,
+    "ultimo_corte": "2026-07-31",
+    "extraido": "2026-11-25T22:19:55+00:00",
+    "segundos": 1.5,
+    "desde": null
+  },
+  "inclusion_sistema": {
+    "dataset": "kx2f-xjdq",
+    "filas": 11766,
+    "ultimo_corte": "2026-06-30",
+    "extraido": "2026-11-25T22:20:30+00:00",
+    "segundos": 34.6,
+    "desde": null
+  },
+  "cartera_sistema": {
+    "dataset": "rvii-eis8",
+    "filas": 34335,
+    "ultimo_corte": "2026-09-30",
+    "extraido": "2026-11-25T22:20:41+00:00",
+    "segundos": 10.7,
+    "desde": null
+  },
+  "tarjetas_sistema": {
+    "dataset": "h2jg-r3zg",
+    "filas": 22642,
+    "ultimo_corte": "2026-09-30",
+    "extraido": "2026-11-25T22:20:47+00:00",
+    "segundos": 6.7,
+    "desde": null
+  },
+  "tasas_captacion_sistema": {
+    "dataset": "axk9-g2nh",
+    "filas": 4985,
+    "ultimo_corte": "2026-11-01",
+    "extraido": "2026-11-25T22:20:52+00:00",
+    "segundos": 4.8,
+    "desde": null
+  }
+}

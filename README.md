@@ -1,76 +1,53 @@
-# Informe vivo: Neobancos y Billeteras Digitales
+# Neobancos y Billeteras Digitales: datos públicos e informe web
 
-Este repositorio genera el informe web *Fintech Snapshot 2025: Neobancos y Billeteras Digitales* a partir de los datos abiertos de la Superintendencia Financiera de Colombia (SFC) y de Fogafín en datos.gov.co. Cuando las fuentes publican datos nuevos, las cifras, las gráficas y los números dentro de los párrafos se actualizan solos. Los párrafos de análisis se revisan desde Claude Code (sin API de pago) y salen a la web solo cuando alguien del equipo los aprueba.
+Este repositorio tiene dos partes:
 
-## Cómo funciona
+1. **La automatización oficial de datos públicos** (`scripts/neobancos/`), entregada por la dirección de investigaciones en el paquete del 18-nov-2026. Descarga de datos.gov.co las cifras de la SFC y Fogafín para el universo de **asociadas de Colombia Fintech vigiladas por la SFC** (`scripts/neobancos/entidades.csv`), arma el Excel del equipo y los JSON, y los publica en la biblioteca de medios de WordPress. Su documentación completa está en [docs/neobancos/actualizacion_datos_publicos.md](docs/neobancos/actualizacion_datos_publicos.md).
+2. **El informe web** (`etl/`, `content/`, `site/`): toma esos datos, calcula los indicadores del informe *Fintech Snapshot 2025: Neobancos y Billeteras Digitales* y los publica como una página que se inserta en WordPress.
+
+## Cómo fluye
 
 ```
-datos.gov.co ──► etl/extract.py ──► data/raw/<fuente>/<AAAA-MM>.parquet   (incremental)
-                 etl/transform.py ─► data/processed/indicadores.parquet   (entidad, fecha, indicador, valor)
-                 etl/validate.py ──► data/processed/alertas.json          (errores bloquean la publicación)
-                 etl/publish.py ───► site/data/informe.json + indicadores.csv
-                 etl/textos.py ────► cifras para redactar y validación de los párrafos
-site/embed.js ──► se inserta en WordPress y dibuja el informe con los datos de site/data/
+datos.gov.co ──► scripts/neobancos/extraer.py ──► data/neobancos/raw/<fuente>.csv
+                 scripts/neobancos/consolidar.py ─► Excel del equipo + data/neobancos/web/*.json
+                 scripts/neobancos/publicar_wp.py ► Medios de colombiafintech.co (si hay secretos de WordPress)
+                 etl/ (transformar, validar, publicar) ► site/data/informe.json ──► GitHub Pages ──► página de WordPress
 ```
 
-- **`.github/workflows/actualizar.yml`** corre el día 20 de cada mes a las 7:00 a. m. (la SFC publica la información mensual a mediados de mes) (también se puede correr a mano desde la pestaña Actions). Revisa la fecha de actualización de cada dataset y solo descarga si algo cambió. Si la validación falla, no publica y abre un issue. Si hubo datos nuevos, abre un issue recordando revisar los textos.
-- **`.github/workflows/publicar.yml`** publica `site/` en GitHub Pages. Corre después de cada actualización y cuando se aprueba un PR de textos.
+Todo corre en un solo flujo de GitHub Actions, `.github/workflows/neobancos.yml`, el día 20 de cada mes (22 en febrero). Al final abre un issue para revisar los textos. `.github/workflows/publicar.yml` vuelve a publicar la página cuando cambian los textos.
 
-## Fuentes (datos.gov.co)
+## Ampliación de la automatización para el informe web
 
-| Fuente | Dataset | Frecuencia | Uso en el informe |
-|---|---|---|---|
-| CUIF por moneda | `mxk5-ce6w` | mensual | Activos, patrimonio, depósitos y cartera por modalidad |
-| Captaciones por rangos | `p22c-4r9c` | mensual | Clientes, cuentas, personas naturales y jurídicas, rangos de saldo |
-| Fogafín, saldos por producto | `frdr-biuv` | trimestral (ene, abr, jul, oct) | Cuentas activas e inactivas, depósitos de bajo monto |
-| Distribución de cartera | `rvii-eis8` | mensual | Cartera vencida de consumo |
-| Formato 414 | `w9zh-vetq` y `qzsc-9esp` | semanal | Desembolsos, número de créditos, tasas, crédito por sexo |
-| Formato 441 | `axk9-g2nh` | diaria | Tasas y montos de CDT |
-| Tarjetas | `h2jg-r3zg` | mensual | Tarjetas de crédito y débito vigentes |
-| Inclusión financiera | `kx2f-xjdq` | trimestral | Cuentas de ahorro por sexo del titular |
-| Operaciones por canal (444) | `bzdm-fkaz` | mensual | Operaciones por canal |
+El paquete original descarga solo las 19 asociadas. El informe web compara al grupo con el sistema financiero, así que se agregaron a `scripts/neobancos/fuentes.py`, sin cambiar las fuentes existentes:
 
-Particularidades de las fuentes, ya resueltas en el código:
-- El CUIF repite filas idénticas en algunos meses (feb-2024, feb-2026). Se depuran antes de sumar.
-- Captaciones por rangos reporta los saldos en miles de pesos. Se convierten a pesos.
-- En la distribución de cartera, el renglón 5 es el total de cada producto. Los demás renglones lo desagregan.
-- En inclusión financiera, `unicap = 34` es el total nacional. Los demás son departamentos y municipios.
-- Fogafín no tiene corte de diciembre. El informe usa el corte trimestral anterior más cercano.
-- El 414 tarda unos 6 minutos por mes. Por eso se descarga mes a mes y queda guardado.
+- Dos campos opcionales en `Fuente`: `alcance` ("universo" o "sistema") y `desde` (fecha mínima fija de la fuente). `extraer.py` los respeta.
+- Fuentes nuevas con sufijo `_sistema`, que traen todas las entidades de los tipos 1, 2, 4, 32 y 128 desde 2022: CUIF, captaciones, Fogafín (productos y depositantes), inclusión financiera, cartera, tarjetas, formato 441 y formato 414 (desde 2024).
+- La fuente `solvencia` (dataset `x586-r5d2`), para el universo y para el sistema.
+
+`etl/fuentes_jefe.py` es el puente: lee esos CSV y los entrega al cálculo del informe.
 
 ## Editar el informe
 
-- **Universo:** `config/entidades.yaml`. Para agregar una entidad, se añade su tipo y código SFC. Las fechas de autorización se diligencian a mano.
-- **Textos y gráficas:** `content/secciones/*.md`. Las cifras van como marcadores, por ejemplo `{{v:depositos_total:universo:informe:billones}}`. Las gráficas son bloques de código ` ```grafico ` con un JSON. La lista completa de marcadores está al inicio de `etl/textos.py`.
-- **Párrafos de análisis:** son los que están entre `<!-- analisis:id -->` y `<!-- /analisis -->`. Sus cifras se actualizan solas; el análisis se revisa en Claude Code con `/actualizar-textos-neobancos` (abriendo Claude Code en la carpeta CF), que redacta, valida con `python -m etl.textos validar` y propone un PR. No usa la API de pago.
-- **Nombres de canales del formato 444:** `config/canales_444.yaml`. Está pendiente de completar con el instructivo de la SFC.
+- **Universo:** `scripts/neobancos/entidades.csv` (el mismo de la automatización). Grupos y comparadores del sistema: `config/entidades.yaml`.
+- **Textos y gráficas:** `content/secciones/*.md`. Las cifras van como marcadores, por ejemplo `{{v:depositos_total:universo:informe:billones}}`; la lista completa está al inicio de `etl/textos.py`. Las gráficas son bloques ` ```grafico ` con un JSON.
+- **Revisión mensual de los textos:** en Claude Code, desde la carpeta CF, `/actualizar-textos-neobancos`. `python -m etl.textos validar` verifica las reglas de la guía de estilo.
+- **Nombres de canales del formato 444:** `config/canales_444.yaml` (pendiente).
 
 ## Correr localmente
 
 ```bash
-python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
-.venv/Scripts/python -m etl.cli todo          # descargar + transformar + validar + publicar
-.venv/Scripts/python -m http.server 8765 --directory site   # vista previa en http://localhost:8765
+uv sync
+uv run python -m scripts.neobancos.extraer          # todas las fuentes (el 414 tarda horas la primera vez)
+uv run python -m scripts.neobancos.consolidar       # Excel y JSON de la automatización
+uv run python -m etl.cli todo                       # informe web
+uv run python -m http.server 8765 --directory site  # vista previa en http://localhost:8765
 ```
-
-## Puesta en marcha en GitHub
-
-1. Crear el repositorio en la cuenta del gremio y subir este código.
-2. En *Settings → Pages*, elegir **GitHub Actions** como origen.
-3. Opcional: en *Settings → Secrets and variables → Actions*, agregar `SOCRATA_APP_TOKEN` para tener más cupo en datos.gov.co.
-4. Correr *Actualizar datos* a mano una vez (con "forzar").
 
 ## Insertar en WordPress
 
-En la página del informe, agregar un bloque **HTML personalizado** con:
+En la página del informe, un bloque **HTML personalizado** con:
 
 ```html
 <div id="cf-neobancos"></div>
 <script src="https://analistainvestigacion-star.github.io/neobancos-informe/embed.js" defer></script>
-```
-
-Si el tema o un plugin de seguridad elimina las etiquetas `<script>`, se puede usar un iframe:
-
-```html
-<iframe src="https://analistainvestigacion-star.github.io/neobancos-informe/" style="width:100%;height:9000px;border:0" loading="lazy"></iframe>
 ```

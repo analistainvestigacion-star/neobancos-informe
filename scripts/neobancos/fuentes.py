@@ -44,6 +44,11 @@ class Fuente:
     unidad: str = ""
     nota: str = ""
     columnas_valor: list[str] = field(default_factory=list)
+    # Ampliación para el informe web: "sistema" = todas las entidades de los tipos de
+    # TIPOS_SISTEMA (no solo el universo), para las comparaciones con el sistema financiero.
+    alcance: str = "universo"
+    # Fecha mínima fija de la fuente (AAAA-MM-DD); vacío = todo el histórico.
+    desde: str = ""
 
 
 FUENTES: list[Fuente] = [
@@ -276,6 +281,115 @@ FUENTES: list[Fuente] = [
     ),
 ]
 
+# ---------------------------------------------------------------------------
+# Ampliación para el informe web (comparaciones con el sistema y solvencia).
+# Estas fuentes no se filtran al universo: traen todas las entidades de los tipos de
+# TIPOS_SISTEMA (bancos, corporaciones financieras, compañías de financiamiento,
+# cooperativas financieras y SEDPE). Se guardan como <clave>.csv igual que las demás.
+# ---------------------------------------------------------------------------
+TIPOS_SISTEMA = ["1", "2", "4", "32", "128"]
+DESDE_SISTEMA = "2022-01-01"
+CUENTAS_SISTEMA = (
+    "'100000','200000','300000','590000','140400','140800','141000','141200',"
+    "'210500','210700','210800','210900','211600','212000'"
+)
+SELECT_414_SISTEMA = (
+    "tipo_entidad,fecha_corte,tipo_de_cr_dito,producto_de_cr_dito,"
+    "sum(montos_desembolsados) as monto_desembolsado,sum(numero_de_creditos) as numero_de_creditos,"
+    "sum(tasa_efectiva_promedio * montos_desembolsados) as tasa_por_monto"
+)
+GROUP_414_SISTEMA = "tipo_entidad,fecha_corte,tipo_de_cr_dito,producto_de_cr_dito"
+
+FUENTES += [
+    Fuente(
+        clave="solvencia", id="x586-r5d2", nombre="Solvencia individual", publicador="SFC",
+        campo_tipo="tipo_entidad", campo_codigo="codigo_entidad", campo_fecha="fecha",
+        select="tipo_entidad,codigo_entidad,fecha,renglon,concepto,valor",
+        filtro="renglon in ('20','60')", orden="fecha,tipo_entidad,codigo_entidad,renglon",
+        frecuencia="Mensual", unidad="COP y %",
+        nota="Renglón 20 = patrimonio técnico; 60 = relación de solvencia total (%). Las SEDPE no reportan.",
+        desde=DESDE_SISTEMA,
+    ),
+    Fuente(
+        clave="solvencia_sistema", id="x586-r5d2", nombre="Solvencia individual – sistema", publicador="SFC",
+        campo_tipo="tipo_entidad", campo_codigo="codigo_entidad", campo_fecha="fecha",
+        select="tipo_entidad,codigo_entidad,fecha,renglon,valor",
+        filtro="renglon in ('20','60')", orden="fecha,tipo_entidad,codigo_entidad,renglon",
+        frecuencia="Mensual", unidad="COP y %", alcance="sistema", desde=DESDE_SISTEMA,
+    ),
+    Fuente(
+        clave="cuif_sistema", id="mxk5-ce6w", nombre="CUIF por moneda – sistema", publicador="SFC",
+        campo_tipo="tipo_entidad", campo_codigo="codigo_entidad", campo_fecha="fecha_corte",
+        select="tipo_entidad,codigo_entidad,fecha_corte,cuenta,valor",
+        filtro=f"moneda='0' AND cuenta in ({CUENTAS_SISTEMA})",
+        orden="fecha_corte,tipo_entidad,codigo_entidad,cuenta", frecuencia="Mensual", unidad="COP",
+        nota="La fuente repite filas idénticas en algunos meses (feb-2024, feb-2026): se depuran antes de sumar.",
+        alcance="sistema", desde=DESDE_SISTEMA,
+    ),
+    Fuente(
+        clave="captaciones_sistema", id="p22c-4r9c", nombre="Captaciones por rangos – sistema", publicador="SFC",
+        campo_tipo="tipoentidad", campo_codigo="codigoentidad", campo_fecha="fechacorte",
+        filtro="unidad_de_captura in ('1','3')",
+        orden="fechacorte,tipoentidad,codigoentidad,unidad_de_captura,subcuenta",
+        frecuencia="Mensual", unidad="Número y miles de COP", alcance="sistema", desde=DESDE_SISTEMA,
+    ),
+    Fuente(
+        clave="fogafin_productos_sistema", id="frdr-biuv", nombre="Fogafín, saldos por producto – sistema",
+        publicador="Fogafín", campo_tipo="codigo_tipo_entidad_sfc", campo_codigo="codigo_entidad_sfc",
+        campo_fecha="fecha_de_corte", orden="fecha_de_corte,codigo_tipo_entidad_sfc,codigo_entidad_sfc",
+        frecuencia="Trimestral", unidad="Número y miles de COP", alcance="sistema",
+    ),
+    Fuente(
+        clave="fogafin_depositantes_sistema", id="uhdk-a4i6", nombre="Fogafín, depositantes – sistema",
+        publicador="Fogafín", campo_tipo="codigo_tipo_entidad_sfc", campo_codigo="codigo_entidad_sfc",
+        campo_fecha="fecha_de_corte", orden="ano,fecha_de_corte,codigo_tipo_entidad_sfc,codigo_entidad_sfc",
+        frecuencia="Trimestral", unidad="Número y miles de COP", alcance="sistema",
+    ),
+    Fuente(
+        clave="inclusion_sistema", id="kx2f-xjdq", nombre="Inclusión financiera – sistema", publicador="SFC",
+        campo_tipo="tipo_entidad", campo_codigo="codigo_entidad", campo_fecha="fecha_corte",
+        filtro="unicap in ('34','37','38','41')",
+        orden="fecha_corte,tipo_entidad,codigo_entidad,unicap,renglon",
+        frecuencia="Trimestral", unidad="Número y COP", alcance="sistema", desde=DESDE_SISTEMA,
+    ),
+    Fuente(
+        clave="cartera_sistema", id="rvii-eis8", nombre="Distribución de cartera por producto – sistema",
+        publicador="SFC", campo_tipo="tipo_entidad", campo_codigo="codigo_entidad", campo_fecha="fecha_corte",
+        filtro="renglon='5'", orden="fecha_corte,tipo_entidad,codigo_entidad,unicap",
+        frecuencia="Mensual", unidad="COP y número", nota="Renglón 5 = total de cada producto.",
+        alcance="sistema", desde=DESDE_SISTEMA,
+    ),
+    Fuente(
+        clave="tarjetas_sistema", id="h2jg-r3zg", nombre="Tarjetas de crédito y débito – sistema", publicador="SFC",
+        campo_tipo="tipoentidad", campo_codigo="codigoentidad", campo_fecha="fechacorte",
+        filtro="subcuenta in ('5','25','35','45','85','90')",
+        orden="fechacorte,tipoentidad,codigoentidad,cod_uca,subcuenta",
+        frecuencia="Mensual", unidad="Número", alcance="sistema", desde=DESDE_SISTEMA,
+    ),
+    Fuente(
+        clave="tasas_captacion_sistema", id="axk9-g2nh", nombre="Formato 441 – sistema", publicador="SFC",
+        campo_tipo="tipoentidad", campo_codigo="codigoentidad", campo_fecha="fechacorte", modo="agregado",
+        select="tipoentidad,date_trunc_ym(fechacorte) as mes,uca,subcuenta,descripcion,"
+        "sum(monto) as monto_total,sum(tasa * monto) as tasa_por_monto",
+        group="tipoentidad,date_trunc_ym(fechacorte),uca,subcuenta,descripcion",
+        filtro="uca in ('1','7') AND tasa > 0",
+        frecuencia="Diaria (se agrega por mes)", unidad="Miles de COP y % EA", alcance="sistema",
+        desde=DESDE_SISTEMA,
+    ),
+    Fuente(
+        clave="tasas_colocacion_sistema", id="w9zh-vetq", nombre="Formato 414 – sistema", publicador="SFC",
+        campo_tipo="tipo_entidad", campo_codigo="codigo_entidad", campo_fecha="fecha_corte", modo="por_fecha",
+        select=SELECT_414_SISTEMA, group=GROUP_414_SISTEMA,
+        frecuencia="Semanal", unidad="COP, número y % EA", alcance="sistema", desde="2024-01-01",
+    ),
+    Fuente(
+        clave="tasas_colocacion_recientes_sistema", id="qzsc-9esp", nombre="Formato 414, últimos dos meses – sistema",
+        publicador="SFC", campo_tipo="tipo_entidad", campo_codigo="codigo_entidad", campo_fecha="fecha_corte",
+        modo="por_fecha", select=SELECT_414_SISTEMA, group=GROUP_414_SISTEMA,
+        frecuencia="Semanal", unidad="COP, número y % EA", alcance="sistema",
+    ),
+]
+
 FUENTES_POR_CLAVE = {f.clave: f for f in FUENTES}
 
 
@@ -285,7 +399,10 @@ def cargar_entidades() -> list[dict[str, str]]:
 
 
 def filtro_entidades(fuente: Fuente, entidades: list[dict[str, str]]) -> str:
-    """Condición SoQL que deja solo las entidades del universo, agrupadas por tipo."""
+    """Condición SoQL que deja solo las entidades del universo, agrupadas por tipo
+    (o, en las fuentes de alcance "sistema", todas las entidades de TIPOS_SISTEMA)."""
+    if fuente.alcance == "sistema":
+        return f"{fuente.campo_tipo} in (" + ",".join(f"'{t}'" for t in TIPOS_SISTEMA) + ")"
     por_tipo: dict[str, list[str]] = {}
     for e in entidades:
         por_tipo.setdefault(e["tipo_sfc"], []).append(e["codigo_sfc"])

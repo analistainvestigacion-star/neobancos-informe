@@ -32,7 +32,7 @@ import sys
 
 import pandas as pd
 
-from .extract import RAIZ
+from .fuentes_jefe import RAIZ
 from .transform import PROC, Universo
 
 SECCIONES = RAIZ / "content" / "secciones"

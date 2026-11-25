@@ -21,8 +21,6 @@ La composición difiere de la del sistema. El ahorro pesa {{ratio:dep_ahorro_tot
 ### Crecimiento 2024-2025
 <!-- analisis:dep_crec -->
 El saldo de depósitos del grupo {{verbo:depositos_total:universo}} {{crec:depositos_total:universo}} entre {{base}} y {{corte}}, frente a {{crec:depositos_total:sis_ec}} de los establecimientos de crédito: una diferencia de {{crec_rel:depositos_total:universo:sis_ec}}. Parte del salto se explica por entidades que empezaron a captar durante el periodo.
-
-En 2026 la serie da un nuevo salto con la entrada de Nequi como compañía de financiamiento. En {{fecha:depositos_total}} sus depósitos sumaban {{v:depositos_total:nequi:ultimo:billones}}.
 <!-- /analisis -->
 
 ```grafico
@@ -30,7 +28,7 @@ En 2026 la serie da un nuevo salto con la entrada de Nequi como compañía de fi
 ```
 
 ```grafico
-{"id": "dep_serie", "tipo": "lineas", "indicador": "depositos_total", "entidades": ["universo", "grupo_cf", "grupo_banco", "grupo_sedpe"], "formato": "billones", "rotulo": "Evolución de los depósitos", "titulo": "Los depósitos del grupo llegaron a {{v:depositos_total:universo:ultimo:billones}} en {{fecha:depositos_total}}", "nota": "El salto de 2026 corresponde al inicio de operaciones de Nequi como compañía de financiamiento."}
+{"id": "dep_serie", "tipo": "lineas", "indicador": "depositos_total", "entidades": ["universo", "grupo_cf", "grupo_banco", "grupo_sedpe"], "formato": "billones", "rotulo": "Evolución de los depósitos", "titulo": "Los depósitos del grupo llegaron a {{v:depositos_total:universo:ultimo:billones}} en {{fecha:depositos_total}}"}
 ```
 
 ### Participación en el sistema financiero

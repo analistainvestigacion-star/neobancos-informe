@@ -12,7 +12,8 @@ import json
 import numpy as np
 import pandas as pd
 
-from .extract import RAIZ, RAW, cargar_config
+# Los datos vienen de la automatización oficial (scripts/neobancos) a través de este puente.
+from .fuentes_jefe import RAIZ, cargar_config, leer
 
 PROC = RAIZ / "data" / "processed"
 
@@ -20,12 +21,6 @@ PROC = RAIZ / "data" / "processed"
 # ---------------------------------------------------------------------------
 # utilidades
 # ---------------------------------------------------------------------------
-
-def leer(nombre: str) -> pd.DataFrame:
-    archivos = sorted((RAW / nombre).glob("*.parquet"))
-    if not archivos:
-        return pd.DataFrame()
-    return pd.concat([pd.read_parquet(a) for a in archivos], ignore_index=True)
 
 
 def num(s: pd.Series) -> pd.Series:
@@ -101,6 +96,7 @@ def ind_cuif(u: Universo) -> pd.DataFrame:
     # La fuente repite filas idénticas en algunos meses (p. ej. feb-2024, feb-2026).
     df = df.drop_duplicates(subset=["nivel", "tipo_entidad", "codigo_entidad", "fecha", "cuenta"])
     inv = {v: k for k, v in u.cuif.items()}
+    df = df[df["cuenta"].isin(inv)].copy()  # el CUIF del universo trae más cuentas de las que se usan
     df["ind"] = df["cuenta"].map(inv)
     piv = df.pivot_table(index=["nivel", "tipo_entidad", "codigo_entidad", "fecha"], columns="ind",
                          values="valor", aggfunc="sum", dropna=False).reset_index()
@@ -350,6 +346,9 @@ def ind_inclusion(u: Universo) -> pd.DataFrame:
     df = leer("inclusion")
     if df.empty:
         return pd.DataFrame()
+    # unicap 34 = total nacional; renglón 999 = total del producto.
+    df = df[(df["unicap"].astype(str) == "34") & (df["renglon"].astype(str) == "999")
+            & (df["tipo"].str.strip() == "Cuentas de Ahorro")].copy()
     df["fecha"] = fin_de_mes(df["fecha_corte"])
     df["codigo_entidad"] = df["codigo_entidad"].fillna("")
     m = {"ctas_ahorro_activas": "_25_nro_ctas_ahorro_activas", "ctas_ahorro_mujeres": "_27_nro_ctas_ahorro_mujeres",
