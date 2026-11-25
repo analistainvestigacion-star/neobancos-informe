@@ -5,7 +5,7 @@ name: Publicar informe
 on:
   push:
     branches: [main]
-    paths: ["content/**", "config/**", "site/embed.js", "site/index.html"]
+    paths: ["content/**", "config/**", "site/embed.js", "site/index.html", "pyproject.toml", ".github/workflows/publicar.yml"]
   workflow_call:
   workflow_dispatch:
 
