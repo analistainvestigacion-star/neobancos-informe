@@ -89,7 +89,10 @@ def _414() -> pd.DataFrame:
     df["_prioridad"] = df["_origen"].str.contains("recientes").astype(int)
     df["_semana"] = df["fecha_corte"].str.slice(0, 10)
     mejor = df.groupby(["nivel", "_semana"])["_prioridad"].transform("min")
-    return df[df["_prioridad"] == mejor].drop(columns=["_prioridad", "_semana"])
+    df = df[df["_prioridad"] == mejor].drop(columns=["_prioridad", "_semana"])
+    # Semanal: el mes en curso llega incompleto y no se usa (igual que en el 441).
+    inicio_mes = pd.Timestamp.today().strftime("%Y-%m-01")
+    return df[df["fecha_corte"].str.slice(0, 10) < inicio_mes]
 
 
 def _441() -> pd.DataFrame:

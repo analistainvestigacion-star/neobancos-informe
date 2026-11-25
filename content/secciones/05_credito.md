@@ -47,7 +47,7 @@ La calificación por riesgo debe leerse con cautela: solo {{ratio:cartera_calif_
 
 ### Desembolsos, número de créditos y tasas frente al sistema
 <!-- analisis:desembolsos -->
-En {{anio}}, las entidades del universo desembolsaron {{anual:desembolsos:universo:informe:billones}} en {{anual:creditos:universo:informe:millones}} de créditos, sin contar el uso de tarjetas de crédito.
+En {{anio}}, las entidades del universo desembolsaron {{anual:desembolsos:universo:informe:billones}} en {{anual:creditos:universo:informe:miles}} créditos, sin contar el uso de tarjetas de crédito.
 
 La tasa promedio ponderada de los créditos de consumo fue {{v:tasa_consumo:universo:ultimo:tasa}} en {{fecha:tasa_consumo}}, frente a {{v:tasa_consumo:sis_ec:ultimo:tasa}} en los establecimientos de crédito. La diferencia refleja el perfil de riesgo de los clientes y el peso de los créditos de bajo monto y corto plazo.
 <!-- /analisis -->

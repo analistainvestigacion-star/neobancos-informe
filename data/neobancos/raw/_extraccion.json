@@ -166,5 +166,37 @@
     "extraido": "2026-11-25T22:20:52+00:00",
     "segundos": 4.8,
     "desde": null
+  },
+  "tasas_colocacion": {
+    "dataset": "w9zh-vetq",
+    "filas": 4123,
+    "ultimo_corte": "2026-08-28",
+    "extraido": "2026-11-25T22:50:30+00:00",
+    "segundos": 603.2,
+    "desde": "2025-01-01"
+  },
+  "tasas_colocacion_sistema": {
+    "dataset": "w9zh-vetq",
+    "filas": 8804,
+    "ultimo_corte": "2026-08-28",
+    "extraido": "2026-11-25T22:54:20+00:00",
+    "segundos": 229.4,
+    "desde": "2025-01-01"
+  },
+  "tasas_colocacion_recientes": {
+    "dataset": "qzsc-9esp",
+    "filas": 1253,
+    "ultimo_corte": "2026-11-13",
+    "extraido": "2026-11-25T22:55:24+00:00",
+    "segundos": 64.1,
+    "desde": null
+  },
+  "tasas_colocacion_recientes_sistema": {
+    "dataset": "qzsc-9esp",
+    "filas": 2083,
+    "ultimo_corte": "2026-11-13",
+    "extraido": "2026-11-25T22:56:07+00:00",
+    "segundos": 42.9,
+    "desde": null
   }
 }
