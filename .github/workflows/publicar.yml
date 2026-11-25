@@ -35,7 +35,7 @@ jobs:
       - name: Regenerar informe.json con los textos vigentes
         run: uv run python -m etl.cli publicar
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: site
       - id: deployment
