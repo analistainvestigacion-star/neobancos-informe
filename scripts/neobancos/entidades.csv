@@ -1,0 +1,20 @@
+marca,razon_social_sfc,nit,tipo_sfc,nombre_tipo_sfc,codigo_sfc,inicio_operacion,incluir,nota
+Lulo Bank,LULO BANK S.A.,901383474,1,Establecimiento bancario,65,,si,
+Revolut,REVOLUT BANK COLOMBIA S.A.,902002134,1,Establecimiento bancario,69,2026-08-31,si,Certificado de funcionamiento Res. SFC 1264 de 2026
+Addi,Addi S.A. Compañía de Financiamiento,901897114,4,Compañía de financiamiento,131,2026-03-26,si,Certificado de funcionamiento Res. SFC 0509 de 2026
+Bold,Bold CF Compañía de Financiamiento S.A.,901522349,4,Compañía de financiamiento,127,,si,
+Crezcamos,Crezcamos S.A. Compañía de Financiamiento,900515759,4,Compañía de financiamiento,118,,si,
+Iris,IRIS CF - Compañía de Financiamiento S.A.,811007729,4,Compañía de financiamiento,108,,si,
+Koa,KOA Compañía de Financiamiento S.A.,901779951,4,Compañía de financiamiento,129,2025-05-13,si,Funcionamiento Res. SFC 0951 de 2025
+Mercado Pago,MercadoPago S.A. Compañía de Financiamiento,901449740,4,Compañía de financiamiento,126,,si,
+Nu,NU Colombia Compañía de Financiamiento S.A.,901658107,4,Compañía de financiamiento,128,,si,
+Plata,Plata S.A. Compañía de Financiamiento,901983739,4,Compañía de financiamiento,132,2026-07-03,si,Certificado de funcionamiento Res. SFC 0983 de 2026
+RappiPay,RappiPay Compañía de Financiamiento S.A.,901526741,4,Compañía de financiamiento,124,,si,
+Tuya,Compañía de Financiamiento Tuya S.A.,860032330,4,Compañía de financiamiento,26,,si,
+Movii,Movii S.A. SEDPE,901077952,128,SEDPE,1,,si,
+Powwi,Pagos GDE S.A.,901077411,128,SEDPE,2,,si,
+Dale!,Aval Soluciones Digitales S.A.,901140552,128,SEDPE,3,,si,
+Ding,Tecnipagos S.A.,901119606,128,SEDPE,4,,si,
+Coink,COINK S.A. SEDPE,901198878,128,SEDPE,5,,si,
+Global66,Global Colombia 81 S.A.,901429272,128,SEDPE,6,,si,
+StoneX,StoneX Global Payments Colombia S.A. SEDPE,901567890,128,SEDPE,7,,si,Solo reporta estados financieros (CUIF)

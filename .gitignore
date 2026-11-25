@@ -5,3 +5,5 @@ __pycache__/
 internas/
 data/*.log
 .claude/
+data/neobancos/raw/_cortes/
+data/neobancos/*.xlsx

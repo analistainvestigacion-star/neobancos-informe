@@ -1,0 +1,82 @@
+# Actualización periódica de los datos públicos del informe de Neobancos.
+# Descarga de datos.gov.co (SFC y Fogafín), consolida, valida y publica en colombiafintech.co.
+# La fecha de la corrida programada se explica en docs/neobancos/actualizacion_datos_publicos.md.
+
+name: neobancos-datos-publicos
+
+on:
+  schedule:
+    # La SFC publica el corte del mes M hacia el día 15-19 del mes M+2 (calendario oficial);
+    # el corte de diciembre sale hacia el 19-20 de febrero. Hora: 06:00 de Bogotá (11:00 UTC).
+    - cron: "0 11 20 1,3-12 *"   # día 20, todos los meses salvo febrero
+    - cron: "0 11 22 2 *"        # 22 de febrero
+  workflow_dispatch:
+    inputs:
+      desde:
+        description: "Fecha inicial para el formato 414 (AAAA-MM-DD). Vacío = todo el histórico."
+        required: false
+        default: ""
+      publicar:
+        description: "Publicar en WordPress"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+      NEOBANCOS_HILOS: "8"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: uv sync
+
+      - name: Extraer fuentes livianas
+        run: uv run python -m scripts.neobancos.extraer entidades_sfc captaciones fogafin_productos fogafin_depositantes tarjetas quejas inclusion cartera tasas_captacion cuif canales
+
+      - name: Extraer formato 414 (pesado)
+        run: |
+          DESDE="${{ github.event.inputs.desde }}"
+          if [ -z "$DESDE" ]; then DESDE="$(date -d '-3 months' +%Y-%m-01)"; fi
+          uv run python -m scripts.neobancos.extraer --desde "$DESDE" tasas_colocacion
+          uv run python -m scripts.neobancos.extraer tasas_colocacion_recientes
+
+      - name: Consolidar y validar
+        run: uv run python -m scripts.neobancos.consolidar
+
+      - name: Guardar resultados
+        uses: actions/upload-artifact@v4
+        with:
+          name: neobancos-${{ github.run_number }}
+          path: |
+            data/neobancos/*.xlsx
+            data/neobancos/web/
+            data/neobancos/raw/_extraccion.json
+
+      - name: Guardar el histórico del formato 414 en el repositorio
+        # El 414 se descarga de forma incremental; el histórico vive en el repo para que la
+        # siguiente corrida no tenga que bajarlo completo otra vez.
+        run: |
+          git config user.name "neobancos-bot"
+          git config user.email "neobancos-bot@users.noreply.github.com"
+          git add data/neobancos/raw/tasas_colocacion.csv data/neobancos/raw/_extraccion.json
+          git diff --cached --quiet || git commit -m "Neobancos: actualización de datos públicos"
+          git push
+
+      - name: Publicar en WordPress
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.publicar == 'true' }}
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: uv run python -m scripts.neobancos.publicar_wp
