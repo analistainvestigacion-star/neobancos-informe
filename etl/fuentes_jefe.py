@@ -97,7 +97,10 @@ def _441() -> pd.DataFrame:
     if df.empty:
         return df
     # La fuente del universo trae también los días con tasa 0; sin tasa no hay costo que ponderar.
-    return df[pd.to_numeric(df["tasa_x_monto"], errors="coerce").fillna(0) != 0]
+    df = df[pd.to_numeric(df["tasa_x_monto"], errors="coerce").fillna(0) != 0]
+    # El 441 es diario: el mes en curso llega incompleto y no se usa (docs/neobancos, sección 7).
+    inicio_mes = pd.Timestamp.today().strftime("%Y-%m-01")
+    return df[df["fechacorte"].str.slice(0, 10) < inicio_mes]
 
 
 LECTORES = {
